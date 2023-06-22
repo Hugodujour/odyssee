@@ -101,8 +101,7 @@ a:active {
 /***** END Reset **********/
 
 body {
-
-  background-color:pink;
+  background-color: #111;
   font-family: Arial, Verdana;
 
 }
