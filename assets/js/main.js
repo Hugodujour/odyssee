@@ -111,6 +111,19 @@
     onscroll(document, headerScrolled)
   }
 
+  /* 
+  * Video scrolled pause
+  */
+
+  let vid = select('#bgvideo')
+  if (vid) {
+    const vidScrolled = () => {
+      window.scrollY > 900 ? vid.pause() : vid.play()
+    }
+    window.addEventListener('load', vidScrolled)
+    onscroll(document, vidScrolled);
+  }
+
   /**
    * Back to top button
    */
@@ -182,8 +195,7 @@
     let portfolioContainer = select('.portfolio-container');
     if (portfolioContainer) {
       let portfolioIsotope = new Isotope(portfolioContainer, {
-        itemSelector: '.portfolio-item',
-        layoutMode: 'fitRows'
+        itemSelector: '.portfolio-item'
       });
 
       let portfolioFilters = select('#portfolio-flters li', true);
@@ -205,12 +217,21 @@
     }
 
   });
-
-  /**
+  
+    /**
    * Initiate portfolio lightbox 
    */
   const portfolioLightbox = GLightbox({
     selector: '.portfolio-lightbox'
+  });
+
+  /**
+   * Initiate portfolio details lightbox 
+   */
+  const portfolioDetailsLightbox = GLightbox({
+    selector: '.portfolio-details-lightbox',
+    width: '90%',
+    height: '90vh'
   });
 
   /**
