@@ -118,10 +118,62 @@
   let vid = select('#bgvideo')
   if (vid) {
     const vidScrolled = () => {
-      window.scrollY > 900 ? vid.pause() : vid.play()
+      window.scrollY > 600 ? vid.pause() : vid.play()
     }
     window.addEventListener('load', vidScrolled)
     onscroll(document, vidScrolled);
+  }
+
+  /* 
+  * Main color
+  */
+
+  let main = select('#main')
+  const la = 1700
+  const lb = 2800
+  const lc = 3600
+  const ld = 4600
+
+  if(main) {
+
+    const mainScrolled = () => {
+      if (window.scrollY >= la && window.scrollY < lb){
+        main.style.background = '#DCB1D1'
+      } else if (window.scrollY >= lb && window.scrollY < lc) {
+        main.style.background = '#073277'
+      } else if (window.scrollY >= lc && window.scrollY < ld) {
+        main.style.background = '#E1E878'
+      } else {
+        main.style.background = '#FDECD6'
+      }
+    }
+    window.addEventListener('load', mainScrolled)
+    onscroll(document, mainScrolled);
+  }
+
+  /* 
+  * Head color
+  */
+
+  let head = select('#header')
+
+  if(head) {
+
+    const headScrolled = () => {
+      if(window.scrollY <= 100){
+        head.style.background = 'none'
+      } else if (window.scrollY >= la && window.scrollY < lb){
+        head.style.background = '#DCB1D1'
+      } else if (window.scrollY >= lb && window.scrollY < lc) {
+        head.style.background = '#073277'
+      } else if (window.scrollY >= lc && window.scrollY < ld) {
+        head.style.background = '#E1E878'
+      } else {
+        head.style.background = '#FDECD6'
+      }
+    }
+    window.addEventListener('load', headScrolled)
+    onscroll(document, headScrolled);
   }
 
   /**

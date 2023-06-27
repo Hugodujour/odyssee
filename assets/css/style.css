@@ -90,12 +90,12 @@ h6 {
 }
 
 .rounded {
-  border-radius: 20px;
   border: solid 1px black;
 }
 
 #main {
   padding: 0;
+  transition: background-color 0.5s ease;
 }
 
 .provenced {
@@ -726,16 +726,14 @@ section #main {
 # Sections General
 --------------------------------------------------------------*/
 section {
-  background: #FDECD6;
   overflow: hidden;
 }
 
-.section-bg {
-  background-color: #f4f9fc;
-}
+
 
 .section-title {
   padding-bottom: 30px;
+  padding-top: 30px;
 }
 
 .section-title p {
@@ -894,7 +892,6 @@ section {
 .about .content {
   padding: 30px;
   background: rgba(255, 255, 255, 1);
-  border-radius: 10px;
 }
 
 .about .content h3 {
@@ -913,7 +910,6 @@ section {
   background: #67b0d1;
   padding: 6px 44px 8px 30px;
   color: #fff;
-  border-radius: 50px;
   transition: 0.3s;
   position: relative;
 }
@@ -1711,7 +1707,6 @@ section {
 
 .shadowed {
   border: solid 1px black;
-  border-radius: 30px;
 }
 
 #wine .thebottle {
