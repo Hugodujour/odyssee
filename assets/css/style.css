@@ -84,6 +84,13 @@ h6 {
   padding-bottom: 60px;
 }
 
+.sand {
+  background: url('/fr/assets/img/sable3.png');
+  background-repeat: no-repeat;
+  background-position: 0% 20%;
+  background-size: cover;
+}
+
 .logoted2 {
   height: 100px;
   transform: translateY(10px);
@@ -290,7 +297,7 @@ background-size: contain;
 #header.header-scrolled {
   background: #FDECD6;
   padding: 13px;
-  border-bottom: 1px solid black;
+  border: 1px solid black;
 }
 
 #header .logo h1 {
@@ -719,7 +726,7 @@ background-size: contain;
 }
 
 section #main {
-  padding: 0px 60px;
+  padding: 0px 40px;
 }
 
 /*--------------------------------------------------------------
