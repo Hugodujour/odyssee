@@ -5,6 +5,8 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
+
+
 (function() {
   "use strict";
 
@@ -99,12 +101,21 @@
    * Toggle .header-scrolled class to #header when page is scrolled
    */
   let selectHeader = select('#header')
+  let logoHeader = select('#logow')
+  let navHeader = select('#navbar')
+  let freng = select('#freng')
   if (selectHeader) {
     const headerScrolled = () => {
       if (window.scrollY > 100) {
         selectHeader.classList.add('header-scrolled')
+        logoHeader.classList.add('blacked')
+        navHeader.style.color = "black"
+        freng.style.color = "black"        
       } else {
         selectHeader.classList.remove('header-scrolled')
+        logoHeader.classList.remove('blacked')
+        navHeader.style.color = "white"
+        freng.style.color = "white"
       }
     }
     window.addEventListener('load', headerScrolled)
@@ -123,6 +134,15 @@
     window.addEventListener('load', vidScrolled)
     onscroll(document, vidScrolled);
   }
+
+
+
+
+
+
+
+
+
 
   /* 
   * Main color
@@ -166,8 +186,13 @@
         head.style.background = '#DCB1D1'
       } else if (window.scrollY >= lb && window.scrollY < lc) {
         head.style.background = '#073277'
+        logoHeader.classList.remove('blacked')
+        navHeader.style.color = "white"
+        freng.style.color = "white"
+        
       } else if (window.scrollY >= lc && window.scrollY < ld) {
         head.style.background = '#E1E878'
+        
       } else {
         head.style.background = '#FDECD6'
       }

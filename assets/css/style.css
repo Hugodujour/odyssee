@@ -10,7 +10,7 @@
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Roboto Mono', monospace;
   color: #444444;
 }
 
@@ -31,7 +31,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Raleway", sans-serif;
+  font-family:'Roboto Mono', monospace;
 }
 
 
@@ -83,17 +83,36 @@ h6 {
   background-size: 850px;
   padding-bottom: 60px;
 }
+.product-container {
+  padding: 60px 0px;
+}
+
+.inverted {
+  filter: brightness(0) invert(1);
+}
+
+.whited {
+  filter: brightness(0) invert(1);
+}
+
+.blacked {
+  filter: brightness(0);
+}
 
 .sand {
-  background: url('/fr/assets/img/sable3.png');
+  background: url('/fr/assets/img/table.jpg');
   background-repeat: no-repeat;
-  background-position: 0% 20%;
+  background-position: 0% 70%;
   background-size: cover;
 }
 
 .logoted2 {
-  height: 100px;
-  transform: translateY(10px);
+ height: 100px;
+}
+
+.logoted3 {
+  height: 250px;
+  transform: translateY(-50px);
 }
 
 .rounded {
@@ -185,6 +204,10 @@ background-repeat: repeat;
 
 .b-all {
   border: solid 1px black;
+}
+
+.blacko {
+  color: black;
 }
 
 
@@ -288,6 +311,11 @@ background-size: contain;
   z-index: 997;
   transition: all 0.5s;
   padding: 24px 0;
+  
+}
+
+#logow {
+  transition: all 0.3s;
 }
 
 #header.header-transparent {
@@ -306,13 +334,15 @@ background-size: contain;
   line-height: 1;
   font-weight: 700;
   letter-spacing: 1px;
-  font-family: "Raleway", sans-serif;
+  font-family:'Roboto Mono', monospace;
   text-transform: uppercase;
 }
 
+
+
 #header .logo h1 a,
 #header .logo h1 a:hover {
-  color: #fff;
+  
   text-decoration: none;
 }
 
@@ -349,7 +379,9 @@ background-size: contain;
 */
 .navbar {
   padding: 0;
-  
+}
+
+.whito {
   color: #fff;
 }
 
@@ -372,10 +404,9 @@ background-size: contain;
   justify-content: space-between;
   padding: 8px 16px;
   margin-left: 10px;
-  font-family: "Raleway", sans-serif;
+  font-family:'Roboto Mono', monospace;
   font-size: 16px;
   font-weight: 500;
-  color: #fff;
   white-space: nowrap;
   transition: 0.3s;
 }
@@ -389,11 +420,9 @@ background-size: contain;
 }
 
 .navbar a:hover,
-.navbar .active,
-.navbar .active:focus,
 .navbar li:focus>a {
-  background: rgba(255, 255, 255, 0.2);
-  color: #fff;
+  text-decoration: underline 2px;
+  text-underline-offset: 4px;
 }
 
 .navbar .dropdown ul {
@@ -413,6 +442,7 @@ background-size: contain;
 
 .navbar .dropdown ul li {
   min-width: 200px;
+  
 }
 
 .navbar .dropdown ul a {
@@ -420,15 +450,14 @@ background-size: contain;
   font-size: 15px;
   text-transform: none;
   font-weight: 600;
+  
 }
 
 .navbar .dropdown ul a i {
   font-size: 12px;
 }
 
-.navbar a {
-  color: #fff;
-}
+
 
 .navbar .dropdown:hover>ul {
   opacity: 1;
@@ -647,6 +676,10 @@ background-size: contain;
   background: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.6)), top center;
   background-size: cover;
   position: relative;
+}
+
+#hero li {
+  list-style-type: none;
 }
 
 #hero .hero-container {
@@ -1072,7 +1105,7 @@ section {
 .counts .count-box p {
   padding: 15px 0 0 0;
   margin: 0 0 0 60px;
-  font-family: "Raleway", sans-serif;
+  font-family: 'Roboto Mono', monospace;
   font-size: 14px;
   color: #49788c;
 }
@@ -1083,7 +1116,7 @@ section {
   margin-top: 20px;
   color: #49788c;
   font-size: 15px;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Roboto Mono', monospace;
   transition: ease-in-out 0.3s;
 }
 
@@ -1111,7 +1144,7 @@ section {
 }
 
 .cta .cta-btn {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Roboto Mono', monospace;
   text-transform: uppercase;
   font-weight: 500;
   font-size: 16px;
@@ -1129,7 +1162,7 @@ section {
 }
 
 .call {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Roboto Mono', monospace;
   text-transform: uppercase;
   font-weight: 500;
   font-size: 16px;
@@ -1138,12 +1171,17 @@ section {
   padding: 8px 28px;
   transition: 0.5s;
   margin-top: 10px;
-  background: rgba(255, 255, 255, 0.2);
-  color: #fff;
+  background: #FDECD6;
+  color: black;
+  border-radius: 50px;
+  border: 1px solid black;
+  box-shadow: 0px 5px 1px #d18c00;
+  transition: all 0.1s;
+  transform: translateY(-10px);
 }
 
 .called {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Roboto Mono', monospace;
   text-transform: uppercase;
   font-weight: 500;
   font-size: 16px;
@@ -1158,9 +1196,10 @@ section {
 }
 
 .call:hover {
-  color: #fff;
-  cursor: pointer;
-  background-color: #202958;
+ box-shadow: none;
+ color: black;
+ transition: all 0s;
+ transform: translateY(0px);
 }
 
 .called:hover {
@@ -1716,22 +1755,30 @@ section {
   border: solid 1px black;
 }
 
-#wine .thebottle {
+#wine1 .thebottle,
+#wine2 .thebottle,
+#wine3 .thebottle {
   background: #fff;
-  padding: 30px 0px;
+  padding: 0px 0px;
 }
 
-#wine .italicos {
+#wine1 .italicos,
+#wine2 .italicos,
+#wine3 .italicos {
   font-style: italic;
   font-weight: 800;
 }
 
-#wine .content {
+#wine1 .content,
+#wine2 .content,
+#wine3 .content {
   background: #fff;
-  padding: 30px;
+  padding: 24px;
 }
 
-#wine .drop img {
+#wine1 .drop img,
+#wine2 .drop img,
+#wine3 .drop img {
   -webkit-filter: drop-shadow(0px 15px 15px rgba(25,25,25, 0.2));
   filter: drop-shadow(25px 25px 15px rgba(25,25,25, 0.5));
 }
@@ -1779,7 +1826,7 @@ section {
   font-size: 14px;
   line-height: 24px;
   margin-bottom: 0;
-  font-family: "Raleway", sans-serif;
+  font-family: 'Roboto Mono', monospace;
 }
 
 

@@ -14,8 +14,10 @@
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet" media="screen" >
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+ 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -31,17 +33,46 @@
 
 <body>
 
-  <!-- ======= Header ======= -->
   <header id="header" class="fixed-top header-transparent">
     <div class="container d-flex align-items-center justify-content-between position-relative">
 
-
-
-      <div class="logo">
-        <img src="assets/img/4x/Texte.png" alt="" class="img-fluid logoted">
+      <div class="logo" id="logow">
+        <a href="#hero"><img src="assets/img/Odyssée.png" alt="Texte L&C Vins Bordeaux" class="img-fluid logoted"></a>
       </div>
 
-
+      <nav id="navbar" class="navbar">
+        <div>
+          <ul>
+            
+              <li><a class="nav-link scrollto" href="#odyssee">Odyssée</a></li>
+              <li><a class="nav-link scrollto" href="#wine1">Provence</a></li>
+              <li><a class="nav-link scrollto" href="#wine2">Merlot</a></li>
+              <li><a class="nav-link scrollto" href="#wine3">Sauvignon</a></li>
+              <li class="nav-link dropdown d-md-block d-lg-none">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <img src="./assets/img/FRA.png" style="height: 28px;" alt="Drapeau français">
+                </a> 
+                <ul class="dropdown-menu" aria-labelledby="navbarDarkDropdownMenuLink">
+                  <li><a class="dropdown-item" href="/fr">FR</a></li>
+                  <li><a class="dropdown-item" href="/en">ENG</a></li>
+                </ul>
+              </li>
+              
+            
+          </ul>
+        </div>
+        
+        
+      </nav><!-- .navbar -->
+      
+      <nav class="navbar" id="freng">
+        <ul>
+          <li><a class="nav-link scrollto fra" href="/fr">FR</a></li>
+          <li><a class="nav-link scrollto" href="/en">ENG</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+      
 
     </div>
   </header><!-- End Header -->
@@ -56,7 +87,7 @@
       </ul>
       <ul>
         <li data-aos="fade-up">
-          <a class="call" href="./fr/">Vivez l'expérience odyssée</a>
+          <a class="call" href="#odyssee">Vivez l'expérience odyssée</a>
         </li>
         <li data-aos="fade-up" data-aos-delay="500" >
           <p></p></li>
@@ -115,10 +146,10 @@
       </video>
     </div>
 
-  <section class="pt-5 pb-5 b-ride b-bot sand">
+  <section class="product-container b-ride b-bot sand" id="odyssee">
     <div class="pt-5 pb-5">
       <div class="d-flex align-items-center justify-content-center">
-        <img src="./assets/img/logo-noir2.png" class="img-fluid logoted2">
+        <img src="./assets/img/logo-noir2.png" class="img-fluid logoted3 inverted">
       </div>
       <div class="">
         <div class="">
@@ -138,7 +169,7 @@
     </div>
   </section> <!-- End section bouteilles -->
 
-  <section id="wine" class="provenced2 b-bot b-ride">
+  <section id="wine1" class="provenced2 b-bot b-ride">
 
     <section class="thebottle b-bot">
       <div class="container">
@@ -205,7 +236,7 @@
     </div>
   </section><!-- End About Section -->
 
-  <section id="wine" class="merlot b-bot b-ride">
+  <section id="wine2" class="merlot b-bot b-ride">
 
     <section class="thebottle b-bot">
       <div class="container">
@@ -272,7 +303,7 @@
     </div>
   </section><!-- End About Section -->
 
-  <section id="wine" class="sauvignon b-ride b-bot">
+  <section id="wine3" class="sauvignon b-ride b-bot">
 
     <section class="thebottle b-bot">
       <div class="container">
