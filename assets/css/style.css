@@ -34,13 +34,23 @@ h6 {
   font-family:'Roboto Mono', monospace;
 }
 
+
+
 .contact-item {
+  font-family:'Roboto Mono', monospace;
   padding: 50px;
   text-align: center;
+  font-weight: 1000;
+  font-size: 60px;
+}
+
+.contact-item:hover {
+  background-color: #2a8a8e;
+  color: white;
 }
 
 .abouted {
-  background-image: linear-gradient( rgba(188, 195, 49, 0.8), rgba(201, 42, 145, 0.8));
+  background: #2a8a8e;
   height: 900px;
   width: 800px;
   padding: 60px;
