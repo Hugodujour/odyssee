@@ -1223,7 +1223,7 @@ section {
   color: black;
   border-radius: 50px;
   border: 1px solid black;
-  box-shadow: 0px 5px 1px #d18c00;
+  box-shadow: 0px 5px 1px #2a8a8e, 0px 5px 1px 1px black;
   transition: all 0.1s;
   transform: translateY(-10px);
 }
