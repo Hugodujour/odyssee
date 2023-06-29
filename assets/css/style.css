@@ -49,6 +49,20 @@ h6 {
   color: white;
 }
 
+.transi {
+  padding-bottom: 150px;
+}
+
+.photomore {
+  min-height: 420px;
+  min-width: 700px;
+  max-width: 100%;
+  height: auto;
+  background-image: url('../img/hero-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .abouted {
   background: #2a8a8e;
   height: 900px;
@@ -1176,20 +1190,12 @@ section {
 # Cta
 --------------------------------------------------------------*/
 .cta {
-  background: linear-gradient(rgba(15, 20, 75, 0.3), rgba(15, 20, 75, 0.6)), url("../img/cta-bg.jpg") fixed center center;
+  color: #444;
   background-size: cover;
   padding: 60px 0;
 }
 
-.cta h3 {
-  color: #fff;
-  font-size: 28px;
-  font-weight: 700;
-}
 
-.cta p {
-  color: #fff;
-}
 
 .cta .cta-btn {
   font-family: 'Roboto Mono', monospace;
@@ -1741,6 +1747,10 @@ section {
   border: solid 1px black;
 }
 
+#wine1 h2 {
+  font-family: 'Domine', serif;
+}
+
 #wine1 .thebottle,
 #wine2 .thebottle,
 #wine3 .thebottle {
@@ -1759,7 +1769,18 @@ section {
 #wine2 .content,
 #wine3 .content {
   background: #fff;
+  border-radius: 10px;
   padding: 24px;
+  box-shadow: 0px 10px 0px #2A8A8E, 0px 10px 0px 1px black;
+  transition: all 0.1s;
+}
+
+#wine1 .content:hover,
+#wine2 .content:hover,
+#wine3 .content:hover {
+  transition: all 0s;
+  box-shadow: none;
+  transform: translateY(10px);
 }
 
 #wine1 .drop img,
@@ -1782,19 +1803,23 @@ section {
   border: 2px solid blue;
 }
 
+.fond {
+  background: #2a8a8e;
+  color: #fff;
+}
 
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #202958;
-  padding: 0 0 30px 0;
+  background: #2a8a8e;
+  padding: 60px 0 30px 0;
   color: #fff;
   font-size: 14px;
 }
 
 #footer .footer-top {
-  padding: 60px 0 30px 0;
+  padding: 30px 0 30px 0;
 }
 
 #footer .footer-top .footer-info {
