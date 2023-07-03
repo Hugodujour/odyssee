@@ -71,6 +71,12 @@ h6 {
   color: #fff;
 }
 
+.colored {
+  background: #2a8a8e;
+}
+
+
+
 .abouted div {
  padding: 245px 0px 0px 0px;
 }
@@ -144,6 +150,14 @@ h6 {
 
 .whited {
   filter: brightness(0) invert(1);
+}
+
+.bottle {
+  height: 600px;
+}
+
+.white {
+  color: #fff
 }
 
 .blacked {
