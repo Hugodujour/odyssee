@@ -203,7 +203,13 @@ h6 {
   transition: background-color 0.5s ease;
 }
 
-
+.provenced3 {
+background-color: #eb00ff;
+opacity: 0.4;
+background-image: radial-gradient(#fca2ff 0.8px, transparent 0.8px), radial-gradient(#fca2ff 0.8px, #eb00ff 0.8px);
+background-size: 32px 32px;
+background-position: 0 0,16px 16px;
+}
 
 
 .provenced {
@@ -217,14 +223,14 @@ h6 {
 
     --s: 50px; /* control the size */
   
-    --c: #DCB1D1 ;
+    --c: #FFE6F9 ;
     --_g: conic-gradient(var(--c) 25%,#0000 0) 0 0;
     background:
       var(--_g)/calc(2*var(--s)) calc(var(--s)/9.5),
       var(--_g)/calc(var(--s)/9.5) calc(2*var(--s)),
       repeating-conic-gradient(#0000 0 25%,var(--c) 0 50%) 
        var(--s) 0 /calc(2*var(--s)) calc(2*var(--s)),
-      radial-gradient(50% 50%,#FFE6F9 98%,var(--c)) 
+      radial-gradient(50% 50%,#9A0074 98%,var(--c)) 
        0 0/var(--s) var(--s);
     background-repeat: repeat;
 }
@@ -233,14 +239,14 @@ h6 {
 
       --s: 50px; /* control the size */
   
-    --c: #073277 ;
+    --c: #DAE6F9 ;
     --_g: conic-gradient(var(--c) 25%,#0000 0) 0 0;
     background:
       var(--_g)/calc(2*var(--s)) calc(var(--s)/9.5),
       var(--_g)/calc(var(--s)/9.5) calc(2*var(--s)),
       repeating-conic-gradient(#0000 0 25%,var(--c) 0 50%) 
        var(--s) 0 /calc(2*var(--s)) calc(2*var(--s)),
-      radial-gradient(50% 50%,#1F5FC4 98%,var(--c)) 
+      radial-gradient(50% 50%,#073277 98%,var(--c)) 
        0 0/var(--s) var(--s);
     background-repeat: repeat;
   
@@ -920,6 +926,8 @@ section {
   margin-bottom: 0;
 }
 
+
+
 /*--------------------------------------------------------------
 # Breadcrumbs
 --------------------------------------------------------------*/
@@ -1011,6 +1019,7 @@ section {
 .conso {
   background-color: #FFFFFF;
 }
+
 
 
 

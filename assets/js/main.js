@@ -107,6 +107,7 @@
   let colored = select('.colored')
   let coloredMer = select('.colored-mer')
   let coloredSau = select('.colored-sau')
+  let callPro = select('#callpro')
   if (selectHeader) {
     const headerScrolled = () => {
       if (window.scrollY > 100) {
@@ -153,24 +154,29 @@
   */
 
   let main = select('#main')
-  const la = 1700
-  const lb = 2800
-  const lc = 3600
-  const ld = 4600
+  const la = 1350
+  const lb = 2550
+  const lc = 3800
+  const ld = 5600
 
   if(main) {
 
     const mainScrolled = () => {
-      if (window.scrollY >= la && window.scrollY < lb){
+      if (window.scrollY < la){
+        callPro.classList.remove('call-pro')
+        main.style.background = '#FDECD6'
+      } else if (window.scrollY >= la && window.scrollY < lb){
         main.style.background = '#FFE6F9'
         colored.style.background = '#9a0074'
         coloredMer.style.background ="#9a0074"
+        callPro.classList.add('call-pro')
       } else if (window.scrollY >= lb && window.scrollY < lc) {
-        main.style.background = '#073277'
+        
+        main.style.background = '#DAE6F9'
         coloredMer.style.background ="#073277"
         coloredSau.style.background = "#073277"
       } else if (window.scrollY >= lc && window.scrollY < ld) {
-        main.style.background = '#E1E878'
+        main.style.background = '#F9FF9E'
         coloredSau.style.background = ""
       } else {
         main.style.background = '#FDECD6'
@@ -194,13 +200,13 @@
       } else if (window.scrollY >= la && window.scrollY < lb){
         head.style.background = '#FFE6F9'
       } else if (window.scrollY >= lb && window.scrollY < lc) {
-        head.style.background = '#073277'
+        head.style.background = '#1F5FC4'
         logoHeader.classList.remove('blacked')
         navHeader.style.color = "white"
         freng.style.color = "white"
         
       } else if (window.scrollY >= lc && window.scrollY < ld) {
-        head.style.background = '#E1E878'
+        head.style.background = '#F9FF9E'
         
       } else {
         head.style.background = '#FDECD6'
