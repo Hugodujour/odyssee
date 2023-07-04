@@ -104,13 +104,15 @@
   let logoHeader = select('#logow')
   let navHeader = select('#navbar')
   let freng = select('#freng')
+  let colored = select('.colored')
   if (selectHeader) {
     const headerScrolled = () => {
       if (window.scrollY > 100) {
         selectHeader.classList.add('header-scrolled')
         logoHeader.classList.add('blacked')
         navHeader.style.color = "black"
-        freng.style.color = "black"        
+        freng.style.color = "black"
+        colored.style.background = "#2A8A8E"        
       } else {
         selectHeader.classList.remove('header-scrolled')
         logoHeader.classList.remove('blacked')
@@ -159,6 +161,7 @@
     const mainScrolled = () => {
       if (window.scrollY >= la && window.scrollY < lb){
         main.style.background = '#DCB1D1'
+        colored.style.background = '#9a0074'
       } else if (window.scrollY >= lb && window.scrollY < lc) {
         main.style.background = '#073277'
       } else if (window.scrollY >= lc && window.scrollY < ld) {

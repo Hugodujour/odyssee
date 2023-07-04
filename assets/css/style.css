@@ -72,7 +72,9 @@ h6 {
 }
 
 .colored {
-  background: #2a8a8e;
+  background: #9a0074;
+  color: white;
+  transition: all 0.2s;
 }
 
 
@@ -1281,6 +1283,32 @@ section {
   border-color: #202958
 }
 
+.call-pro {
+  font-family: 'Roboto Mono', monospace;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 28px;
+  transition: 0.5s;
+  margin-top: 10px;
+  background: #FFE6F9;
+  color: black;
+  border-radius: 50px;
+  border: 1px solid black;
+  box-shadow: 0px 5px 1px #9A0074, 0px 5px 1px 1px black;
+  transition: all 0.1s;
+  transform: translateY(-10px);
+}
+
+.call-pro:hover {
+  box-shadow: none;
+  color: black;
+  transition: all 0s;
+  transform: translateY(0px);
+ }
+
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
@@ -1765,11 +1793,28 @@ section {
   font-family: 'Domine', serif;
 }
 
+.contented h2, .contented h3 {
+  font-family: 'Domine', serif;
+}
+
+.contented h2 {
+  padding-bottom: 20px;
+}
+
+.contented {
+  padding: 30px;
+  color: #fff;
+}
+
 #wine1 .thebottle,
 #wine2 .thebottle,
 #wine3 .thebottle {
   background: #fff;
   padding: 0px 0px;
+}
+
+.thebottle {
+  background: #fff;
 }
 
 #wine1 .italicos,
