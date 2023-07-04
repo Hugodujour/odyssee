@@ -105,6 +105,8 @@
   let navHeader = select('#navbar')
   let freng = select('#freng')
   let colored = select('.colored')
+  let coloredMer = select('.colored-mer')
+  let coloredSau = select('.colored-sau')
   if (selectHeader) {
     const headerScrolled = () => {
       if (window.scrollY > 100) {
@@ -160,12 +162,16 @@
 
     const mainScrolled = () => {
       if (window.scrollY >= la && window.scrollY < lb){
-        main.style.background = '#DCB1D1'
+        main.style.background = '#FFE6F9'
         colored.style.background = '#9a0074'
+        coloredMer.style.background ="#9a0074"
       } else if (window.scrollY >= lb && window.scrollY < lc) {
         main.style.background = '#073277'
+        coloredMer.style.background ="#073277"
+        coloredSau.style.background = "#073277"
       } else if (window.scrollY >= lc && window.scrollY < ld) {
         main.style.background = '#E1E878'
+        coloredSau.style.background = ""
       } else {
         main.style.background = '#FDECD6'
       }
@@ -186,7 +192,7 @@
       if(window.scrollY <= 100){
         head.style.background = 'none'
       } else if (window.scrollY >= la && window.scrollY < lb){
-        head.style.background = '#DCB1D1'
+        head.style.background = '#FFE6F9'
       } else if (window.scrollY >= lb && window.scrollY < lc) {
         head.style.background = '#073277'
         logoHeader.classList.remove('blacked')

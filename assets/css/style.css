@@ -74,7 +74,19 @@ h6 {
 .colored {
   background: #9a0074;
   color: white;
-  transition: all 0.2s;
+  transition: all 0.5s;
+}
+
+.colored-mer {
+  background: #073277;
+  color: white;
+  transition: all 0.5s;
+}
+
+.colored-sau {
+  background: #b2bf00;
+  color: white;
+  transition: all 0.5s;
 }
 
 
