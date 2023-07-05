@@ -200,10 +200,10 @@
       } else if (window.scrollY >= la && window.scrollY < lb){
         head.style.background = '#FFE6F9'
       } else if (window.scrollY >= lb && window.scrollY < lc) {
-        head.style.background = '#1F5FC4'
-        logoHeader.classList.remove('blacked')
-        navHeader.style.color = "white"
-        freng.style.color = "white"
+        head.style.background = '#DAE6F9'
+        // logoHeader.classList.remove('blacked')
+        // navHeader.style.color = "white"
+        // freng.style.color = "white"
         
       } else if (window.scrollY >= lc && window.scrollY < ld) {
         head.style.background = '#F9FF9E'

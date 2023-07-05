@@ -84,7 +84,7 @@ h6 {
 }
 
 .colored-sau {
-  background: #b2bf00;
+  background: #4F745A;
   color: white;
   transition: all 0.5s;
 }
@@ -220,52 +220,54 @@ background-position: 0 0,16px 16px;
 }
 
 .provenced2 {
-
-    --s: 50px; /* control the size */
-  
-    --c: #FFE6F9 ;
-    --_g: conic-gradient(var(--c) 25%,#0000 0) 0 0;
+    --s: 100px; /* control the size */
+    --c1: #FFE6F9;
+    --c2: #9C0577;
+    
+    --_g:#0000, #0004 5%,
+       var(--c2) 6%  14%,var(--c1) 16% 24%,var(--c2) 26% 34%,var(--c1) 36% 44%,
+       var(--c2) 46% 54%,var(--c1) 56% 64%,var(--c2) 66% 74%,var(--c1) 76% 84%,
+       var(--c2) 86% 94%,#0004 95%,#0000;
     background:
-      var(--_g)/calc(2*var(--s)) calc(var(--s)/9.5),
-      var(--_g)/calc(var(--s)/9.5) calc(2*var(--s)),
-      repeating-conic-gradient(#0000 0 25%,var(--c) 0 50%) 
-       var(--s) 0 /calc(2*var(--s)) calc(2*var(--s)),
-      radial-gradient(50% 50%,#9A0074 98%,var(--c)) 
-       0 0/var(--s) var(--s);
-    background-repeat: repeat;
+      radial-gradient(100% 50% at 100% 0   ,var(--_g)),
+      radial-gradient(100% 50% at 0    50% ,var(--_g)),
+      radial-gradient(100% 50% at 100% 100%,var(--_g));
+    background-size: var(--s) calc(2*var(--s));
 }
 
 .merlot {
 
-      --s: 50px; /* control the size */
+  --s: 100px; /* control the size */
+  --c1: #DAE6F9;
+  --c2: #0B367A;
   
-    --c: #DAE6F9 ;
-    --_g: conic-gradient(var(--c) 25%,#0000 0) 0 0;
-    background:
-      var(--_g)/calc(2*var(--s)) calc(var(--s)/9.5),
-      var(--_g)/calc(var(--s)/9.5) calc(2*var(--s)),
-      repeating-conic-gradient(#0000 0 25%,var(--c) 0 50%) 
-       var(--s) 0 /calc(2*var(--s)) calc(2*var(--s)),
-      radial-gradient(50% 50%,#073277 98%,var(--c)) 
-       0 0/var(--s) var(--s);
-    background-repeat: repeat;
+  --_g:#0000, #0004 5%,
+     var(--c2) 6%  14%,var(--c1) 16% 24%,var(--c2) 26% 34%,var(--c1) 36% 44%,
+     var(--c2) 46% 54%,var(--c1) 56% 64%,var(--c2) 66% 74%,var(--c1) 76% 84%,
+     var(--c2) 86% 94%,#0004 95%,#0000;
+  background:
+    radial-gradient(100% 50% at 100% 0   ,var(--_g)),
+    radial-gradient(100% 50% at 0    50% ,var(--_g)),
+    radial-gradient(100% 50% at 100% 100%,var(--_g));
+  background-size: var(--s) calc(2*var(--s));
   
 }
 
 .sauvignon {
 
-  --s: 50px; /* control the size */
-
---c: #E0E879 ;
---_g: conic-gradient(var(--c) 25%,#0000 0) 0 0;
-background:
-  var(--_g)/calc(2*var(--s)) calc(var(--s)/9.5),
-  var(--_g)/calc(var(--s)/9.5) calc(2*var(--s)),
-  repeating-conic-gradient(#0000 0 25%,var(--c) 0 50%) 
-   var(--s) 0 /calc(2*var(--s)) calc(2*var(--s)),
-  radial-gradient(50% 50%,#F9FF9E 98%,var(--c)) 
-   0 0/var(--s) var(--s);
-background-repeat: repeat;
+  --s: 100px; /* control the size */
+  --c1: #F9FF9E;
+  --c2: #4F745A;
+  
+  --_g:#0000, #0004 5%,
+     var(--c2) 6%  14%,var(--c1) 16% 24%,var(--c2) 26% 34%,var(--c1) 36% 44%,
+     var(--c2) 46% 54%,var(--c1) 56% 64%,var(--c2) 66% 74%,var(--c1) 76% 84%,
+     var(--c2) 86% 94%,#0004 95%,#0000;
+  background:
+    radial-gradient(100% 50% at 100% 0   ,var(--_g)),
+    radial-gradient(100% 50% at 0    50% ,var(--_g)),
+    radial-gradient(100% 50% at 100% 100%,var(--_g));
+  background-size: var(--s) calc(2*var(--s));
 
 }
 
@@ -1323,13 +1325,52 @@ section {
   transform: translateY(-10px);
 }
 
-.call-pro:hover {
+ .call-mer {
+  font-family: 'Roboto Mono', monospace;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 28px;
+  transition: 0.5s;
+  margin-top: 10px;
+  background: #DAE6F9;
+  color: black;
+  border-radius: 50px;
+  border: 1px solid black;
+  box-shadow: 0px 5px 1px #073277, 0px 5px 1px 1px black;
+  transition: all 0.1s;
+  transform: translateY(-10px);
+}
+
+ .call-sau {
+  font-family: 'Roboto Mono', monospace;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 28px;
+  transition: 0.5s;
+  margin-top: 10px;
+  background: #F9FF9E;
+  color: black;
+  border-radius: 50px;
+  border: 1px solid black;
+  box-shadow: 0px 5px 1px #4F745A, 0px 5px 1px 1px black;
+  transition: all 0.1s;
+  transform: translateY(-10px);
+}
+
+.call-sau:hover,
+.call-pro:hover,
+.call-mer:hover {
   box-shadow: none;
   color: black;
   transition: all 0s;
   transform: translateY(0px);
  }
-
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
