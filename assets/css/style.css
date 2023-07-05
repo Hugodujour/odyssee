@@ -113,10 +113,18 @@ h6 {
 
 .bottle-img {
   padding: 0px 5px;
-  -webkit-filter: drop-shadow(0px 15px 5px rgba(25,25,25, 0.2));
-  filter: drop-shadow(0px 15px 5px rgba(25,25,25, 0.2));
+  -webkit-filter: drop-shadow(0px 15px 5px rgba(25,25,25, 0.25));
+  filter: drop-shadow(0px 15px 5px rgba(25,25,25, 0.25));
   transition: all 0.1s ease-out;
   cursor: pointer;
+  height: auto;
+  width: 120px;
+  transform: translateY(-10px);
+}
+
+.inside {
+  border: 2px solid #000; /* Couleur et épaisseur du contour */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Ombre portée */
 }
 
 .img-one:hover {
