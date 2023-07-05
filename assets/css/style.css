@@ -123,8 +123,10 @@ h6 {
 }
 
 .inside {
-  border: 2px solid #000; /* Couleur et épaisseur du contour */
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Ombre portée */
+  -webkit-filter: drop-shadow(1px 1px 0 black)
+  drop-shadow(-1px -1px 0 black);
+  filter: drop-shadow(1px 1px 0 black) 
+  drop-shadow(-1px -1px 0 black);
 }
 
 .img-one:hover {
