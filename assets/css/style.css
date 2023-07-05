@@ -58,9 +58,10 @@ h6 {
   min-width: 700px;
   max-width: 100%;
   height: auto;
-  background-image: url('../img/hero-bg.jpg');
+  background-image: url('../img/portfolio/bottle3.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: 40% 40% ;
 }
 
 .abouted {
