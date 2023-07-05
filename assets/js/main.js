@@ -142,6 +142,55 @@
 
 
 
+//Bouteille movable
+
+
+
+
+
+
+
+  //carroussel
+// Variables to store the scroll position and rotation angle
+let scrollPosition = 0;
+let rotationAngle = 0;
+
+// Add an event listener for the scroll event
+window.addEventListener('scroll', handleScroll);
+
+// Start the continuous rotation animation
+continuousRotation();
+
+// Function to handle the scroll event
+function handleScroll() {
+  // Update the scroll position
+  scrollPosition = window.scrollY;
+
+  // Update the rotation angle based on the scroll position
+  rotationAngle = scrollPosition * 0.2; // Adjust the multiplier to control the rotation speed
+
+  // Apply the rotation angle to the carousel element
+  const carousel = document.querySelector('.carousel');
+  carousel.style.transform = `rotateY(-${rotationAngle}deg)`;
+}
+
+// Function to continuously rotate the carousel
+function continuousRotation() {
+  // Get the current rotation angle
+  const currentRotation = rotationAngle;
+
+  // Update the rotation angle for the continuous rotation
+  rotationAngle += 0.15; // Adjust the increment to control the continuous rotation speed
+
+  // Apply the rotation angle to the carousel element
+  const carousel = document.querySelector('.carousel');
+  carousel.style.transform = `rotateY(-${rotationAngle}deg)`;
+
+  // Schedule the next continuous rotation frame
+  requestAnimationFrame(continuousRotation);
+}
+
+  
 
   
 
