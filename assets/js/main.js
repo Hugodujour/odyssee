@@ -233,8 +233,8 @@ function resumeCarouselRotation() {
         main.style.background = '#FDECD6'
       } else if (window.scrollY >= la && window.scrollY < lb){
         main.style.background = '#FFE6F9'
-        colored.style.background = '#9a0074'
-        coloredMer.style.background ="#9a0074"
+        colored.style.background = '#9B628D'
+        coloredMer.style.background ="#9B628D"
         callPro.classList.add('call-pro')
       } else if (window.scrollY >= lb && window.scrollY < lc) {
         
@@ -242,7 +242,7 @@ function resumeCarouselRotation() {
         coloredMer.style.background ="#073277"
         coloredSau.style.background = "#073277"
       } else if (window.scrollY >= lc && window.scrollY < ld) {
-        main.style.background = '#F9FF9E'
+        main.style.background = '#FFFACC'
         coloredSau.style.background = ""
       } else {
         main.style.background = '#FDECD6'
@@ -272,7 +272,7 @@ function resumeCarouselRotation() {
         // freng.style.color = "white"
         
       } else if (window.scrollY >= lc && window.scrollY < ld) {
-        head.style.background = '#F9FF9E'
+        head.style.background = '#FFFACC'
         
       } else {
         head.style.background = '#FDECD6'
