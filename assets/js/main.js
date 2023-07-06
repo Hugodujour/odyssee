@@ -142,7 +142,7 @@
 
 
 
-//Bouteille movable
+
 
 
 
@@ -154,6 +154,7 @@
 // Variables to store the scroll position and rotation angle
 let scrollPosition = 0;
 let rotationAngle = 0;
+let shouldRotate = true; // Flag to control rotation
 
 // Add an event listener for the scroll event
 window.addEventListener('scroll', handleScroll);
@@ -176,23 +177,38 @@ function handleScroll() {
 
 // Function to continuously rotate the carousel
 function continuousRotation() {
-  // Get the current rotation angle
-  const currentRotation = rotationAngle;
+  if (shouldRotate) {
+    // Get the current rotation angle
+    const currentRotation = rotationAngle;
 
-  // Update the rotation angle for the continuous rotation
-  rotationAngle += 0.15; // Adjust the increment to control the continuous rotation speed
+    // Update the rotation angle for the continuous rotation
+    rotationAngle += 0.05; // Adjust the increment to control the continuous rotation speed
 
-  // Apply the rotation angle to the carousel element
-  const carousel = document.querySelector('.carousel');
-  carousel.style.transform = `rotateY(-${rotationAngle}deg)`;
+    // Apply the rotation angle to the carousel element
+    const carousel = document.querySelector('.carousel');
+    carousel.style.transform = `rotateY(-${rotationAngle}deg)`;
 
-  // Schedule the next continuous rotation frame
-  requestAnimationFrame(continuousRotation);
+    // Schedule the next continuous rotation frame
+    requestAnimationFrame(continuousRotation);
+  }
 }
 
-  
+// Add event listeners for hover on carousel
+const carousel = document.querySelector('.carousel');
+carousel.addEventListener('mousedown', stopCarouselRotation);
+carousel.addEventListener('mouseup', resumeCarouselRotation);
 
-  
+// Function to stop the carousel rotation on hover
+function stopCarouselRotation() {
+  shouldRotate = false;
+}
+
+// Function to resume the carousel rotation when the mouse leaves
+function resumeCarouselRotation() {
+  shouldRotate = true;
+  continuousRotation();
+}
+
 
 
 

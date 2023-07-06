@@ -34,7 +34,11 @@ h6 {
   font-family:'Roboto Mono', monospace;
 }
 
-
+.green {
+  padding-top: 50px;
+  background-color: #2A8A8E;
+  color: #fff;
+}
 
 .contact-item {
   font-family:'Roboto Mono', monospace;
@@ -42,10 +46,11 @@ h6 {
   text-align: center;
   font-weight: 1000;
   font-size: 60px;
+  background-color: #2a8a8e;
+  color: #fff;
 }
 
 .contact-item:hover {
-  background-color: #2a8a8e;
   color: white;
 }
 
@@ -1540,7 +1545,21 @@ section {
   right: 15px;
 }
 
+.come-on {
+  padding-top: 20px
+}
 
+.dived {
+  font: 900 100px/0.65 system-ui;
+  margin: 0;
+  overflow: hidden;
+  width: 110%;
+}
+.spaned {
+  display: inline-block;
+  text-indent: -2rem;
+  position: relative;
+}
 
 
 .carousel {
@@ -1549,6 +1568,7 @@ section {
   height: 100%;
   transform-style: preserve-3d; 
   animation: rotate360 60s infinite forwards linear;
+  cursor: pointer;
 }
 .carousel__face { 
   position: absolute;
