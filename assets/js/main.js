@@ -214,6 +214,7 @@ function resumeCarouselRotation() {
 
 
 
+
   /* 
   * Main color
   */
