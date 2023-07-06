@@ -218,6 +218,15 @@ h6 {
   transition: background-color 0.5s ease;
 }
 
+.txt-pad {
+  padding: 100px 0px;
+}
+
+.txt-title {
+  font-family:'Domine', serif;
+  font-size: 70px;
+}
+
 .container-txt {
   width: 100%;
   display: flex;
@@ -226,7 +235,8 @@ h6 {
 
 .txt-yes {
   padding: 13px 0px;
-  font-family:'Domine', serif; ;
+  font-family:'Domine', serif;
+  font-size: 25px;
   white-space: nowrap;
   animation: Scroll 35s linear infinite;
 }
@@ -2069,6 +2079,11 @@ span {
   padding: 30px 0 30px 0;
 }
 
+#footer p {
+  padding: 0px 30px;
+  text-align: center;
+}
+
 #footer .footer-top .footer-info {
   margin-top: -90px;
   margin-bottom: 15px;
@@ -2182,7 +2197,6 @@ span {
 }
 
 #footer .copyright {
-  border-top: 1px solid #fff;
   text-align: center;
   padding-top: 30px;
 }
