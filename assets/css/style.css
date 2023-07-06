@@ -237,53 +237,49 @@ background-position: 0 0,16px 16px;
 
 .provenced2 {
     --s: 100px; /* control the size */
-    --c1: #FFE6F9;
-    --c2: #9C0577;
+    --c1: #9A0074;
+    --c2: #FFE6F9;
     
-    --_g:#0000, #0004 5%,
-       var(--c2) 6%  14%,var(--c1) 16% 24%,var(--c2) 26% 34%,var(--c1) 36% 44%,
-       var(--c2) 46% 54%,var(--c1) 56% 64%,var(--c2) 66% 74%,var(--c1) 76% 84%,
-       var(--c2) 86% 94%,#0004 95%,#0000;
     background:
-      radial-gradient(100% 50% at 100% 0   ,var(--_g)),
-      radial-gradient(100% 50% at 0    50% ,var(--_g)),
-      radial-gradient(100% 50% at 100% 100%,var(--_g));
-    background-size: var(--s) calc(2*var(--s));
+      radial-gradient(#0000 50%,var(--c1) 52% 55%,var(--c2) 57%)
+      0 0/var(--s) var(--s),
+      repeating-linear-gradient(45deg,var(--c1) 0 25%,var(--c2) 0 50%)
+      0 0/calc(2*var(--s)) calc(2*var(--s))
 }
 
 .merlot {
 
-  --s: 100px; /* control the size */
-  --c1: #DAE6F9;
-  --c2: #0B367A;
-  
-  --_g:#0000, #0004 5%,
-     var(--c2) 6%  14%,var(--c1) 16% 24%,var(--c2) 26% 34%,var(--c1) 36% 44%,
-     var(--c2) 46% 54%,var(--c1) 56% 64%,var(--c2) 66% 74%,var(--c1) 76% 84%,
-     var(--c2) 86% 94%,#0004 95%,#0000;
-  background:
-    radial-gradient(100% 50% at 100% 0   ,var(--_g)),
-    radial-gradient(100% 50% at 0    50% ,var(--_g)),
-    radial-gradient(100% 50% at 100% 100%,var(--_g));
-  background-size: var(--s) calc(2*var(--s));
+    --s: 160px; /* control the size */
+    --c1: #073277;
+    --c2: #DAE6F9;
+    
+    --_g: var(--s) var(--s) 
+      radial-gradient(var(--c1) 17%,var(--c2) 18% 35%,#0000 36.5%);
+    background: 
+      calc(var(--s)/-4) calc(var(--s)/-4)/var(--_g),
+      calc(var(--s)/ 4) calc(var(--s)/ 4)/var(--_g),
+      radial-gradient(var(--c2) 34%,var(--c1) 36% 68%,#0000 70%) 
+       0 0/calc(var(--s)/2) calc(var(--s)/2),
+      repeating-linear-gradient(45deg,var(--c1) -12.5% 12.5%,var(--c2) 0 37.5%)
+       0 0/var(--s) var(--s);
   
 }
 
 .sauvignon {
 
-  --s: 100px; /* control the size */
-  --c1: #F9FF9E;
-  --c2: #4F745A;
-  
-  --_g:#0000, #0004 5%,
-     var(--c2) 6%  14%,var(--c1) 16% 24%,var(--c2) 26% 34%,var(--c1) 36% 44%,
-     var(--c2) 46% 54%,var(--c1) 56% 64%,var(--c2) 66% 74%,var(--c1) 76% 84%,
-     var(--c2) 86% 94%,#0004 95%,#0000;
-  background:
-    radial-gradient(100% 50% at 100% 0   ,var(--_g)),
-    radial-gradient(100% 50% at 0    50% ,var(--_g)),
-    radial-gradient(100% 50% at 100% 100%,var(--_g));
-  background-size: var(--s) calc(2*var(--s));
+    --s: 100px; /* control the size */
+    --c1: #F9FF9E;
+    --c2: #4F745A;
+    
+    background:
+      radial-gradient(var(--c2) 15%,
+        #0000 17% 20%,var(--c2) 22% 25%,
+        #0000 27% 30%,var(--c2) 32% 35%,
+        #0000 37% 40%,var(--c2) 42% 45%,
+        #0000 47% 50%,var(--c2) 52% 55%, var(--c1) 57%)
+       calc(var(--s)/2) 0/var(--s) var(--s),
+      repeating-conic-gradient(var(--c2) 0 25%,var(--c1) 0 50%)
+       0 0/calc(2*var(--s)) calc(2*var(--s))
 
 }
 
@@ -416,7 +412,7 @@ background-size: contain;
   transition: all 0.5s;
   z-index: 997;
   transition: all 0.5s;
-  padding: 24px 0;
+  padding: 10px 40px;
   
 }
 
@@ -430,8 +426,7 @@ background-size: contain;
 
 #header.header-scrolled {
   background: #FDECD6;
-  padding: 13px;
-  border: 1px solid black;
+  border-bottom: 1px solid black;
 }
 
 #header .logo h1 {
@@ -492,8 +487,8 @@ background-size: contain;
 }
 
 .navbar ul {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   display: flex;
   list-style: none;
   align-items: center;
