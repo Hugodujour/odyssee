@@ -483,6 +483,9 @@ background-size: contain;
   
 }
 
+.italicos p {
+  font-style: italic;
+}
 
 @media (max-width: 1000px) {
   .b-mobile {
@@ -2060,7 +2063,7 @@ span {
 }
 
 .contented {
-  padding: 30px;
+  padding: 40px;
   color: #fff;
 }
 
