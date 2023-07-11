@@ -1689,19 +1689,19 @@ span {
   background-image: url("../img/portfolio/bottle2.jpg");
   transform: rotateY(120deg) translateZ(430px); }
 .carousel__face:nth-child(5) { 
-  background-image: url("https://images.pexels.com/photos/1415268/pexels-photo-1415268.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-image: url("../img/portfolio/bottle1.jpg");
  transform: rotateY(160deg) translateZ(430px); }
 .carousel__face:nth-child(6) { 
   background-image: url("../img/portfolio/bottle3.jpg");
  transform: rotateY(200deg) translateZ(430px); }
 .carousel__face:nth-child(7) { 
-  background-image: url("https://images.pexels.com/photos/1415268/pexels-photo-1415268.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-image: url("../img/Odyssée\ plage\ photo\ 3\ \(1\).jpeg");
  transform: rotateY(240deg) translateZ(430px); }
 .carousel__face:nth-child(8) {
-  background-image: url("https://images.pexels.com/photos/135018/pexels-photo-135018.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-image: url("../img/Matthieu-et-Jean.jpeg");
   transform: rotateY(280deg) translateZ(430px); }
 .carousel__face:nth-child(9) {
-  background-image: url("https://images.pexels.com/photos/1175135/pexels-photo-1175135.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-image: url("../img/portfolio/bottle2.jpg");
   transform: rotateY(320deg) translateZ(430px); }
 
 
