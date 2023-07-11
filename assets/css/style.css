@@ -565,7 +565,7 @@ background-size: contain;
 
 .fra {
   text-decoration: underline solid 2px;
-  text-underline-offset: 4px;
+  text-underline-offset: 10px;
 }
 
 /*--------------------------------------------------------------
@@ -594,6 +594,7 @@ background-size: contain;
   position: relative;
 }
 
+
 .navbar a,
 .navbar a:hover {
   display: flex;
@@ -619,7 +620,7 @@ background-size: contain;
 .navbar a:hover,
 .navbar li:focus>a {
   text-decoration: underline 2px;
-  text-underline-offset: 4px;
+  text-underline-offset: 10px;
 }
 
 .navbar .dropdown ul {
