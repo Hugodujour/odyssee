@@ -34,6 +34,10 @@ h6 {
   font-family:'Roboto Mono', monospace;
 }
 
+.padded {
+  padding: 500 0px;
+}
+
 .green {
   background-color: #2A8A8E;
   color: #fff;
@@ -479,6 +483,12 @@ background-size: contain;
   }
   .magic {
   padding: 50px 10px;
+  }
+  main {
+    background-color: #FDECD6;
+  }
+  .bottle-img {
+    width: 90px;
   }
 }
 
@@ -1351,7 +1361,7 @@ section {
   border-radius: 50px;
   border: 1px solid black;
   box-shadow: 0px 5px 1px #2a8a8e, 0px 5px 1px 1px black;
-  transition: all 0.1s;
+  transition: all 0.15s;
   transform: translateY(-10px);
 }
 
@@ -1373,7 +1383,6 @@ section {
 .call:hover {
  box-shadow: none;
  color: black;
- transition: all 0s;
  transform: translateY(0px);
 }
 
@@ -1403,7 +1412,7 @@ section {
   border-radius: 50px;
   border: 1px solid black;
   box-shadow: 0px 5px 1px #9B628D, 0px 5px 1px 1px black;
-  transition: all 0.1s;
+  transition: all 0.15s;
   transform: translateY(-10px);
 }
 
@@ -1422,7 +1431,7 @@ section {
   border-radius: 50px;
   border: 1px solid black;
   box-shadow: 0px 5px 1px #073277, 0px 5px 1px 1px black;
-  transition: all 0.1s;
+  transition: all 0.15s;
   transform: translateY(-10px);
 }
 
@@ -1441,7 +1450,7 @@ section {
   border-radius: 50px;
   border: 1px solid black;
   box-shadow: 0px 5px 1px #4F745A, 0px 5px 1px 1px black;
-  transition: all 0.1s;
+  transition: all 0.5s;
   transform: translateY(-10px);
 }
 
@@ -1450,7 +1459,6 @@ section {
 .call-mer:hover {
   box-shadow: none;
   color: black;
-  transition: all 0s;
   transform: translateY(0px);
  }
 /*--------------------------------------------------------------
@@ -1644,7 +1652,8 @@ section {
   left: 10px;
   right: 10px;
   background-size: cover;
-  border: 1px solid #222;
+  border: 2px solid #222;
+  border-radius: 5px;
   display: flex;
 }
 
