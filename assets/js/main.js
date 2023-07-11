@@ -97,6 +97,84 @@
     })
   }
 
+  function isMobile() {
+    return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    }
+    
+    if (!isMobile()) {
+    //place script you don't want to run on mobile here
+      console.log('Not mobiled')
+
+      /* 
+  * Main color
+  */
+
+  let main = select('#main')
+  const la = 1350
+  const lb = 2550
+  const lc = 3800
+  const ld = 5600
+
+  if(main) {
+
+    const mainScrolled = () => {
+      if (window.scrollY < la){
+        callPro.classList.remove('call-pro')
+        main.style.background = '#FDECD6'
+      } else if (window.scrollY >= la && window.scrollY < lb){
+        main.style.background = '#FFE6F9'
+        colored.style.background = '#9B628D'
+        coloredMer.style.background ="#9B628D"
+        callPro.classList.add('call-pro')
+      } else if (window.scrollY >= lb && window.scrollY < lc) {
+        
+        main.style.background = '#DAE6F9'
+        coloredMer.style.background ="#073277"
+        coloredSau.style.background = "#073277"
+      } else if (window.scrollY >= lc && window.scrollY < ld) {
+        main.style.background = '#FFFACC'
+        coloredSau.style.background = ""
+      } else {
+        main.style.background = '#FDECD6'
+      }
+    }
+    window.addEventListener('load', mainScrolled)
+    onscroll(document, mainScrolled);
+  }
+
+  /* 
+  * Head color
+  */
+
+  let head = select('#header')
+
+  if(head) {
+
+    const headScrolled = () => {
+      if(window.scrollY <= 100){
+        head.style.background = 'none'
+      } else if (window.scrollY >= la && window.scrollY < lb){
+        head.style.background = '#FFE6F9'
+      } else if (window.scrollY >= lb && window.scrollY < lc) {
+        head.style.background = '#DAE6F9'
+        // logoHeader.classList.remove('blacked')
+        // navHeader.style.color = "white"
+        // freng.style.color = "white"
+        
+      } else if (window.scrollY >= lc && window.scrollY < ld) {
+        head.style.background = '#FFFACC'
+        
+      } else {
+        head.style.background = '#FDECD6'
+      }
+    }
+    window.addEventListener('load', headScrolled)
+    onscroll(document, headScrolled);
+  }
+
+
+    }
+
   /**
    * Toggle .header-scrolled class to #header when page is scrolled
    */
@@ -108,6 +186,7 @@
   let coloredMer = select('.colored-mer')
   let coloredSau = select('.colored-sau')
   let callPro = select('#callpro')
+  let mobiled = select('#mobiled')
   if (selectHeader) {
     const headerScrolled = () => {
       if (window.scrollY > 100) {
@@ -115,12 +194,14 @@
         logoHeader.classList.add('blacked')
         navHeader.style.color = "black"
         freng.style.color = "black"
-        colored.style.background = "#2A8A8E"        
+        colored.style.background = "#2A8A8E"
+        mobiled.style.color = 'black'        
       } else {
         selectHeader.classList.remove('header-scrolled')
         logoHeader.classList.remove('blacked')
         navHeader.style.color = "white"
         freng.style.color = "white"
+        mobiled.style.color = 'white'
       }
     }
     window.addEventListener('load', headerScrolled)
@@ -215,72 +296,6 @@ function resumeCarouselRotation() {
 
 
 
-  /* 
-  * Main color
-  */
-
-  let main = select('#main')
-  const la = 1350
-  const lb = 2550
-  const lc = 3800
-  const ld = 5600
-
-  if(main) {
-
-    const mainScrolled = () => {
-      if (window.scrollY < la){
-        callPro.classList.remove('call-pro')
-        main.style.background = '#FDECD6'
-      } else if (window.scrollY >= la && window.scrollY < lb){
-        main.style.background = '#FFE6F9'
-        colored.style.background = '#9B628D'
-        coloredMer.style.background ="#9B628D"
-        callPro.classList.add('call-pro')
-      } else if (window.scrollY >= lb && window.scrollY < lc) {
-        
-        main.style.background = '#DAE6F9'
-        coloredMer.style.background ="#073277"
-        coloredSau.style.background = "#073277"
-      } else if (window.scrollY >= lc && window.scrollY < ld) {
-        main.style.background = '#FFFACC'
-        coloredSau.style.background = ""
-      } else {
-        main.style.background = '#FDECD6'
-      }
-    }
-    window.addEventListener('load', mainScrolled)
-    onscroll(document, mainScrolled);
-  }
-
-  /* 
-  * Head color
-  */
-
-  let head = select('#header')
-
-  if(head) {
-
-    const headScrolled = () => {
-      if(window.scrollY <= 100){
-        head.style.background = 'none'
-      } else if (window.scrollY >= la && window.scrollY < lb){
-        head.style.background = '#FFE6F9'
-      } else if (window.scrollY >= lb && window.scrollY < lc) {
-        head.style.background = '#DAE6F9'
-        // logoHeader.classList.remove('blacked')
-        // navHeader.style.color = "white"
-        // freng.style.color = "white"
-        
-      } else if (window.scrollY >= lc && window.scrollY < ld) {
-        head.style.background = '#FFFACC'
-        
-      } else {
-        head.style.background = '#FDECD6'
-      }
-    }
-    window.addEventListener('load', headScrolled)
-    onscroll(document, headScrolled);
-  }
 
   /**
    * Back to top button

@@ -341,28 +341,28 @@ background-position: 0 0,16px 16px;
 }
 
 .b-top {
-  border-top: solid 1px #222 ;
+  border-top: solid 2px #222 ;
 }
 
 .b-bot {
-  border-bottom: solid 1px #222 ;
+  border-bottom: solid 2px #222 ;
 }
 
 .b-left {
-  border-left: 1px solid #222;
+  border-left: 2px solid #222;
 }
 
 .b-right {
-  border-right: 1px solid #222;
+  border-right: 2px solid #222;
 }
 
 .b-ride {
-  border-right: 1px solid #222;
-  border-left: 1px solid #222;
+  border-right: 2px solid #222;
+  border-left: 2px solid #222;
 }
 
 .b-all {
-  border: solid 1px #222;
+  border: solid 2px #222;
 }
 
 .blacko {
@@ -473,6 +473,17 @@ background-size: contain;
   
 }
 
+@media (max-width: 768px) {
+  #header {
+    padding: 15px 5px;
+  }
+  .magic {
+  padding: 50px 10px;
+  }
+}
+
+
+
 #logow {
   transition: all 0.3s;
 }
@@ -483,7 +494,8 @@ background-size: contain;
 
 #header.header-scrolled {
   background: #FDECD6;
-  border-bottom: 1px solid black;
+  border-bottom: 2px solid #222;
+  transition: all 0.2s;
 }
 
 #header .logo h1 {
@@ -510,11 +522,7 @@ background-size: contain;
   max-height: 40px;
 }
 
-@media (max-width: 768px) {
-  #header.header-scrolled {
-    padding: 15px 0;
-  }
-}
+
 
 .logoted {
   width: 10rem;
@@ -918,6 +926,12 @@ background-size: contain;
 
 section #main {
   padding: 0px 40px;
+}
+
+@media (max-width: 768px) {
+  section #main {
+    padding: 0px 15px;
+  }
 }
 
 section #odyssee {
