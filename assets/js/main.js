@@ -121,9 +121,10 @@
       if (window.scrollY < la){
         callPro.classList.remove('call-pro')
         main.style.background = '#FDECD6'
+        colored.style.background = "#2A8A8E"
       } else if (window.scrollY >= la && window.scrollY < lb){
         main.style.background = '#FFE6F9'
-        colored.style.background = '#9B628D'
+        colored.style.background = "#9B628D"
         coloredMer.style.background ="#9B628D"
         callPro.classList.add('call-pro')
       } else if (window.scrollY >= lb && window.scrollY < lc) {
@@ -194,7 +195,6 @@
         logoHeader.classList.add('blacked')
         navHeader.style.color = "black"
         freng.style.color = "black"
-        colored.style.background = "#2A8A8E"
         mobiled.style.color = 'black'        
       } else {
         selectHeader.classList.remove('header-scrolled')

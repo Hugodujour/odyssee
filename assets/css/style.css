@@ -490,6 +490,9 @@ background-size: contain;
   .bottle-img {
     width: 90px;
   }
+  .bottle {
+    height: 450px;
+  }
 }
 
 
