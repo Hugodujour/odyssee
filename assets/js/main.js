@@ -189,6 +189,7 @@
   let coloredSau = select('.colored-sau')
   let callPro = select('#callpro')
   let mobiled = select('#mobiled')
+  let ody = select('#ody')
   if (selectHeader) {
     const headerScrolled = () => {
       if (window.scrollY > 100) {
@@ -196,7 +197,7 @@
         logoHeader.classList.add('blacked')
         navHeader.style.color = "black"
         freng.style.color = "black"
-        mobiled.style.color = 'black'        
+        mobiled.style.color = 'black';
       } else {
         selectHeader.classList.remove('header-scrolled')
         logoHeader.classList.remove('blacked')
