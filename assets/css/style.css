@@ -568,6 +568,8 @@ background-size: contain;
   text-underline-offset: 10px;
 }
 
+
+
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
@@ -776,11 +778,11 @@ background-size: contain;
   right: 15px;
   left: 15px;
   padding: 10px 0;
-  background-color: #fff;
+  background-color: #FDECD6;
   overflow-y: auto;
   transition: 0.3s;
-  border-top: 4px solid #202958;
-  border-radius: 0;
+  border: 2px solid #222;
+  border-radius: 10px;
 }
 
 .navbar-mobile a,
@@ -791,7 +793,7 @@ background-size: contain;
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover>a {
-  color: #F8D28C;
+  color: #2A8A8E;
 }
 
 .navbar-mobile .getstarted,
