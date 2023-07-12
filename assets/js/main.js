@@ -151,23 +151,30 @@
   let head = select('#header')
 
   if(head) {
-
+    let chevroned = select('#chevroned')
     const headScrolled = () => {
       if(window.scrollY <= 100){
         head.style.background = 'none'
+        chevroned.style.background = "#FDECD6"
+        
       } else if (window.scrollY >= la && window.scrollY < lb){
         head.style.background = '#FFE6F9'
+        chevroned.style.background = "#FFE6F9"
       } else if (window.scrollY >= lb && window.scrollY < lc) {
         head.style.background = '#DAE6F9'
+        chevroned.style.background = "#DAE6F9"
         // logoHeader.classList.remove('blacked')
         // navHeader.style.color = "white"
         // freng.style.color = "white"
         
       } else if (window.scrollY >= lc && window.scrollY < ld) {
         head.style.background = '#FFFACC'
+        chevroned.style.background = "#FFFACC"
         
       } else {
         head.style.background = '#FDECD6'
+        chevroned.style.background = "#FDECD6"
+        
       }
     }
     window.addEventListener('load', headScrolled)
@@ -175,7 +182,7 @@
   }
 
 
-    }
+}
 
   /**
    * Toggle .header-scrolled class to #header when page is scrolled
@@ -190,6 +197,7 @@
   let callPro = select('#callpro')
   let mobiled = select('#mobiled')
   let ody = select('#ody')
+  
   if (selectHeader) {
     const headerScrolled = () => {
       if (window.scrollY > 100) {
@@ -198,12 +206,14 @@
         navHeader.style.color = "black"
         freng.style.color = "black"
         mobiled.style.color = 'black';
+        
       } else {
         selectHeader.classList.remove('header-scrolled')
         logoHeader.classList.remove('blacked')
         navHeader.style.color = "white"
         freng.style.color = "white"
         mobiled.style.color = 'white'
+        
       }
     }
     window.addEventListener('load', headerScrolled)
