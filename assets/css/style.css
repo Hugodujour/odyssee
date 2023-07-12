@@ -2103,7 +2103,12 @@ span {
 #wine2 .italicos,
 #wine3 .italicos {
   font-style: italic;
-  font-weight: 800;
+  font-weight: 300;
+  padding: 30px 30px 0px 0px;
+}
+
+.pad {
+  padding: 30px 30px 0px 0px;
 }
 
 #wine1 .content,
