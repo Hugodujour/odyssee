@@ -14,6 +14,25 @@ body {
   color: #444444;
 }
 
+:root {
+  
+  --main-color: #FDECD6 ;
+  --sec-color: #2A8A8E ;
+
+  --black-color: #222;
+  --white-color: #fff;
+
+  --main-color-pro: #FFE6F9;
+  --sec-color-pro: #9B628D;
+
+  --main-color-mer: #DAE6F9;
+  --sec-color-mer: #073277;
+
+  --main-color-sau: #D5F009 ;
+  --sec-color-sau: #1E9B50;
+
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -47,8 +66,8 @@ h6 {
 }
 
 .green {
-  background-color: #2A8A8E;
-  color: #fff;
+  background-color: var(--sec-color);
+  color: var(--white-color);
 }
 
 .contact-item {
@@ -57,12 +76,12 @@ h6 {
   text-align: center;
   font-weight: 1000;
   font-size: 60px;
-  background-color: #2a8a8e;
-  color: #fff;
+  background-color: var(--sec-color);
+  color: var(--white-color);
 }
 
 .contact-item:hover {
-  color: #222;
+  color: var(--black-color);
   transition: all 0.15s;
 }
 
@@ -82,28 +101,28 @@ h6 {
 }
 
 .abouted {
-  background: #2a8a8e;
+  background: var(--sec-color);
   height: 900px;
   width: 800px;
   padding: 60px;
-  color: #fff;
+  color: var(--white-color);
 }
 
 .colored {
-  background: #9B628D;
-  color: white;
+  background: var(--sec-color-pro);
+  color: var(--white-color);
   transition: all 0.5s;
 }
 
 .colored-mer {
-  background: #073277;
-  color: white;
+  background: var(--sec-color-mer);
+  color: var(--white-color);
   transition: all 0.5s;
 }
 
 .colored-sau {
-  background: #7D784A;
-  color: white;
+  background: var(--sec-color-sau);
+  color: var(--white-color);
   transition: all 0.5s;
 }
 
@@ -142,24 +161,24 @@ h6 {
 }
 
 .inside-pro {
-  -webkit-filter: drop-shadow(1px 1px 0 #9B628D)
-  drop-shadow(-1px -1px 0 #9B628D);
-  filter: drop-shadow(1px 1px 0 #9B628D) 
-  drop-shadow(-1px -1px 0 #9B628D);
+  -webkit-filter: drop-shadow(1px 1px 0 var(--sec-color-pro))
+  drop-shadow(-1px -1px 0 var(--sec-color-pro));
+  filter: drop-shadow(1px 1px 0 var(--sec-color-pro)) 
+  drop-shadow(-1px -1px 0 var(--sec-color-pro));
 }
 
 .inside-mer {
-  -webkit-filter: drop-shadow(1px 1px 0 black)
-  drop-shadow(-1px -1px 0 black);
-  filter: drop-shadow(1px 1px 0 black) 
-  drop-shadow(-1px -1px 0 black);
+  -webkit-filter: drop-shadow(1px 1px 0 var(--sec-color-mer))
+  drop-shadow(-1px -1px 0 var(--sec-color-mer));
+  filter: drop-shadow(1px 1px 0 var(--sec-color-mer)) 
+  drop-shadow(-1px -1px 0 var(--sec-color-mer));
 }
 
 .inside-sau {
-  -webkit-filter: drop-shadow(1px 1px 0 #A59F6A)
-  drop-shadow(-1px -1px 0 #A59F6A);
-  filter: drop-shadow(1px 1px 0 #A59F6A) 
-  drop-shadow(-1px -1px 0 #A59F6A);
+  -webkit-filter: drop-shadow(1px 1px 0 var(--sec-color-sau))
+  drop-shadow(-1px -1px 0 var(--sec-color-sau));
+  filter: drop-shadow(1px 1px 0 var(--sec-color-sau)) 
+  drop-shadow(-1px -1px 0 var(--sec-color-sau));
 }
 
 .img-one:hover {
@@ -214,7 +233,7 @@ h6 {
 }
 
 .white {
-  color: #fff
+  color: var(--white-color)
 }
 
 .blacked {
@@ -238,7 +257,7 @@ h6 {
 }
 
 .rounded {
-  border: solid 1px black;
+  border: solid 1px var(--black-color);
 }
 
 #main {
@@ -304,8 +323,8 @@ background-position: 0 0,16px 16px;
 .provenced2 {
 
   --s: 160px; /* control the size */
-  --c1: #9b628d;
-  --c2: #FFE6F9;
+  --c1: var(--main-color-pro);
+  --c2: var(--sec-color-pro);
   
   --_g: var(--s) var(--s) 
     radial-gradient(var(--c1) 17%,var(--c2) 18% 35%,#0000 36.5%);
@@ -321,8 +340,8 @@ background-position: 0 0,16px 16px;
 .merlot {
 
     --s: 160px; /* control the size */
-    --c1: #073277;
-    --c2: #DAE6F9;
+    --c1: var(--sec-color-mer);
+    --c2: var(--main-color-mer);
     
     --_g: var(--s) var(--s) 
       radial-gradient(var(--c1) 17%,var(--c2) 18% 35%,#0000 36.5%);
@@ -339,8 +358,8 @@ background-position: 0 0,16px 16px;
 .sauvignon {
 
     --s: 160px; /* control the size */
-    --c1: #7D784A;
-    --c2: #FFFACC;
+    --c1: var(--sec-color-sau);
+    --c2: var(--main-color-sau);
     
     --_g: var(--s) var(--s) 
       radial-gradient(var(--c1) 17%,var(--c2) 18% 35%,#0000 36.5%);
@@ -355,36 +374,36 @@ background-position: 0 0,16px 16px;
 }
 
 .b-top {
-  border-top: solid 2px #222 ;
+  border-top: solid 2px var(--black-color) ;
 }
 
 .b-bot {
-  border-bottom: solid 2px #222 ;
+  border-bottom: solid 2px var(--black-color) ;
 }
 
 .b-left {
-  border-left: 2px solid #222;
+  border-left: 2px solid var(--black-color);
 }
 
 .b-right {
-  border-right: 2px solid #222;
+  border-right: 2px solid var(--black-color);
 }
 
 .b-ride {
-  border-right: 2px solid #222;
-  border-left: 2px solid #222;
+  border-right: 2px solid var(--black-color);
+  border-left: 2px solid var(--black-color);
 }
 
 .b-all {
-  border: solid 2px #222;
+  border: solid 2px var(--black-color);
 }
 
 .b-mobile {
-  border-right: solid 2px #222;
+  border-right: solid 2px var(--black-color);
 }
 
 .blacko {
-  color: black;
+  color: var(--black-color);
 }
 
 
@@ -428,13 +447,13 @@ background-size: contain;
 
 .back-to-top i {
   font-size: 24px;
-  color: #fff;
+  color: var(--white-color);
   line-height: 0;
 }
 
 .back-to-top:hover {
   background: #86c0da;
-  color: #fff;
+  color: var(--white-color);
 }
 
 .back-to-top.active {
@@ -460,7 +479,7 @@ background-size: contain;
 
 .clients .content {
   padding: 30px;
-  color: #fff;
+  color: var(--white-color);
   font-weight: 700;
   font-size: 34px;
   margin-bottom: 30px;
@@ -498,10 +517,10 @@ background-size: contain;
 @media (max-width: 1000px) {
   .b-mobile {
     border-right: none;
-    border-bottom: 2px solid #222;
+    border-bottom: 2px solid var(--black-color);
   }
   main {
-    background-color: #FDECD6;
+    background-color: var(--main-color);
   }
 }
 
@@ -532,8 +551,8 @@ background-size: contain;
 }
 
 #header.header-scrolled {
-  background: #FDECD6;
-  border-bottom: 2px solid #222;
+  background: var(--main-color);
+  border-bottom: 2px solid var(--black-color);
   transition: all 0.2s;
 }
 
@@ -589,7 +608,7 @@ background-size: contain;
 }
 
 .whito {
-  color: #fff;
+  color: var(--white-color);
 }
 
 .navbar ul {
@@ -642,8 +661,8 @@ background-size: contain;
   z-index: 99;
   opacity: 0;
   visibility: hidden;
-  background: #FDECD6;
-  border: 2px solid #222;
+  background: var(--main-color);
+  border: 2px solid var(--black-color);
   border-radius: 10px;
   transition: 0.3s;
 }
@@ -654,7 +673,7 @@ background-size: contain;
 }
 
 .navbar-mobile .dropdown {
-  color: #222
+  color: var(--black-color)
 }
 
 .navbar .dropdown ul a {
@@ -665,7 +684,7 @@ background-size: contain;
 }
 
 .navbar-mobile .dropdown ul a {
-  color: #fff;
+  color: var(--white-color);
 }
 
 .navbar .dropdown ul a i {
@@ -751,7 +770,7 @@ background-size: contain;
 * Mobile Navigation 
 */
 .mobile-nav-toggle {
-  color: #fff;
+  color: var(--white-color);
   font-size: 28px;
   cursor: pointer;
   display: none;
@@ -793,26 +812,26 @@ background-size: contain;
   right: 15px;
   left: 15px;
   padding: 10px 0;
-  background-color: #FDECD6;
+  background-color: var(--main-color);
   overflow-y: auto;
   transition: 0.3s;
-  border: 2px solid #222;
+  border: 2px solid var(--black-color);
   border-radius: 10px;
 }
 
 .navbar-mobile a,
 .navbar-mobile a:focus {
-  color: #222;
+  color: var(--black-color);
 }
 
 .blanc {
-  color: #fff;
+  color: var(--white-color);
 }
 
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover>a {
-  color: #2A8A8E;
+  color: var(--sec-color);
 }
 
 .navbar-mobile .getstarted,
@@ -828,7 +847,7 @@ background-size: contain;
   z-index: 99;
   opacity: 1;
   visibility: visible;
-  background:#2A8A8E;
+  background:var(--sec-color);
 }
 
 .navbar-mobile .dropdown ul li {
@@ -920,12 +939,12 @@ background-size: contain;
   font-weight: 700;
   line-height: 56px;
   text-transform: uppercase;
-  color: #fff;
+  color: var(--white-color);
   text-shadow: -1px 0 2px #2f4d5a;
 }
 
 #hero h2 {
-  color: #fff;
+  color: var(--white-color);
   margin-bottom: 50px;
   font-size: 20px;
   text-transform: uppercase;
@@ -943,8 +962,8 @@ background-size: contain;
   width: 64px;
   height: 64px;
   text-align: center;
-  border: 2px solid #fff;
-  color: #fff;
+  border: 2px solid var(--white-color);
+  color: var(--white-color);
 }
 
 #hero .btn-get-started:hover {
@@ -1028,12 +1047,12 @@ section {
   font-weight: bold;
   position: relative;
   margin-bottom: 30px;
-  color: #fff;
+  color: var(--white-color);
   z-index: 2;
 }
 
 .back {
-  background-color: white;
+  background-color: var(--white-color);
   padding: 30px;
 }
 
@@ -1149,11 +1168,11 @@ section {
 # About
 --------------------------------------------------------------*/
 .about {
-  background-color: #FDECD6;
+  background-color: var(--main-color);
 }
 
 .conso {
-  background-color: #FFFFFF;
+  background-color: var(--white-color);
 }
 
 
@@ -1184,7 +1203,7 @@ section {
   display: inline-block;
   background: #67b0d1;
   padding: 6px 44px 8px 30px;
-  color: #fff;
+  color: var(--white-color);
   transition: 0.3s;
   position: relative;
 }
@@ -1381,11 +1400,11 @@ section {
   transition: 0.5s;
   margin-top: 10px;
   border: 2px solid rgba(255, 255, 255, 0.5);
-  color: #fff;
+  color: var(--white-color);
 }
 
 .cta .cta-btn:hover {
-  border-color: #fff;
+  border-color: var(--white-color);
 }
 
 .call {
@@ -1398,11 +1417,11 @@ section {
   padding: 8px 28px;
   transition: 0.5s;
   margin-top: 10px;
-  background: #FDECD6;
-  color: black;
+  background: var(--main-color);
+  color: var(--black-color);
   border-radius: 50px;
-  border: 1px solid black;
-  box-shadow: 0px 5px 1px #2a8a8e, 0px 5px 1px 1px black;
+  border: 1px solid var(--black-color);
+  box-shadow: 0px 5px 1px var(--sec-color), 0px 5px 1px 1px var(--black-color);
   transition: all 0.15s;
   transform: translateY(-10px);
 }
@@ -1424,13 +1443,13 @@ section {
 
 .call:hover {
  box-shadow: none;
- color: black;
+ color: var(--black-color);
  transform: translateY(0px);
 }
 
 .called:hover {
   background-color: #202958;
-  color: #fff;
+  color: var(--white-color);
   cursor: pointer;
 }
 
@@ -1450,10 +1469,10 @@ section {
   transition: 0.5s;
   margin-top: 10px;
   background: #FFE6F9;
-  color: black;
+  color: var(--black-color);
   border-radius: 50px;
-  border: 1px solid black;
-  box-shadow: 0px 5px 1px #9B628D, 0px 5px 1px 1px black;
+  border: 1px solid var(--black-color);
+  box-shadow: 0px 5px 1px var(--sec-color-pro), 0px 5px 1px 1px var(--black-color);
   transition: all 0.15s;
   transform: translateY(-10px);
 }
@@ -1468,11 +1487,11 @@ section {
   padding: 8px 28px;
   transition: 0.5s;
   margin-top: 10px;
-  background: #DAE6F9;
-  color: black;
+  background: var(--main-color-mer);
+  color: var(--black-color);
   border-radius: 50px;
-  border: 1px solid black;
-  box-shadow: 0px 5px 1px #073277, 0px 5px 1px 1px black;
+  border: 1px solid var(--black-color);
+  box-shadow: 0px 5px 1px var(--sec-color-mer), 0px 5px 1px 1px var(--black-color);
   transition: all 0.15s;
   transform: translateY(-10px);
 }
@@ -1487,11 +1506,11 @@ section {
   padding: 8px 28px;
   transition: 0.5s;
   margin-top: 10px;
-  background: #FFFACC;
-  color: black;
+  background: var(--main-color-sau);
+  color: var(--black-color);
   border-radius: 50px;
-  border: 1px solid black;
-  box-shadow: 0px 5px 1px #7D784A, 0px 5px 1px 1px #222;
+  border: 1px solid var(--black-color);
+  box-shadow: 0px 5px 1px var(--sec-color-sau), 0px 5px 1px 1px var(--black-color);
   transition: all 0.15s;
   transform: translateY(-10px);
 }
@@ -1500,7 +1519,7 @@ section {
 .call-pro:hover,
 .call-mer:hover {
   box-shadow: none;
-  color: black;
+  color: var(--black-color);
   transform: translateY(0px);
  }
 /*--------------------------------------------------------------
@@ -1511,7 +1530,7 @@ section {
 }
 
 .portfolio-wrap {
-  border: 1px solid black;
+  border: 1px solid var(--black-color);
   transition: all 0.3s
 }
 
@@ -1520,7 +1539,7 @@ section {
   margin: 0 auto 25px auto;
   list-style: none;
   text-align: center;
-  background: #fff;
+  background: var(--white-color);
   border-radius: 50px;
   padding: 2px 15px;
 }
@@ -1694,7 +1713,7 @@ section {
   left: 10px;
   right: 10px;
   background-size: cover;
-  border: 2px solid #222;
+  border: 2px solid var(--black-color);
   border-radius: 5px;
   display: flex;
 }
@@ -1813,7 +1832,7 @@ span {
   font-style: italic;
   margin: 0 15px 15px 15px;
   padding: 20px;
-  background: #fff;
+  background: var(--white-color);
   position: relative;
   margin-bottom: 35px;
   border-radius: 6px;
@@ -1824,7 +1843,7 @@ span {
   content: "";
   width: 0;
   height: 0;
-  border-top: 20px solid #fff;
+  border-top: 20px solid var(--white-color);
   border-right: 20px solid transparent;
   border-left: 20px solid transparent;
   position: absolute;
@@ -1840,7 +1859,7 @@ span {
 .testimonials .swiper-pagination .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
-  background-color: #fff;
+  background-color: var(--white-color);
   opacity: 1;
   border: 1px solid #67b0d1;
 }
@@ -1884,7 +1903,7 @@ span {
 
 .team .member .social p {
 
-  color: #fff;
+  color: var(--white-color);
   margin: 0px;
   justify-content: center;
   align-items: center;
@@ -1985,12 +2004,12 @@ span {
 .contact .php-email-form {
   box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
   padding: 30px;
-  background: #fff;
+  background: var(--white-color);
 }
 
 .contact .php-email-form .error-message {
   display: none;
-  color: #fff;
+  color: var(--white-color);
   background: #ed3c0d;
   text-align: left;
   padding: 15px;
@@ -2003,7 +2022,7 @@ span {
 
 .contact .php-email-form .sent-message {
   display: none;
-  color: #fff;
+  color: var(--white-color);
   background: #18d26e;
   text-align: center;
   padding: 15px;
@@ -2012,7 +2031,7 @@ span {
 
 .contact .php-email-form .loading {
   display: none;
-  background: #fff;
+  background: var(--white-color);
   text-align: center;
   padding: 15px;
 }
@@ -2068,7 +2087,7 @@ span {
 }
 
 .shadowed {
-  border: solid 1px black;
+  border: solid 1px var(--black-color);
 }
 
 #wine1 h2 {
@@ -2085,18 +2104,18 @@ span {
 
 .contented {
   padding: 40px;
-  color: #fff;
+  color: var(--white-color);
 }
 
 #wine1 .thebottle,
 #wine2 .thebottle,
 #wine3 .thebottle {
-  background: #fff;
+  background: var(--white-color);
   padding: 0px 0px;
 }
 
 .thebottle {
-  background: #fff;
+  background: var(--white-color);
 }
 
 #wine1 .italicos,
@@ -2114,10 +2133,10 @@ span {
 #wine1 .content,
 #wine2 .content,
 #wine3 .content {
-  background: #fff;
+  background: var(--white-color);
   border-radius: 10px;
   padding: 24px;
-  box-shadow: 0px 10px 0px #2A8A8E, 0px 10px 0px 1px black;
+  box-shadow: 0px 10px 0px var(--sec-color), 0px 10px 0px 1px var(--black-color);
   transition: all 0.1s;
 }
 
@@ -2150,17 +2169,17 @@ span {
 }
 
 .fond {
-  background: #2a8a8e;
-  color: #fff;
+  background: var(--sec-color);
+  color: var(--white-color);
 }
 
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #2a8a8e;
+  background: var(--sec-color);
   padding: 60px 0 30px 0;
-  color: #fff;
+  color: var(--white-color);
   font-size: 14px;
 }
 
@@ -2176,7 +2195,7 @@ span {
 #footer .footer-top .footer-info {
   margin-top: -90px;
   margin-bottom: 15px;
-  background: white;
+  background: var(--white-color);
   color: #2f4d5a;
   border-top: 4px solid #67b0d1;
   text-align: center;
@@ -2201,15 +2220,15 @@ span {
 
 
 #footer .footer-top .social-links a:hover {
-  background: #fff;
-  color: #fff;
+  background: var(--white-color);
+  color: var(--white-color);
   text-decoration: none;
 }
 
 #footer .footer-top h4 {
   font-size: 16px;
   font-weight: 600;
-  color: #fff;
+  color: var(--white-color);
   position: relative;
   padding-bottom: 12px;
 }
@@ -2242,7 +2261,7 @@ span {
 }
 
 #footer .footer-top .footer-links ul a {
-  color: #fff;
+  color: var(--white-color);
   transition: 0.3s;
   display: inline-block;
   line-height: 1;
@@ -2254,7 +2273,7 @@ span {
 
 #footer .footer-top .footer-newsletter form {
   margin-top: 30px;
-  background: #fff;
+  background: var(--white-color);
   padding: 6px 10px;
   position: relative;
   border-radius: 4;
@@ -2276,7 +2295,7 @@ span {
   font-size: 16px;
   padding: 0 20px;
   background: #67b0d1;
-  color: #fff;
+  color: var(--white-color);
   transition: 0.3s;
   border-radius: 4;
 }
@@ -2295,7 +2314,7 @@ span {
   padding-top: 10px;
   text-align: center;
   font-size: 13px;
-  color: #fff;
+  color: var(--white-color);
 }
 
 @media (max-width: 575px) {
@@ -2305,6 +2324,6 @@ span {
 }
 
 #footer a {
-  color: #fff;
+  color: var(--white-color);
   font-weight: 600;
 }

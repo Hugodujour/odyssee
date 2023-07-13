@@ -121,23 +121,23 @@
     const mainScrolled = () => {
       if (window.scrollY < la){
         callPro.classList.remove('call-pro')
-        main.style.background = '#FDECD6'
-        colored.style.background = "#2A8A8E"
+        main.style.background = 'var(--main-color)'
+        colored.style.background = "var(--sec-color)"
       } else if (window.scrollY >= la && window.scrollY < lb){
-        main.style.background = '#FFE6F9'
-        colored.style.background = "#9B628D"
-        coloredMer.style.background ="#9B628D"
+        main.style.background = 'var(--main-color-pro)'
+        colored.style.background = "var(--sec-color-pro)"
+        coloredMer.style.background ="var(--sec-color-pro)"
         callPro.classList.add('call-pro')
       } else if (window.scrollY >= lb && window.scrollY < lc) {
         
-        main.style.background = '#DAE6F9'
-        coloredMer.style.background ="#073277"
-        coloredSau.style.background = "#073277"
+        main.style.background = 'var(--main-color-mer)'
+        coloredMer.style.background ="var(--sec-color-mer)"
+        coloredSau.style.background = "var(--sec-color-mer)"
       } else if (window.scrollY >= lc && window.scrollY < ld) {
-        main.style.background = '#FFFACC'
+        main.style.background = 'var(--main-color-sau)'
         coloredSau.style.background = ""
       } else {
-        main.style.background = '#FDECD6'
+        main.style.background = 'var(--main-color)'
       }
     }
     window.addEventListener('load', mainScrolled)
@@ -155,25 +155,25 @@
     const headScrolled = () => {
       if(window.scrollY <= 100){
         head.style.background = 'none'
-        chevroned.style.background = "#FDECD6"
+        chevroned.style.background = "var(--main-color)"
         
       } else if (window.scrollY >= la && window.scrollY < lb){
         head.style.background = '#FFE6F9'
         chevroned.style.background = "#FFE6F9"
       } else if (window.scrollY >= lb && window.scrollY < lc) {
-        head.style.background = '#DAE6F9'
-        chevroned.style.background = "#DAE6F9"
+        head.style.background = 'var(--main-color-mer)'
+        chevroned.style.background = "var(--main-color-mer)"
         // logoHeader.classList.remove('blacked')
         // navHeader.style.color = "white"
         // freng.style.color = "white"
         
       } else if (window.scrollY >= lc && window.scrollY < ld) {
-        head.style.background = '#FFFACC'
-        chevroned.style.background = "#FFFACC"
+        head.style.background = 'var(--main-color-sau)'
+        chevroned.style.background = "var(--main-color-sau)"
         
       } else {
-        head.style.background = '#FDECD6'
-        chevroned.style.background = "#FDECD6"
+        head.style.background = 'var(--main-color)'
+        chevroned.style.background = "var(--main-color)"
         
       }
     }
@@ -235,8 +235,31 @@
 
 
 
+  let genNew = select('#genNew')
 
+  const setBg = () => {
+    const randomColor = (Math.random() * 0xFFFFFF << 0).toString(16).padStart(6, '0');
+    const randomColor2 = (Math.random() * 0xFFFFFF << 0).toString(16).padStart(6, '0');
+    const randomColor3 = (Math.random() * 0xFFFFFF << 0).toString(16).padStart(6, '0');
+    const randomColor4 = (Math.random() * 0xFFFFFF << 0).toString(16).padStart(6, '0');
+    const randomColor5 = (Math.random() * 0xFFFFFF << 0).toString(16).padStart(6, '0');
+    const randomColor6 = (Math.random() * 0xFFFFFF << 0).toString(16).padStart(6, '0');
+    const randomColor7 = (Math.random() * 0xFFFFFF << 0).toString(16).padStart(6, '0');
+    const randomColor8 = (Math.random() * 0xFFFFFF << 0).toString(16).padStart(6, '0');
+    console.log(randomColor)
+    const root = document.querySelector(':root');
+    root.style.setProperty('--main-color', "#" + randomColor);
+    root.style.setProperty('--sec-color', "#" + randomColor2);
+    root.style.setProperty('--main-color-pro', "#" + randomColor3);
+    root.style.setProperty('--sec-color-pro', "#" + randomColor4);
+    root.style.setProperty('--main-color-mer', "#" + randomColor5);
+    root.style.setProperty('--sec-color-mer', "#" + randomColor6);
+    root.style.setProperty('--main-color-sau', "#" + randomColor7);
+    root.style.setProperty('--sec-color-sau', "#" + randomColor8);
 
+  }
+  
+  genNew.addEventListener("click", setBg);
 
 
 
