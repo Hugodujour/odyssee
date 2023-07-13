@@ -111,19 +111,19 @@ h6 {
 .colored {
   background: var(--sec-color-pro);
   color: var(--white-color);
-  transition: all 0.5s;
+  transition: all 0.3s;
 }
 
 .colored-mer {
   background: var(--sec-color-mer);
   color: var(--white-color);
-  transition: all 0.5s;
+  transition: all 0.3s;
 }
 
 .colored-sau {
   background: var(--sec-color-sau);
   color: var(--white-color);
-  transition: all 0.5s;
+  transition: all 0.3s;
 }
 
 
@@ -1468,7 +1468,7 @@ section {
   padding: 8px 28px;
   transition: 0.5s;
   margin-top: 10px;
-  background: #FFE6F9;
+  background: var(--main-color-pro);
   color: var(--black-color);
   border-radius: 50px;
   border: 1px solid var(--black-color);

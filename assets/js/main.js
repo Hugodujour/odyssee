@@ -158,8 +158,8 @@
         chevroned.style.background = "var(--main-color)"
         
       } else if (window.scrollY >= la && window.scrollY < lb){
-        head.style.background = '#FFE6F9'
-        chevroned.style.background = "#FFE6F9"
+        head.style.background = "var(--main-color-pro)"
+        chevroned.style.background = "var(--main-color-pro)"
       } else if (window.scrollY >= lb && window.scrollY < lc) {
         head.style.background = 'var(--main-color-mer)'
         chevroned.style.background = "var(--main-color-mer)"
@@ -240,23 +240,16 @@
   const setBg = () => {
     const randomColor = (Math.random() * 0xFFFFFF << 0).toString(16).padStart(6, '0');
     const randomColor2 = (Math.random() * 0xFFFFFF << 0).toString(16).padStart(6, '0');
-    const randomColor3 = (Math.random() * 0xFFFFFF << 0).toString(16).padStart(6, '0');
-    const randomColor4 = (Math.random() * 0xFFFFFF << 0).toString(16).padStart(6, '0');
-    const randomColor5 = (Math.random() * 0xFFFFFF << 0).toString(16).padStart(6, '0');
-    const randomColor6 = (Math.random() * 0xFFFFFF << 0).toString(16).padStart(6, '0');
-    const randomColor7 = (Math.random() * 0xFFFFFF << 0).toString(16).padStart(6, '0');
-    const randomColor8 = (Math.random() * 0xFFFFFF << 0).toString(16).padStart(6, '0');
     console.log(randomColor)
     const root = document.querySelector(':root');
     root.style.setProperty('--main-color', "#" + randomColor);
     root.style.setProperty('--sec-color', "#" + randomColor2);
-    root.style.setProperty('--main-color-pro', "#" + randomColor3);
-    root.style.setProperty('--sec-color-pro', "#" + randomColor4);
-    root.style.setProperty('--main-color-mer', "#" + randomColor5);
-    root.style.setProperty('--sec-color-mer', "#" + randomColor6);
-    root.style.setProperty('--main-color-sau', "#" + randomColor7);
-    root.style.setProperty('--sec-color-sau', "#" + randomColor8);
-
+    root.style.setProperty('--main-color-pro', "#" + randomColor);
+    root.style.setProperty('--sec-color-pro', "#" + randomColor2);
+    root.style.setProperty('--main-color-mer', "#" + randomColor);
+    root.style.setProperty('--sec-color-mer', "#" + randomColor2);
+    root.style.setProperty('--main-color-sau', "#" + randomColor);
+    root.style.setProperty('--sec-color-sau', "#" + randomColor2);
   }
   
   genNew.addEventListener("click", setBg);
