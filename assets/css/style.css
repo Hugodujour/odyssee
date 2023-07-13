@@ -9,10 +9,7 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
-body {
-  font-family: 'Roboto Mono', monospace;
-  color: #444444;
-}
+
 
 :root {
   
@@ -31,6 +28,11 @@ body {
   --main-color-sau: #D5F009 ;
   --sec-color-sau: #1E9B50;
 
+}
+
+body {
+  font-family: 'Roboto Mono', monospace;
+  color: var(--black-color);
 }
 
 a {
@@ -1382,7 +1384,7 @@ section {
 # Cta
 --------------------------------------------------------------*/
 .cta {
-  color: #444;
+  color: var(--black-color);
   background-size: cover;
   padding: 60px 0;
 }
@@ -1972,7 +1974,7 @@ span {
 }
 
 .contact .info-box {
-  color: #444444;
+  color: var(--black-color);
   background: rgba(255, 255, 255, 0.9);
   backdrop-filter: blur(3px);
   text-align: center;
