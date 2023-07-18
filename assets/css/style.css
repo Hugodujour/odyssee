@@ -163,24 +163,24 @@ h6 {
 }
 
 .inside-pro {
-  -webkit-filter: drop-shadow(1px 1px 0 var(--sec-color-pro))
-  drop-shadow(-1px -1px 0 var(--sec-color-pro));
-  filter: drop-shadow(1px 1px 0 var(--sec-color-pro)) 
-  drop-shadow(-1px -1px 0 var(--sec-color-pro));
+  -webkit-filter: drop-shadow(1px 1px 0 var(--main-color-pro))
+  drop-shadow(-1px -1px 0 var(--main-color-pro));
+  filter: drop-shadow(1px 1px 0 var(--main-color-pro)) 
+  drop-shadow(-1px -1px 0 var(--main-color-pro));
 }
 
 .inside-mer {
-  -webkit-filter: drop-shadow(1px 1px 0 var(--sec-color-mer))
-  drop-shadow(-1px -1px 0 var(--sec-color-mer));
-  filter: drop-shadow(1px 1px 0 var(--sec-color-mer)) 
-  drop-shadow(-1px -1px 0 var(--sec-color-mer));
+  -webkit-filter: drop-shadow(1px 1px 0 var(--main-color-mer))
+  drop-shadow(-1px -1px 0 var(--main-color-mer));
+  filter: drop-shadow(1px 1px 0 var(--main-color-mer)) 
+  drop-shadow(-1px -1px 0 var(--main-color-mer));
 }
 
 .inside-sau {
-  -webkit-filter: drop-shadow(1px 1px 0 var(--sec-color-sau))
-  drop-shadow(-1px -1px 0 var(--sec-color-sau));
-  filter: drop-shadow(1px 1px 0 var(--sec-color-sau)) 
-  drop-shadow(-1px -1px 0 var(--sec-color-sau));
+  -webkit-filter: drop-shadow(1px 1px 0 var(--main-color-sau))
+  drop-shadow(-1px -1px 0 var(--main-color-sau));
+  filter: drop-shadow(1px 1px 0 var(--main-color-sau)) 
+  drop-shadow(-1px -1px 0 var(--main-color-sau));
 }
 
 .img-one:hover {
@@ -322,57 +322,64 @@ background-position: 0 0,16px 16px;
   background-repeat: repeat;
 }
 
-.provenced2 {
+.provenced2::before {
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  top: -50%;
+  left: -50%;
+  z-index: 0;
+  background: url(../img/Odyssée5.png) repeat;
+  background-size: 600px;
+  transform: rotate(-30deg);
+  padding: 1100px;
+  background-color: var(--main-color-pro);
+}
 
-  --s: 160px; /* control the size */
-  --c1: var(--main-color-pro);
-  --c2: var(--sec-color-pro);
-  
-  --_g: var(--s) var(--s) 
-    radial-gradient(var(--c1) 17%,var(--c2) 18% 35%,#0000 36.5%);
-  background: 
-    calc(var(--s)/-4) calc(var(--s)/-4)/var(--_g),
-    calc(var(--s)/ 4) calc(var(--s)/ 4)/var(--_g),
-    radial-gradient(var(--c2) 34%,var(--c1) 36% 68%,#0000 70%) 
-     0 0/calc(var(--s)/2) calc(var(--s)/2),
-    repeating-linear-gradient(45deg,var(--c1) -12.5% 12.5%,var(--c2) 0 37.5%)
-     0 0/var(--s) var(--s);
+.provenced2 {
+  position: relative;
+  overflow: hidden;
+}
+
+.merlot::before {
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  top: -50%;
+  left: -50%;
+  z-index: 0;
+  background: url(../img/Odyssée5.png) repeat;
+  background-size: 600px;
+  transform: rotate(-30deg);
+  padding: 1100px;
+  background-color: var(--main-color-mer);
 }
 
 .merlot {
+  position: relative;
+  overflow: hidden;
+}
 
-    --s: 160px; /* control the size */
-    --c1: var(--sec-color-mer);
-    --c2: var(--main-color-mer);
-    
-    --_g: var(--s) var(--s) 
-      radial-gradient(var(--c1) 17%,var(--c2) 18% 35%,#0000 36.5%);
-    background: 
-      calc(var(--s)/-4) calc(var(--s)/-4)/var(--_g),
-      calc(var(--s)/ 4) calc(var(--s)/ 4)/var(--_g),
-      radial-gradient(var(--c2) 34%,var(--c1) 36% 68%,#0000 70%) 
-       0 0/calc(var(--s)/2) calc(var(--s)/2),
-      repeating-linear-gradient(45deg,var(--c1) -12.5% 12.5%,var(--c2) 0 37.5%)
-       0 0/var(--s) var(--s);
-  
+.sauvignon::before {
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  top: -50%;
+  left: -50%;
+  z-index: 0;
+  background: url(../img/Odyssée5.png) repeat;
+  background-size: 600px;
+  transform: rotate(-30deg);
+  padding: 1100px;
+  background-color: var(--main-color-sau);
 }
 
 .sauvignon {
-
-    --s: 160px; /* control the size */
-    --c1: var(--sec-color-sau);
-    --c2: var(--main-color-sau);
-    
-    --_g: var(--s) var(--s) 
-      radial-gradient(var(--c1) 17%,var(--c2) 18% 35%,#0000 36.5%);
-    background: 
-      calc(var(--s)/-4) calc(var(--s)/-4)/var(--_g),
-      calc(var(--s)/ 4) calc(var(--s)/ 4)/var(--_g),
-      radial-gradient(var(--c2) 34%,var(--c1) 36% 68%,#0000 70%) 
-       0 0/calc(var(--s)/2) calc(var(--s)/2),
-      repeating-linear-gradient(45deg,var(--c1) -12.5% 12.5%,var(--c2) 0 37.5%)
-       0 0/var(--s) var(--s);
-
+  position: relative;
+  overflow: hidden;
 }
 
 .b-top {
