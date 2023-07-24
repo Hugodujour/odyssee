@@ -13,20 +13,20 @@
 
 :root {
   
-  --main-color: #FDECD6 ;
-  --sec-color: #2A8A8E ;
+  --main-color: #ffe2b0 ;
+  --sec-color: #3F6375 ;
 
   --black-color: #222;
   --white-color: #fff;
 
-  --main-color-pro: #FFE6F9;
-  --sec-color-pro: #af1d97;
+  --main-color-pro: #ffe2b0;
+  --sec-color-pro: #C4555F;
 
-  --main-color-mer: #DAE6F9;
-  --sec-color-mer: #073277;
+  --main-color-mer: #ffe2b0;
+  --sec-color-mer: #E4795C;
 
-  --main-color-sau: #F0E2AE ;
-  --sec-color-sau: #a79522;
+  --main-color-sau: #ffe2b0 ;
+  --sec-color-sau: #EDB769;
 
 }
 
@@ -92,14 +92,33 @@ h6 {
 }
 
 .photomore {
-  min-height: 420px;
-  min-width: 700px;
+  background-image: url('../img/prov.jpg');
   max-width: 100%;
   height: auto;
-  background-image: url('../img/portfolio/bottle3.jpg');
-  background-repeat: no-repeat;
+  min-width: 600px;
+  min-height: 420px;
   background-size: cover;
-  background-position: 40% 40% ;
+  background-position: 0% 70%;
+}
+
+.photomore2 {
+  background-image: url('../img/merl.jpg');
+  max-width: 100%;
+  height: auto;
+  min-width: 600px;
+  min-height: 420px;
+  background-size: cover;
+  background-position: 0% 70%;
+}
+
+.photomore3 {
+  background-image: url('../img/sauvi.jpg');
+  max-width: 100%;
+  height: auto;
+  min-width: 600px;
+  min-height: 420px;
+  background-size: cover;
+  background-position: 0% 70%;
 }
 
 .abouted {
@@ -333,7 +352,7 @@ background-position: 0 0,16px 16px;
   background: url(../img/Odyssée5.png) repeat;
   background-size: 600px;
   transform: rotate(-30deg);
-  padding: 1100px;
+  padding: 720px;
   background-color: var(--main-color-pro);
 }
 
@@ -353,7 +372,7 @@ background-position: 0 0,16px 16px;
   background: url(../img/Odyssée5.png) repeat;
   background-size: 600px;
   transform: rotate(-30deg);
-  padding: 1100px;
+  padding: 720px;
   background-color: var(--main-color-mer);
 }
 
@@ -373,7 +392,7 @@ background-position: 0 0,16px 16px;
   background: url(../img/Odyssée5.png) repeat;
   background-size: 600px;
   transform: rotate(-30deg);
-  padding: 1100px;
+  padding: 720px;
   background-color: var(--main-color-sau);
 }
 
@@ -537,10 +556,6 @@ background-size: contain;
   #header {
     padding: 15px 5px;
   }
-  .magic {
-  padding: 50px 10px;
-  }
-
   .bottle-img {
     width: 90px;
   }
@@ -548,6 +563,10 @@ background-size: contain;
     height: 450px;
   }
 }
+
+.magic {
+  padding: 40px 10px;
+  }
 
 
 
