@@ -6,7 +6,7 @@
 * License: https://bootstrapmade.com/license/
 */
 
-
+window.location.replace("http://www.vins-odyssee.com/fr");
 (function() {
   "use strict";
 
