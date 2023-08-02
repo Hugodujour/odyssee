@@ -272,6 +272,12 @@ h6 {
   background-size: cover;
 }
 
+
+.logoted {
+  height: 25px;
+  transform: translateY(-3px) ;
+}
+
 .logoted2 {
  height: 100px;
 }
@@ -279,6 +285,10 @@ h6 {
 .logoted3 {
   height: 250px;
   transform: translateY(-50px);
+}
+
+.logoted4 {
+  height: 14px;
 }
 
 .rounded {
@@ -579,6 +589,7 @@ background-size: contain;
 
 #header.header-transparent {
   background: transparent;
+  border-bottom: 2px solid var(--white-color);
 }
 
 #header.header-scrolled {
@@ -613,9 +624,6 @@ background-size: contain;
 
 
 
-.logoted {
-  width: 10rem;
-}
 
 .navbar-mobile .dropdown>.dropdown-active {
   overflow: hidden;
@@ -636,6 +644,7 @@ background-size: contain;
 */
 .navbar {
   padding: 0;
+  color: white;
 }
 
 .whito {
@@ -819,6 +828,10 @@ background-size: contain;
 @media (max-width: 991px) {
   .mobile-nav-toggle {
     display: block;
+  }
+
+  .logoted {
+    height: 40px;
   }
 
   .navbar ul {
@@ -2363,4 +2376,11 @@ span {
 #footer a {
   color: var(--white-color);
   font-weight: 600;
+}
+
+.flag {
+  height: 28px;
+  width: 45px;
+  border-radius: 5px;
+  border: solid 2px var(--black-color);
 }

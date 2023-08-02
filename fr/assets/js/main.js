@@ -251,7 +251,7 @@
     root.style.setProperty('--sec-color-sau', "#" + randomColor2);
   }
   
-  genNew.addEventListener("click", setBg);
+  
 
 
 

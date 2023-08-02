@@ -2364,3 +2364,10 @@ span {
   color: var(--white-color);
   font-weight: 600;
 }
+
+.flag {
+  height: 28px;
+  width: 45px;
+  border-radius: 5px;
+  border: solid 2px var(--black-color);
+}
