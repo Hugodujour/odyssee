@@ -13,20 +13,22 @@
 
 :root {
   
-  --main-color: #ffe2b0 ;
-  --sec-color: #3F6375 ;
+  --main-color: #F1EADC ;
+  --sec-color: #F1EADC ;
 
   --black-color: #222;
   --white-color: #fff;
 
-  --main-color-pro: #ffe2b0;
-  --sec-color-pro: #C4555F;
+  --main-color-pro: #F5C4B7;
+  --sec-color-pro: #F5C4B7;
 
   --main-color-mer: #ffe2b0;
   --sec-color-mer: #E4795C;
 
   --main-color-sau: #ffe2b0 ;
   --sec-color-sau: #EDB769;
+
+  --border: 1px solid var(--black-color);
 
 }
 
@@ -143,6 +145,10 @@ h6 {
   transition: all 0.3s;
 }
 
+.full-height {
+  height: 94vh;
+}
+
 .colored-mer {
   background: var(--sec-color-mer);
   color: var(--white-color);
@@ -188,6 +194,52 @@ h6 {
   width: 120px;
   transform: translateY(-10px);
 }
+
+.nexted {
+  position: sticky;
+  width: 100px;
+  height: 100px;
+  top: 50%;
+  margin-left: -50px; /* moitié width */
+
+  z-index: 1;
+  background: #fff url('../img/fleche-droite.png');
+  background-size: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: var(--border);
+  border-radius: 50%;
+  border-image: 2px red solid
+
+}
+
+
+
+@keyframes buttoned {
+
+  0% {
+    border: none;
+  }
+
+  75% {
+    width: 5000px;
+    height: 5000px;
+    margin-left: -2500px; /* moitié width */
+  }
+  80% {
+    opacity: 0;;
+  }
+  100% {
+    opacity: 1;
+  }
+
+}
+
+.nexted:active {
+  animation: buttoned 2s
+}
+
+
 
 .inside-pro {
   -webkit-filter: drop-shadow(1px 1px 0 var(--main-color-pro))
@@ -287,8 +339,7 @@ h6 {
 }
 
 .logoted3 {
-  height: 250px;
-  transform: translateY(-50px);
+  height: 200px;
 }
 
 .logoted4 {
@@ -296,7 +347,7 @@ h6 {
 }
 
 .rounded {
-  border: solid 1px var(--black-color);
+  border: var(--border)
 }
 
 #main {
@@ -371,7 +422,6 @@ background-position: 0 0,16px 16px;
   background-size: 600px;
   transform: rotate(-30deg);
   padding: 720px;
-  background-color: var(--main-color-pro);
 }
 
 .provenced2 {
@@ -420,32 +470,32 @@ background-position: 0 0,16px 16px;
 }
 
 .b-top {
-  border-top: solid 2px var(--black-color) ;
+  border-top: var(--border);
 }
 
 .b-bot {
-  border-bottom: solid 2px var(--black-color) ;
+  border-bottom: var(--border);
 }
 
 .b-left {
-  border-left: 2px solid var(--black-color);
+  border-left: var(--border);
 }
 
 .b-right {
-  border-right: 2px solid var(--black-color);
+  border-right: var(--border);
 }
 
 .b-ride {
-  border-right: 2px solid var(--black-color);
-  border-left: 2px solid var(--black-color);
+  border-right: var(--border);
+  border-left: var(--border);
 }
 
 .b-all {
-  border: solid 2px var(--black-color);
+  border: var(--border);
 }
 
 .b-mobile {
-  border-right: solid 2px var(--black-color);
+  border-right: var(--border);
 }
 
 .blacko {
@@ -563,7 +613,7 @@ background-size: contain;
 @media (max-width: 1000px) {
   .b-mobile {
     border-right: none;
-    border-bottom: 2px solid var(--black-color);
+    border-bottom: var(--border);
   }
   main {
     background-color: var(--main-color);
@@ -593,12 +643,12 @@ background-size: contain;
 
 #header.header-transparent {
   background: transparent;
-  border-bottom: 2px solid var(--white-color);
+
 }
 
 #header.header-scrolled {
   background: var(--main-color);
-  border-bottom: 2px solid var(--black-color);
+  border-bottom: var(--border);
   transition: all 0.2s;
 }
 
@@ -712,7 +762,7 @@ background-size: contain;
   opacity: 0;
   visibility: hidden;
   background: var(--main-color);
-  border: 2px solid var(--black-color);
+  border: var(--border);
   border-radius: 10px;
   transition: 0.3s;
 }
@@ -823,6 +873,11 @@ background-size: contain;
   }
 }
 
+.magic {
+  position: absolute;
+  z-index: 0;
+}
+
 /**
 * Mobile Navigation 
 */
@@ -876,7 +931,7 @@ background-size: contain;
   background-color: var(--main-color);
   overflow-y: auto;
   transition: 0.3s;
-  border: 2px solid var(--black-color);
+  border: var(--border);
   border-radius: 10px;
 }
 
@@ -1024,7 +1079,7 @@ background-size: contain;
   width: 64px;
   height: 64px;
   text-align: center;
-  border: 2px solid var(--white-color);
+  border: var(--border);
   color: var(--white-color);
 }
 
