@@ -96,3 +96,13 @@ function bottleAnimation(e){
     }, 1000)
     
 }
+
+// delete heroAnim
+function heroAnim(){
+    const hero = select('#heroAnim')
+    setTimeout(()=> {
+        hero.classList.remove('heroAnim')
+    }, 800)
+}
+
+heroAnim()
