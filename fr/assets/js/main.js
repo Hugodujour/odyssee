@@ -233,22 +233,7 @@
 
 
 
-  let genNew = select('#genNew')
 
-  const setBg = () => {
-    const randomColor = (Math.random() * 0xFFFFFF << 0).toString(16).padStart(6, '0');
-    const randomColor2 = (Math.random() * 0xFFFFFF << 0).toString(16).padStart(6, '0');
-    console.log(randomColor)
-    const root = document.querySelector(':root');
-    root.style.setProperty('--main-color', "#" + randomColor);
-    root.style.setProperty('--sec-color', "#" + randomColor2);
-    root.style.setProperty('--main-color-pro', "#" + randomColor);
-    root.style.setProperty('--sec-color-pro', "#" + randomColor2);
-    root.style.setProperty('--main-color-mer', "#" + randomColor);
-    root.style.setProperty('--sec-color-mer', "#" + randomColor2);
-    root.style.setProperty('--main-color-sau', "#" + randomColor);
-    root.style.setProperty('--sec-color-sau', "#" + randomColor2);
-  }
   
 
 //boat

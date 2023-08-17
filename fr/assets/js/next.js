@@ -1,9 +1,11 @@
 let x = 0
-const select = (e) => document.getElementById(e)
-const nexted = select('nexted')
-const bottled = select('bottled')
-const title = select('title')
-const engagement = select('engagement')
+const select = (e) => document.querySelector(e)
+const nexted = select('#nexted')
+const bottled = select('#bottled')
+const title = select('#title')
+const engagement = select('#engagement')
+
+
 delay = 1000
 
 
@@ -35,11 +37,21 @@ nexted.addEventListener('click', () => {
     
 })
 
+
+const main = select('#main')
+const wine = select('#wine1')
+const textColor = select('#textColor')
+const provenced = select('#provenced2')
+
 function provence(){
 
     setTimeout(()=> {
         nexted.disabled = false
     }, 1000)
+
+    main.style.background = 'var(--main-color-pro)'
+    wine.style.background = 'var(--main-color-pro)'
+    textColor.style.color = 'var(--black-color)'
 
     bottled.src = 'assets/img/Odyssée rosé.png'
     title.innerText = 'Côtes de Provence'
@@ -52,6 +64,10 @@ function merlot(){
         nexted.disabled = false
     }, 1000)
 
+    main.style.background = 'var(--main-color-mer)'
+    wine.style.background = 'var(--main-color-mer)'
+    textColor.style.color = 'var(--white-color)'
+
     bottled.src = 'assets/img/Odyssée rouge.png'
     title.innerText = 'Bordeaux'
     engagement.innerText = 'ENGAGEMENT II'
@@ -59,9 +75,14 @@ function merlot(){
 
 function sauvignon(){
 
+
     setTimeout(()=> {
         nexted.disabled = false
     }, 1000)
+
+    main.style.background = 'var(--main-color-sau)'
+    wine.style.background = 'var(--main-color-sau)'
+    textColor.style.color = 'var(--black-color)'
 
     bottled.src = 'assets/img/Odysée blanc.png'
     title.innerText = 'Sauvignon'

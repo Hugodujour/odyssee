@@ -13,19 +13,19 @@
 
 :root {
   
-  --main-color: #F1EADC ;
-  --sec-color: #F1EADC ;
+  --main-color: #F3C4B6 ;
+  --sec-color: #F3C4B6 ;
 
   --black-color: #222;
   --white-color: #fff;
 
-  --main-color-pro: #F5C4B7;
-  --sec-color-pro: #F5C4B7;
+  --main-color-pro: #F3C4B6;
+  --sec-color-pro: #F3C4B6;
 
-  --main-color-mer: #ffe2b0;
+  --main-color-mer: #A92222;
   --sec-color-mer: #E4795C;
 
-  --main-color-sau: #ffe2b0 ;
+  --main-color-sau: #EAE4D5 ;
   --sec-color-sau: #EDB769;
 
   --border: 1px solid var(--black-color);
@@ -48,6 +48,22 @@ a {
 
 .black {
   color: black;
+}
+
+.coule {
+  height: 20vh;
+  width: 100%;
+  border-bottom: var(--border);
+}
+
+.coule p {
+  font-family:'Domine', serif;
+  font-size: 4vw;
+}
+
+.coule2{
+  height: 80vh;
+  width: 100%;
 }
 
 #chevroned {
@@ -136,12 +152,12 @@ h6 {
   height: 900px;
   width: 800px;
   padding: 60px;
-  color: var(--white-color);
+  color: var(--black-color);
 }
 
 .colored {
   background: var(--sec-color-pro);
-  color: var(--white-color);
+  color: var(--black-color);
   transition: all 0.3s;
 }
 
@@ -203,13 +219,12 @@ h6 {
   margin-left: -50px; /* moitié width */
 
   z-index: 1;
-  background: #fff url('../img/fleche-droite.png');
+  background: var(--main-color) url('../img/fleche-droite.png');
   background-size: 40px;
   background-repeat: no-repeat;
   background-position: center;
-  border: var(--border);
   border-radius: 50%;
-  border-image: 2px red solid;
+  transition: all 0.3s;
 
 }
 
@@ -238,6 +253,9 @@ h6 {
 .nexted:hover {
   /* animation: buttoned 2s */
   cursor: pointer;
+  transition: all 0.3s;
+  background-color: var(--main-color-mer);
+  
 }
 
 #nexted {
@@ -245,15 +263,13 @@ h6 {
   width: 100%;
   border-radius: 50%;
   border: var(--border);
+  background: none
 }
 
 
 
 .inside-pro {
-  -webkit-filter: drop-shadow(1px 1px 0 var(--main-color-pro))
-  drop-shadow(-1px -1px 0 var(--main-color-pro));
-  filter: drop-shadow(1px 1px 0 var(--main-color-pro)) 
-  drop-shadow(-1px -1px 0 var(--main-color-pro));
+  z-index: 1;
 }
 
 .inside-mer {
@@ -427,7 +443,7 @@ background-position: 0 0,16px 16px;
   top: -50%;
   left: -50%;
   z-index: 0;
-  background: url(../img/Odyssée5.png) repeat;
+  /* background: url(../img/Odyssée5.png) repeat; */
   background-size: 600px;
   transform: rotate(-30deg);
   padding: 720px;
