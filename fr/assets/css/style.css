@@ -209,7 +209,7 @@ h6 {
   background-position: center;
   border: var(--border);
   border-radius: 50%;
-  border-image: 2px red solid
+  border-image: 2px red solid;
 
 }
 
@@ -235,8 +235,16 @@ h6 {
 
 }
 
-.nexted:active {
-  animation: buttoned 2s
+.nexted:hover {
+  /* animation: buttoned 2s */
+  cursor: pointer;
+}
+
+#nexted {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  border: var(--border);
 }
 
 
@@ -289,6 +297,7 @@ h6 {
   -webkit-filter: drop-shadow(0px 0px 15px rgba(255, 255, 255, 1));
   filter: drop-shadow(0px 0px 15px rgba(255, 255, 255, 1));
 }
+
 
 .bottle-container {
   background: url('/fr/assets/img/Splash3.png');
@@ -634,7 +643,9 @@ background-size: contain;
 
 }
 
-
+#bottled {
+  transition: all 1s ease-in-out;
+}
 
 
 #logow {
@@ -1868,6 +1879,7 @@ span {
   margin: auto;
   font-size: 2rem;
 }
+
 
 .pad-car {
   padding: 100px 0px 350px 0px
