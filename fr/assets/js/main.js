@@ -120,19 +120,18 @@
       if (window.scrollY < la){
         callPro.classList.remove('call-pro')
         main.style.background = 'var(--main-color)'
-        colored.style.background = "var(--sec-color)"
+        colored.style.background = "var(--main-color)"
       } else if (window.scrollY >= la && window.scrollY < lb){
-        main.style.background = 'var(--main-color-pro)'
-        colored.style.background = "var(--sec-color-pro)"
-        coloredMer.style.background ="var(--sec-color-pro)"
+        main.style.background = 'var(--main-color)'
+        colored.style.background = "var(--main-color)"
         callPro.classList.add('call-pro')
       } else if (window.scrollY >= lb && window.scrollY < lc) {
         
-        main.style.background = 'var(--main-color-mer)'
-        coloredMer.style.background ="var(--sec-color-mer)"
-        coloredSau.style.background = "var(--sec-color-mer)"
+        main.style.background = 'var(--main-color)'
+    
+
       } else if (window.scrollY >= lc && window.scrollY < ld) {
-        main.style.background = 'var(--main-color-sau)'
+        main.style.background = 'var(--main-color)'
         coloredSau.style.background = ""
       } else {
         main.style.background = 'var(--main-color)'
@@ -156,18 +155,18 @@
         chevroned.style.background = "var(--main-color)"
         
       } else if (window.scrollY >= la && window.scrollY < lb){
-        head.style.background = "var(--main-color-pro)"
-        chevroned.style.background = "var(--main-color-pro)"
+        head.style.background = "var(--main-color)"
+        chevroned.style.background = "var(--main-color)"
       } else if (window.scrollY >= lb && window.scrollY < lc) {
-        head.style.background = 'var(--main-color-mer)'
-        chevroned.style.background = "var(--main-color-mer)"
+        head.style.background = 'var(--main-color)'
+        chevroned.style.background = "var(--main-color)"
         // logoHeader.classList.remove('blacked')
         // navHeader.style.color = "white"
         // freng.style.color = "white"
         
       } else if (window.scrollY >= lc && window.scrollY < ld) {
-        head.style.background = 'var(--main-color-sau)'
-        chevroned.style.background = "var(--main-color-sau)"
+        head.style.background = 'var(--main-color)'
+        chevroned.style.background = "var(--main-color)"
         
       } else {
         head.style.background = 'var(--main-color)'

@@ -42,6 +42,7 @@ const main = select('#main')
 const wine = select('#wine1')
 const textColor = select('#textColor')
 const provenced = select('#provenced2')
+const header = select('#header')
 
 function provence(){
 
@@ -49,9 +50,8 @@ function provence(){
         nexted.disabled = false
     }, 1000)
 
-    main.style.background = 'var(--main-color-pro)'
-    wine.style.background = 'var(--main-color-pro)'
-    textColor.style.color = 'var(--black-color)'
+    root.style.setProperty('--main-color', '#F3C4B6');
+    root.style.setProperty('--sec-color', '#EAE4D5');
 
     bottled.src = 'assets/img/Odyssée rosé.png'
     title.innerText = 'Côtes de Provence'
@@ -64,9 +64,9 @@ function merlot(){
         nexted.disabled = false
     }, 1000)
 
-    main.style.background = 'var(--main-color-mer)'
-    wine.style.background = 'var(--main-color-mer)'
-    textColor.style.color = 'var(--white-color)'
+    root.style.setProperty('--main-color', '#EAE4D5');
+    root.style.setProperty('--sec-color', '#f3f3b6');
+
 
     bottled.src = 'assets/img/Odyssée rouge.png'
     title.innerText = 'Bordeaux'
@@ -79,10 +79,12 @@ function sauvignon(){
     setTimeout(()=> {
         nexted.disabled = false
     }, 1000)
+    
+    root.style.setProperty('--main-color', '#f3f3b6');
+    root.style.setProperty('--sec-color', '#F3C4B6');
 
-    main.style.background = 'var(--main-color-sau)'
-    wine.style.background = 'var(--main-color-sau)'
-    textColor.style.color = 'var(--black-color)'
+  
+    
 
     bottled.src = 'assets/img/Odysée blanc.png'
     title.innerText = 'Sauvignon'
@@ -106,3 +108,6 @@ function heroAnim(){
 }
 
 heroAnim()
+
+const root = document.querySelector(':root');
+
