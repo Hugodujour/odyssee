@@ -422,6 +422,7 @@ h6 {
 }
 
 #main {
+  background-color: var(--main-color);
   padding: 0;
   transition: background-color 0.5s ease;
 }
@@ -1623,6 +1624,10 @@ section {
   color: var(--black-color);
   background-size: cover;
   padding: 60px 0;
+}
+
+#cta {
+  background-color: var(--main-color);
 }
 
 
