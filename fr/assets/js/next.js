@@ -55,7 +55,7 @@ function provence(){
 
     bottled.src = 'assets/img/Odyssée rosé.png'
     title.innerText = 'Côtes de Provence'
-    engagement.innerText = 'ENGAGEMENT I'
+    engagement.innerText = 'Du site internet à la bouteille, nous choisissons de mentionner le terroir, l’année et les vignerons à l’origine de l’élaboration de chaque cuvée.'
 }
 
 function merlot(){
@@ -70,7 +70,7 @@ function merlot(){
 
     bottled.src = 'assets/img/Odyssée rouge.png'
     title.innerText = 'Bordeaux'
-    engagement.innerText = 'ENGAGEMENT II'
+    engagement.innerText = 'Sensibiliser et impliquer dans la démarche de développement durable les Clubs, les licenciés, les publics et les partenaires.'
 }
 
 function sauvignon(){
@@ -88,7 +88,7 @@ function sauvignon(){
 
     bottled.src = 'assets/img/Odysée blanc.png'
     title.innerText = 'Sauvignon'
-    engagement.innerText = 'ENGAGEMENT III'
+    engagement.innerText = 'Une entreprise durable est une entreprise qui travaille en phase avec les objectifs liés à la société et à lenvironnement, plutôt quen contradiction avec eux.'
 }
 
 function bottleAnimation(e){

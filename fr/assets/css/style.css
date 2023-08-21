@@ -51,7 +51,7 @@ a {
 }
 
 .coule4{
-  background: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.6)), top center;
+  background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.8)), top center;
   height: 100%;
   width: 100%;
   display: flex;
@@ -425,6 +425,18 @@ h6 {
   background-color: var(--main-color);
   padding: 0;
   transition: background-color 0.5s ease;
+}
+
+.title-flex {
+  display: flex;
+  align-self: baseline;
+  font-family:'Domine', serif;
+  font-size: 2rem;
+  padding-left: 2.4rem;
+}
+
+#engagement {
+  font-size: 1.5rem;
 }
 
 .txt-pad {
