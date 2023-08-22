@@ -50,6 +50,11 @@ a {
   color: black;
 }
 
+
+
+
+
+
 .coule4{
   background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.8)), top center;
   height: 100%;
@@ -257,6 +262,10 @@ h6 {
   transform: translateY(-10px);
 }
 
+.foule {
+  min-width: 63vw;
+}
+
 .nexted {
   position: sticky;
   width: 100px;
@@ -432,7 +441,6 @@ h6 {
   align-self: baseline;
   font-family:'Domine', serif;
   font-size: 2rem;
-  padding-left: 2.4rem;
 }
 
 #engagement {
@@ -721,7 +729,7 @@ background-size: contain;
 }
 
 #bottled {
-  transition: all 1s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 

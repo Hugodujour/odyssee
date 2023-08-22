@@ -50,9 +50,9 @@
             <li><a class="nav-link scrollto" href="#odyssee">L'Odyssée</a></li>
               <li class="dropdown"><a>Nos vins<i class="bi bi-chevron-down" ></i></a>
                 <ul class="black" id="chevroned"> 
-                  <li><a href="#wine1" class="scrollto">Côtes de Provence</a></li>
-                  <li><a href="#wine2" class="scrollto">Bordeaux</a></li>
-                  <li><a href="#wine3" class="scrollto">Sauvignon Blanc</a></li>
+                  <li><a href="#wine1" class="scrollto" onclick="displayProvence()">Côtes de Provence</a></li>
+                  <li><a href="#wine1" class="scrollto" onclick="displayMerlot()">Bordeaux</a></li>
+                  <li><a href="#wine1" class="scrollto" onclick="displaySauvignon()">Sauvignon Blanc</a></li>
                 </ul>
               </li>
               
@@ -143,17 +143,17 @@
         </div>
             <div class="d-flex justify-content-center align-items-center px-3">
               <div class="bottle-img img-one">
-                <a class="scrollto" href="#wine2">
+                <a class="scrollto" href="#wine1" onclick="displayMerlot()">
                   <img src="./assets/img/Odyssée rouge.png" class="img-fluid" alt="..." >
                 </a>
               </div>
-              <div class="bottle-img img-two">
+              <div class="bottle-img img-two" onclick="displayProvence()">
                 <a class="scrollto" href="#wine1">
                   <img src="./assets/img/Odyssée rosé.png" class="img-fluid" alt="..." >
                 </a>
               </div>
-              <div class="bottle-img img-three">
-                <a class="scrollto" href="#wine3">
+              <div class="bottle-img img-three" onclick="displaySauvignon()">
+                <a class="scrollto" href="#wine1">
                   <img src="./assets/img/Odysée blanc.png" class="img-fluid" alt="..." >
                 </a>
               </div>
@@ -162,9 +162,9 @@
       </div>
 
     </div>
-    <div class="d-xl-block d-none">
-    <div class="d-flex flex-column justify-content-center full-height bg b-left " id="abouted">
-      <div class="abouted d-xl-block d-none">
+    <div class="d-xl-block d-none ">
+    <div class="d-flex flex-column justify-content-center full-height bg b-left  " id="abouted">
+      <div class="abouted d-xl-block d-none ">
         <h2>Une invitation au voyage.</h2>
         <p class="pt-3">Odyssée est né de la rencontre d'une famille de vignerons bordelais : les Compeyrot avec des vignerons provençaux.
 
@@ -219,20 +219,20 @@
 
 
                 
-                  <div class="d-flex">
+                  <div class="d-flex foule">
                     <span class="nexted nexted2"><button id="nexted"></button></span>
                     <div class="coule2 d-flex flex-column align-items-center justify-content-between">
                       <div class="d-flex justify-content-center align-items-center bot-tittle"><h2 id="title">Côtes de Provence</h2></div>
                       <div class="d-flex justify-content-center align-items-center bot-desc">
                         <div class="description">
-                          <p class="strong">Caractéristiques:</p>
+                          <p><strong class="strong">Caractéristiques :</strong></p>
                           <ul>
-                            <li>un type cool</li>
-                            <li>un vin encore plus coule</li>
-                            <li>j'adore le raisin omg c'est si coule mais si long comme phrase</li>
+                            <li id="list-1">un type cool</li>
+                            <li id="list-2">un vin encore plus coule</li>
+                            <li id="list-3">j'adore le raisin omg c'est si coule mais si long comme phrase</li>
                           </ul>
-                          <p class="strong">Accords mets & vins:</p>
-                          <p>Se marie parfaitement avec du fois gras et des endives. De quoi mettre daccord toute la famille.</p>
+                          <p><strong class="strong">Accords mets & vins :</strong></p>
+                          <p id="accord-desc"></p>
                         </div>
                       </div>
                       <div class="d-flex justify-content-center align-items-center bot-call">
@@ -242,10 +242,13 @@
                   
                     <div class="coule3 b-left">
                       <div class="coule4">
-                        <p class="title-flex">Nos engagements :</p>
-                        <p class="col-md-10 italicos" id="engagement">
-                          "Du site internet à la bouteille, nous choisissons de mentionner le terroir, l’année et les vignerons à l’origine de l’élaboration de chaque cuvée."
-                        </p>
+                        <div class="col-lg-10">
+                          <p class="title-flex">Nos engagements :</p>
+                          <p class="italicos" id="engagement">
+                            "Du site internet à la bouteille, nous choisissons de mentionner le terroir, l’année et les vignerons à l’origine de l’élaboration de chaque cuvée."
+                          </p>
+                        </div>
+
                       </div>
 
                     </div>
