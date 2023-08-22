@@ -13,24 +13,33 @@
 
 :root {
   
-  --main-color: #F3C4B6 ;
+  --main-color: #ffe9e2 ;
   --sec-color: #EAE4D5 ;
 
   --black-color: #222;
   --white-color: #fff;
 
-  --main-color-pro: #F3C4B6;
+  --main-color-pro:#ffcdc8 ;
   --sec-color-pro: #F3C4B6;
+  --third-color-pro: #ffdbd7;
 
-  --main-color-mer: #EAE4D5;
+  --main-color-mer: #81CCE1;
   --sec-color-mer: #E4795C;
+  --third-color-mer: #9feaff;
 
   --main-color-sau: #f3f3b6 ;
   --sec-color-sau: #EDB769;
+  --third-color-sau: #f7f7ca;
 
   --border: 1px solid var(--black-color);
 
+  --third-color: #93e8ff;
+
+  font-size: 16px;
+
 }
+
+
 
 body {
   font-family: 'Roboto Mono', monospace;
@@ -79,6 +88,7 @@ a {
 
 .coule2, .coule3{
   width: 100%;
+  background: radial-gradient(circle at 80%,var(--third-color) 10%, var(--main-color)70%);
 }
 
 .coule3 {
@@ -123,6 +133,8 @@ h6 {
 .green {
   background-color: var(--main-color);
   color: var(--white-color);
+  background: radial-gradient(circle at 50%,var(--third-color) 0%, var(--main-color)40%);
+  
 }
 
 .contact-item {
@@ -190,7 +202,6 @@ h6 {
 }
 
 .abouted {
-  background: var(--main-color);
   color: var(--black-color);
   padding: 0px 60px;
   display: flex;
@@ -198,9 +209,10 @@ h6 {
 }
 
 .bg {
-  background-color: var(--main-color);
+  background-color: var(--sec-color);
   width: 50vw;
   border-left: var(--border) ;
+  background: radial-gradient(circle at 30%,var(--third-color) 0%, var(--main-color)50%);
 }
 
 .bg-h {
@@ -208,7 +220,7 @@ h6 {
 }
 
 .colored {
-  background: var(--main-color);
+  background: var(--sec-color);
   color: var(--black-color);
   transition: all 0.3s;
 }
@@ -501,6 +513,7 @@ background-position: 0 0,16px 16px;
   background-position: 40px 0px, 40px 0px, 0px 0px, 0px 0px; 
   background-size: 80px 80px; 
   background-repeat: repeat;
+  
 }
 
 .provenced2::before {
@@ -516,6 +529,7 @@ background-position: 0 0,16px 16px;
   background-size: 600px;
   transform: rotate(-30deg);
   padding: 720px;
+  
 }
 
 .provenced2 {
@@ -1128,6 +1142,7 @@ background-size: contain;
   background-size: cover;
   position: relative;
   cursor: pointer;
+  
 }
 
 .heroAnim {
@@ -2614,7 +2629,7 @@ span {
 }
 
 .description {
-  font-size: 1.4vw;
+  font-size: 1rem;
   padding: 0px 24px;
 }
 
@@ -2625,3 +2640,4 @@ height: 100%;
 .strong {
   font-weight: bold;
 }
+

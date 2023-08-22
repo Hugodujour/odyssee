@@ -6,7 +6,7 @@ const title = select('#title')
 const engagement = select('#engagement')
 
 
-delay = 500
+delay = 350
 
 
 
@@ -43,8 +43,9 @@ function provence(){
         nexted.disabled = false
     }, delay)
 
-    root.style.setProperty('--main-color', '#F3C4B6');
-    root.style.setProperty('--sec-color', '#EAE4D5');
+    root.style.setProperty('--main-color', 'var(--main-color-pro)');
+    root.style.setProperty('--sec-color', 'var(--main-color-mer)');
+    root.style.setProperty('--third-color', 'var(--third-color-pro)');
 
     bottled.src = 'assets/img/Odyssée rosé.png'
     title.innerText = 'Côtes de Provence'
@@ -62,8 +63,9 @@ function merlot(){
         nexted.disabled = false
     }, delay)
 
-    root.style.setProperty('--main-color', '#EAE4D5');
-    root.style.setProperty('--sec-color', '#f3f3b6');
+    root.style.setProperty('--main-color', 'var(--main-color-mer)');
+    root.style.setProperty('--sec-color', 'var(--main-color-sau)');
+    root.style.setProperty('--third-color', 'var(--third-color-mer)');
 
 
     bottled.src = 'assets/img/Odyssée rouge.png'
@@ -83,8 +85,9 @@ function sauvignon(){
         nexted.disabled = false
     }, delay)
     
-    root.style.setProperty('--main-color', '#f3f3b6');
-    root.style.setProperty('--sec-color', '#F3C4B6');
+    root.style.setProperty('--main-color', 'var(--main-color-sau)');
+    root.style.setProperty('--sec-color', 'var(--main-color-pro)');
+    root.style.setProperty('--third-color', 'var(--third-color-sau)');
 
   
     
@@ -182,3 +185,14 @@ function displayProvence(){
 
 provence()
 
+
+
+
+let btn = document.querySelector('.mouse-cursor-gradient-tracking');
+btn.addEventListener('mousemove', e => {
+  let rect = e.target.getBoundingClientRect();
+  let xaa = e.clientX - rect.left;
+  let yaa = e.clientY - rect.top;
+  btn.style.setProperty('--x', xaa + 'px');
+  btn.style.setProperty('--y', yaa + 'px');
+});
