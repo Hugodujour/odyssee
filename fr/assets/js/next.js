@@ -114,7 +114,7 @@ const l1Mer = `100% Merlot.`
 const l2Mer = `Teinte pourpre intense et profonde.`
 const l3Mer = `Arômes captivants de fruits à noyeaux et de cerises, nuances épicées.`
 const engagementMer = `Nous sommes fiers de notre engagement croissant envers des pratiques plus durables, en collaborant étroitement avec des producteurs de plus en plus axés sur le bio pour vous offrir des produits de qualité supérieure.`
-const accordMer = `Se marie aussi bien avec de la viande rouge qu'avec de la viande blanche.`
+const accordMer = `Se déguste aussi bien avec de la viande rouge qu'avec de la viande blanche.`
 
 
 // change text Sauvignon
