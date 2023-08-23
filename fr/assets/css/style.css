@@ -23,9 +23,9 @@
   --sec-color-pro: #F3C4B6;
   --third-color-pro: #ffdbd7;
 
-  --main-color-mer: #81CCE1;
+  --main-color-mer: #F1EADC;
   --sec-color-mer: #E4795C;
-  --third-color-mer: #9feaff;
+  --third-color-mer: #fcf7ee;
 
   --main-color-sau: #f3f3b6 ;
   --sec-color-sau: #EDB769;
@@ -59,7 +59,26 @@ a {
   color: black;
 }
 
+p {
+  font-size: 1rem;
+  font-weight: 400;
+}
 
+.odydy {
+  position: absolute;
+  transform: translateX(25vw);
+  
+  
+}
+
+.batow2 {
+  height: 40px;
+  width: auto;
+}
+
+.grad {
+  background: radial-gradient(circle at 60%,var(--third-color) 10%, var(--main-color)70%);
+}
 
 
 
@@ -67,7 +86,7 @@ a {
 .coule4{
   background: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.7)), top center;
   height: 100%;
-  width: 100%;
+  width: 32vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -123,7 +142,12 @@ h3,
 h4,
 h5,
 h6 {
-  font-family:'Roboto Mono', monospace;
+  font-family:'Domine', serif;
+}
+
+h1 {
+  font-size: 8.5rem ;
+
 }
 
 .padded {
@@ -420,6 +444,35 @@ h6 {
   background-size: cover;
 }
 
+.batow {
+background-image: url('../img/batow.gif');
+height: 200px;
+width: 200px;
+border-radius: 50%;
+background-position-x: center;
+background-size: cover;
+border: var(--border);
+}
+
+.full-height2{
+  min-height: 850px;
+  max-height: 94vh;
+}
+
+.photo1 {
+  background: url('../img/Matthieu-et-Jean.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.h100 {
+  height: 100vh;
+}
+
+.w50 {
+  width: 50vw;
+}
 
 .logoted {
   height: 25px;
@@ -794,7 +847,7 @@ background-size: contain;
 }
 
 .fra {
-  text-decoration: underline solid 2px;
+  text-decoration: underline var(--border);
   text-underline-offset: 10px;
 }
 
@@ -842,8 +895,8 @@ background-size: contain;
   padding: 8px 16px;
   margin-left: 10px;
   font-family:'Roboto Mono', monospace;
-  font-size: 16px;
-  font-weight: 500;
+  font-size: 1rem;
+  font-weight: 400;
   white-space: nowrap;
   transition: 0.3s;
 }
@@ -857,7 +910,7 @@ background-size: contain;
 
 .navbar a:hover,
 .navbar li:focus>a {
-  text-decoration: underline 2px;
+  text-decoration: underline var(--border);
   text-underline-offset: 10px;
 }
 
@@ -888,9 +941,9 @@ background-size: contain;
 
 .navbar .dropdown ul a {
   padding: 10px 20px;
-  font-size: 15px;
+  font-size: 1rem;
   text-transform: none;
-  font-weight: 600;
+
 }
 
 .navbar-mobile .dropdown ul a {
@@ -1669,7 +1722,7 @@ section {
 
 .cta .cta-btn {
   font-family: 'Roboto Mono', monospace;
-  text-transform: uppercase;
+
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 1px;
@@ -1686,9 +1739,9 @@ section {
 }
 
 .call {
-  font-family: 'Roboto Mono', monospace;
-  text-transform: uppercase;
-  font-weight: 500;
+  font-family: 'Domine', serif;
+  
+  font-weight: 800;
   font-size: 16px;
   letter-spacing: 1px;
   display: inline-block;
@@ -1705,18 +1758,22 @@ section {
 }
 
 .called {
-  font-family: 'Roboto Mono', monospace;
-  text-transform: uppercase;
-  font-weight: 500;
+  font-family: 'Domine', serif;
+  
+  font-weight: 800;
   font-size: 16px;
   letter-spacing: 1px;
   display: inline-block;
   padding: 8px 28px;
   transition: 0.5s;
   margin-top: 10px;
-  color: #202958;
-  border: none;
-  background: none;
+  background: var(--main-color);
+  color: var(--black-color);
+  border-radius: 50px;
+  border: 1px solid var(--black-color);
+  box-shadow: 0px 5px 1px var(--main-color), 0px 5px 1px 1px var(--black-color);
+  transition: all 0.15s;
+  transform: translateY(-10px);
 }
 
 .call:hover {
@@ -1738,9 +1795,9 @@ section {
 }
 
 .call-pro {
-  font-family: 'Roboto Mono', monospace;
-  text-transform: uppercase;
-  font-weight: 500;
+  font-family: 'Domine', serif;
+
+  font-weight: 800;
   font-size: 16px;
   letter-spacing: 1px;
   display: inline-block;
@@ -1757,9 +1814,8 @@ section {
 }
 
  .call-mer {
-  font-family: 'Roboto Mono', monospace;
-  text-transform: uppercase;
-  font-weight: 500;
+  font-family: 'Domine', serif;
+  font-weight: 800;
   font-size: 16px;
   letter-spacing: 1px;
   display: inline-block;
@@ -1776,9 +1832,9 @@ section {
 }
 
  .call-sau {
-  font-family: 'Roboto Mono', monospace;
-  text-transform: uppercase;
-  font-weight: 500;
+  font-family: 'Domine', serif;
+
+  font-weight: 800;
   font-size: 16px;
   letter-spacing: 1px;
   display: inline-block;
@@ -2641,5 +2697,7 @@ height: 100%;
 
 .strong {
   font-weight: bold;
+  font-family: 'Domine', serif;
+  font-size: 1.2rem;
 }
 
