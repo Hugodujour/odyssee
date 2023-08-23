@@ -110,6 +110,9 @@ p {
   background: radial-gradient(circle at 80%,var(--third-color) 10%, var(--main-color)70%);
 }
 
+
+
+
 .coule3 {
   color: var(--white-color);
   min-height: 596px;
@@ -241,6 +244,11 @@ h1 {
 
 .bg-h {
   height: 100vh;
+  min-height: 600px;
+}
+
+.sanded {
+  height: 300px;
 }
 
 .colored {
@@ -251,6 +259,7 @@ h1 {
 
 .full-height {
   height: 94vh;
+  min-height: 600px;
   max-height: 850px;
 }
 
@@ -478,8 +487,23 @@ border: var(--border);
   background-position: top;
 }
 
+.photo3 {
+  background: url('../img/Odyssée\ plage\ photo\ 3\ \(1\).jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
+.photo4 {
+  background: url('../img/bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
 .h100 {
-  height: 100vh;
+  height: 94vh;
+  min-height: 700px;
 }
 
 .w50 {
@@ -694,8 +718,8 @@ z-index: -100;
 transform: translateX(-50%) translateY(-50%);
 background: url(placeholder.jpg) no-repeat;
 background-size: contain;
-filter: grayscale();
-opacity: 0.5;
+
+
 }
 
 
@@ -1211,6 +1235,7 @@ opacity: 0.5;
   cursor: pointer;
   
 }
+
 
 .heroAnim {
   background: #fff;
@@ -2064,7 +2089,6 @@ section {
   right: 10px;
   background-size: cover;
   border: var(--border);
-  border-radius: 5px;
   display: flex;
 }
 
