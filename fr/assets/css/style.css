@@ -252,7 +252,7 @@ h1 {
 }
 
 .sanded {
-  height: 300px;
+  height: 250px;
 }
 
 .colored {
@@ -507,11 +507,17 @@ border: var(--border);
 
 .h100 {
   height: 94vh;
-  min-height: 700px;
+  min-height: 800px;
 }
 
 .w50 {
   width: 50vw;
+}
+
+.engaged {
+  width: 50vw;
+  height: 94vh;
+  min-height: 800px;
 }
 
 .logoted {
@@ -1076,7 +1082,30 @@ background-size: contain;
   .magic {
     padding: 40px 10px;
   }
+
+  .w50 {
+    width: 100vw;
+  }
+
+  .h100 {
+    height: 50vw;
+    min-height: 400px;
+  }
+
+  .flex-phone {
+    flex-direction: column-reverse;
+  }
+
+  .engaged {
+    width: 100vw;
+  }
+
+  .cached {
+    display: none;
+  }
 }
+
+
 
 .magic {
   
