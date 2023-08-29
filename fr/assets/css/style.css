@@ -244,7 +244,7 @@ h1 {
 }
 
 .colored {
-  background: var(--sec-color);
+  
   color: var(--black-color);
   transition: all 0.3s;
 }
