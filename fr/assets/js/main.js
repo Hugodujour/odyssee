@@ -152,25 +152,25 @@
     const headScrolled = () => {
       if(window.scrollY <= 100){
         head.style.background = 'none'
-        chevroned.style.background = "var(--four-color)"
+        chevroned.style.background = "var(--main-color)"
         
       } else if (window.scrollY >= la && window.scrollY < lb){
-        head.style.background = "var(--four-color)"
-        chevroned.style.background = "var(--four-color)"
+        head.style.background = "var(--main-color)"
+        chevroned.style.background = "var(--main-color)"
       } else if (window.scrollY >= lb && window.scrollY < lc) {
-        head.style.background = 'var(--four-color)'
-        chevroned.style.background = "var(--four-color)"
+        head.style.background = 'var(--main-color)'
+        chevroned.style.background = "var(--main-color)"
         // logoHeader.classList.remove('blacked')
         // navHeader.style.color = "white"
         // freng.style.color = "white"
         
       } else if (window.scrollY >= lc && window.scrollY < ld) {
-        head.style.background = 'var(--four-color)'
-        chevroned.style.background = "var(--four-color)"
+        head.style.background = 'var(--main-color)'
+        chevroned.style.background = "var(--main-color)"
         
       } else {
-        head.style.background = 'var(--four-color)'
-        chevroned.style.background = "var(--four-color)"
+        head.style.background = 'var(--main-color)'
+        chevroned.style.background = "var(--main-color)"
         
       }
     }
