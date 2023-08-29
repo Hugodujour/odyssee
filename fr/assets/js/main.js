@@ -114,121 +114,13 @@
   const lc = 3800
   const ld = 5600
 
-  if(main) {
-
-    const mainScrolled = () => {
-      if (window.scrollY < la){
-        callPro.classList.remove('call-pro')
-        main.style.background = 'var(--main-color)'
-        colored.style.background = "var(--main-color)"
-      } else if (window.scrollY >= la && window.scrollY < lb){
-        main.style.background = 'var(--main-color)'
-        colored.style.background = "var(--main-color)"
-        callPro.classList.add('call-pro')
-      } else if (window.scrollY >= lb && window.scrollY < lc) {
-        
-        main.style.background = 'var(--main-color)'
-    
-
-      } else if (window.scrollY >= lc && window.scrollY < ld) {
-        main.style.background = 'var(--main-color)'
-        coloredSau.style.background = ""
-      } else {
-        main.style.background = 'var(--main-color)'
-      }
-    }
-    window.addEventListener('load', mainScrolled)
-    onscroll(document, mainScrolled);
-  }
-
-  /* 
-  * Head color
-  */
-
-  let head = select('#header')
-
-  if(head) {
-    let chevroned = select('#chevroned')
-    const headScrolled = () => {
-      if(window.scrollY <= 100){
-        head.style.background = 'none'
-        chevroned.style.background = "var(--main-color)"
-        
-      } else if (window.scrollY >= la && window.scrollY < lb){
-        head.style.background = "var(--main-color)"
-        chevroned.style.background = "var(--main-color)"
-      } else if (window.scrollY >= lb && window.scrollY < lc) {
-        head.style.background = 'var(--main-color)'
-        chevroned.style.background = "var(--main-color)"
-        // logoHeader.classList.remove('blacked')
-        // navHeader.style.color = "white"
-        // freng.style.color = "white"
-        
-      } else if (window.scrollY >= lc && window.scrollY < ld) {
-        head.style.background = 'var(--main-color)'
-        chevroned.style.background = "var(--main-color)"
-        
-      } else {
-        head.style.background = 'var(--main-color)'
-        chevroned.style.background = "var(--main-color)"
-        
-      }
-    }
-    window.addEventListener('load', headScrolled)
-    onscroll(document, headScrolled);
-  }
 
 
-}
 
-  /**
-   * Toggle .header-scrolled class to #header when page is scrolled
-   */
-  let selectHeader = select('#header')
-  let logoHeader = select('#logow')
-  let navHeader = select('#navbar')
-  let freng = select('#freng')
-  let colored = select('.colored')
-  let coloredMer = select('.colored-mer')
-  let coloredSau = select('.colored-sau')
-  let callPro = select('#callpro')
-  let mobiled = select('#mobiled')
-  let ody = select('#ody')
+
   
-  if (selectHeader) {
-    const headerScrolled = () => {
-      if (window.scrollY > 100) {
-        selectHeader.classList.add('header-scrolled')
-        logoHeader.classList.add('blacked')
-        navHeader.style.color = "black"
-        freng.style.color = "black"
-        mobiled.style.color = 'black';
-        
-      } else {
-        selectHeader.classList.remove('header-scrolled')
-        logoHeader.classList.remove('blacked')
-        navHeader.style.color = "white"
-        freng.style.color = "white"
-        mobiled.style.color = 'white'
-        
-      }
-    }
-    window.addEventListener('load', headerScrolled)
-    onscroll(document, headerScrolled)
-  }
 
-  /* 
-  * Video scrolled pause
-  */
 
-  let vid = select('#bgvideo')
-  if (vid) {
-    const vidScrolled = () => {
-      window.scrollY > 600 ? vid.pause() : vid.play()
-    }
-    window.addEventListener('load', vidScrolled)
-    onscroll(document, vidScrolled);
-  }
 
 
 
@@ -490,7 +382,7 @@ function resumeCarouselRotation() {
    * Initiate Pure Counter 
    */
   new PureCounter();
-
+    }
 })()
 
 document.getElementById("form").addEventListener("submit", function (event) {

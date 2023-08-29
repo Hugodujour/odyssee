@@ -800,6 +800,9 @@ background-size: contain;
   z-index: 997;
   transition: all 0.5s;
   padding: 10px 40px;
+  border-bottom: var(--border);
+  background-color: var(--main-color);
+  
   
 }
 
@@ -875,7 +878,9 @@ background-size: contain;
   max-height: 40px;
 }
 
-
+.pt-40 {
+  margin-top: 60px;
+}
 
 
 .navbar-mobile .dropdown>.dropdown-active {
@@ -897,7 +902,8 @@ background-size: contain;
 */
 .navbar {
   padding: 0;
-  color: white;
+  color: var(--black-color);
+  
 }
 
 .whito {
@@ -920,6 +926,18 @@ background-size: contain;
 
 .navbar li {
   position: relative;
+}
+
+.transitioned {
+  background: var(--main-color);
+  animation: opacited 0.5s 1;
+  height: 100vh;
+}
+
+@keyframes opacited {
+  100% {
+    height: 0vh;
+  }
 }
 
 
@@ -1258,19 +1276,11 @@ background-size: contain;
 }
 
 
-.heroAnim {
-  background: #fff;
-  animation: opacited 1s 1;
-}
-
-@keyframes opacited {
-  0% {
-    opacity: 0.85;
-  }
-
-  100% {
-    opacity: 0;
-  }
+.line-clamp-2 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
 }
 
 #hero li {

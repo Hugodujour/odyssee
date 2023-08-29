@@ -38,15 +38,15 @@
     <div class="container-fluid d-flex align-items-center justify-content-between position-relative">
 
       <div class="logo d-flex align-items-center" id="logow">
-        <a href="#hero" class="scrollto"><img src="/fr/assets/img/Asset 6.png" alt="Texte L&C Vins Bordeaux" class="img-fluid logoted"></a>
-        <a href="#hero" class="scrollto"><img src="/fr/assets/img/Odyssée.png" alt="Texte L&C Vins Bordeaux" class="img-fluid logoted4 blacked d-none d-lg-block ps-3"></a>
+        <a href="/" class="scrollto"><img src="/fr/assets/img/Asset 6.png" alt="Texte L&C Vins Bordeaux" class="logoted"></a>
+        <a href="/" class="scrollto"><img src="/fr/assets/img/Odyssée.png" alt="Texte L&C Vins Bordeaux" class="logoted4 blacked d-none d-lg-block ps-3"></a>
       </div>
 
       <nav id="navbar" class="navbar">
         <div>
           <ul>
             
-              <li class="dropdown"><a class="nav-link scrollto" href="/fr/#odyssee">Nos vins<i class="bi bi-chevron-down" ></i></a>
+              <li class="dropdown"><a class="nav-link scrollto" href="/fr/#">Nos vins<i class="bi bi-chevron-down" ></i></a>
                 <ul class="black" id="chevroned"> 
                   <li><a href="#wine1" class="scrollto" onclick="displayProvence()">Côtes de Provence</a></li>
                   <li><a href="#wine1" class="scrollto" onclick="displayMerlot()">Bordeaux</a></li>
@@ -88,6 +88,7 @@
   </header><!-- End Header -->
 
   <section class="main pt-40" id="ody">
+    <div class="transitioned" id="animatedDiv"></div>
 
 
   
@@ -258,6 +259,13 @@
     AOS.init();
   </script>
   <script src="/assets/js/about.js"></script>
+  <script>
+    const animatedDiv = document.getElementById('animatedDiv');
+
+animatedDiv.addEventListener('animationend', () => {
+  animatedDiv.remove();
+});
+  </script>
 
 
 </body>

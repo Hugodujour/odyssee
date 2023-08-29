@@ -35,19 +35,19 @@
 
 <body>
  
-  <header id="header" class="fixed-top header-transparent">
+  <header id="header" class="fixed-top">
     <div class="container-fluid d-flex align-items-center justify-content-between position-relative">
 
       <div class="logo d-flex align-items-center" id="logow">
-        <a href="#hero" class="scrollto"><img src="assets/img/Asset 6.png" alt="Texte L&C Vins Bordeaux" class="img-fluid logoted whited"></a>
-        <a href="#hero" class="scrollto"><img src="assets/img/Odyssée.png" alt="Texte L&C Vins Bordeaux" class="img-fluid logoted4 whited d-none d-lg-block ps-3"></a>
+        <a href="/" class="scrollto"><img src="assets/img/Asset 6.png" alt="Texte L&C Vins Bordeaux" class=" logoted"></a>
+        <a href="/" class="scrollto"><img src="assets/img/Odyssée.png" alt="Texte L&C Vins Bordeaux" class=" logoted4 blacked d-none d-lg-block ps-3"></a>
       </div>
 
       <nav id="navbar" class="navbar">
         <div>
           <ul>
             
-              <li class="dropdown"><a class="nav-link scrollto" href="#odyssee">Nos vins<i class="bi bi-chevron-down" ></i></a>
+              <li class="dropdown"><a class="nav-link scrollto" href="#">Nos vins<i class="bi bi-chevron-down" ></i></a>
                 <ul class="black" id="chevroned"> 
                   <li><a href="#wine1" class="scrollto" onclick="displayProvence()">Côtes de Provence</a></li>
                   <li><a href="#wine1" class="scrollto" onclick="displayMerlot()">Bordeaux</a></li>
@@ -89,65 +89,19 @@
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
-  <section id="hero">
-    <div class="hero-container welcome heroAnim" id="heroAnim">
-      <img id="cursor-image" src="./assets/img/Asset 6.png" alt="Cursor Image" class="whited bato mb-5" data-aos="fade-up" data-aos-delay="5000">
-      <div class="d-none d-lg-block">
-        <img src="./assets/img/4x/O@4x.png" alt="" data-aos="fade-up" data-aos-delay="800" class="whited img-fluid letter">
-        <img src="./assets/img/4x/D@4x.png" alt="" data-aos="fade-up" data-aos-delay="900" class="whited img-fluid letter ">
-        <img src="./assets/img/4x/Y@4x.png" alt="" data-aos="fade-up" data-aos-delay="1000" class="whited img-fluid letter">
-        <img src="./assets/img/4x/S@4x.png" alt="" data-aos="fade-up" data-aos-delay="1100" class="whited img-fluid letter">
-        <img src="./assets/img/4x/S@4x.png" alt="" data-aos="fade-up" data-aos-delay="1200" class="whited img-fluid letter">
-        <img src="./assets/img/4x/E@4x.png" alt="" data-aos="fade-up" data-aos-delay="1300" class="whited img-fluid letter">
-        <img src="./assets/img/4x/E@4x.png" alt="" data-aos="fade-up" data-aos-delay="1400" class="whited img-fluid letter">
-    </div>
 
-      <ul class="col-lg-6 mt-5 pb-2 d-block d-lg-none">
-        <li data-aos="fade-in" data-aos-delay="1000">
-          <img src="./assets/img/Odyssée.png" class="img-fluid col-sm-12" alt="Logotype L&C vins représentant des bouteilles de vins">
-        </li>
-      </ul>
-    </div>
-
-
-
-
-  </section><!-- End Hero -->
 
   <section class="main b-top" id="ody">
 
 
   
-  <main id="main" class="">
+  <main id="main" class="pt-40">
+    <div class="transitioned" id="animatedDiv"></div>
   
 
       <!-- Section Bouteilles -->
 
-    <div id="videal">
-      <div class="d-md-block d-none">
-        <video playsinline autoplay muted loop id="bgvideo" width="x" height="y">
-        <source src="./assets/video/odyssée vendredi 10 septembre.mp4" type="video/mp4">
-        </video>
-      </div>
-      <div class="d-md-none d-block">
-        <video playsinline autoplay muted loop id="bgvideo" width="x" height="y">
-        <source src="./assets/video/video-phone.mp4" type="video/mp4">
-        </video>
-      </div>
-    </div>
-
-
-
-    <section class="b-ride b-bot">
-      <div class="container-txt">
-        <span class="txt-yes">- Vivez l'expérience Odyssée. - Vivez l'expérience Odyssée. - Vivez l'expérience Odyssée. - Vivez l'expérience Odyssée. - Vivez l'expérience Odyssée.&nbsp;</span>
-        <span class="txt-yes">- Vivez l'expérience Odyssée. - Vivez l'expérience Odyssée. - Vivez l'expérience Odyssée. - Vivez l'expérience Odyssée. - Vivez l'expérience Odyssée.&nbsp;</span>
-      </div>
-    </section>
-
-
-
-    <section id="odyssee" class="product-container b-ride b-bot sand d-flex justify-content-center align-items-center h100" >
+    <section id="odyssee" class=" product-container b-ride b-bot sand d-flex justify-content-center align-items-center h100" >
       <div class="boubou flex-fill sand-inside " >
         <div class="padded  ">
           <div class="d-flex align-items-center justify-content-center">
@@ -395,6 +349,13 @@
     AOS.init();
   </script>
   <script src="assets/js/next.js"></script>
+  <script>
+    const animatedDiv = document.getElementById('animatedDiv');
+
+animatedDiv.addEventListener('animationend', () => {
+  animatedDiv.remove();
+});
+  </script>
 
 
 </body>

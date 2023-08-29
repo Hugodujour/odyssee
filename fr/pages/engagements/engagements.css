@@ -1256,18 +1256,16 @@
   }
   
   
-  .heroAnim {
-    background: #fff;
-    animation: opacited 1s 1;
+  .transitioned {
+    background: var(--main-color);
+    animation: opacited 0.5s 1;
+    height: 100vh;
+    border: var(--border);
   }
   
   @keyframes opacited {
-    0% {
-      opacity: 0.85;
-    }
-  
     100% {
-      opacity: 0;
+      height: 0vh;
     }
   }
   
