@@ -196,3 +196,26 @@ btn.addEventListener('mousemove', e => {
   btn.style.setProperty('--x', xaa + 'px');
   btn.style.setProperty('--y', yaa + 'px');
 });
+
+
+// rectangle fill
+
+document.addEventListener("DOMContentLoaded", function() {
+    var rectangle = document.getElementById("rectangle");
+  
+    window.addEventListener("scroll", updateRectangle);
+  
+    function updateRectangle() {
+      var scrollpercent = (document.documentElement.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight);
+  
+      // Calculate the rectangle's height based on scroll percentage
+      var heightPercent = scrollpercent * 100;
+  
+      // Ensure the height doesn't exceed 100%
+      heightPercent = Math.min(heightPercent, 100);
+  
+      // Set the rectangle's height
+      rectangle.setAttribute("height", heightPercent + "%");
+    }
+  });
+  
