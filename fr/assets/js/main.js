@@ -376,7 +376,7 @@ function resumeCarouselRotation() {
    */
   new PureCounter();
     }
-});
+})
 
 document.getElementById("form")?.addEventListener("submit", function (event) {
   // Prevent the default form submission
