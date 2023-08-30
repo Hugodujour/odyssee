@@ -4,6 +4,7 @@ const nexted = select('#nexted')
 const bottled = select('#bottled')
 const title = select('#title')
 const engagement = select('#engagement')
+const nexted2 = select('#nexted2')
 
 
 delay = 350
@@ -11,6 +12,22 @@ delay = 350
 
 
 nexted.addEventListener('click', () => {
+    nexted.disabled = 'disabled'
+    x++
+    if (x === 1){
+        displayMerlot()
+    }
+    if (x === 2){
+        displaySauvignon()
+    }
+    if(x === 3){
+        displayProvence()
+    }
+    console.log(x)
+    
+})
+
+nexted2.addEventListener('click', () => {
     nexted.disabled = 'disabled'
     x++
     if (x === 1){
