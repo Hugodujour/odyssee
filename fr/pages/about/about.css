@@ -1256,22 +1256,29 @@
   }
   
   .abs {
+    position: absolute;
+  }
+
+  .fix {
     position: fixed;
   }
   
   .transitioned {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background: var(--main-color);
     animation: opacited 0.5s 1;
-    height: 100vh;
   }
-
-
   
   @keyframes opacited {
     100% {
-      height: 0vh;
+      height: 0;
     }
   }
+  
   
   #hero li {
     list-style-type: none;
