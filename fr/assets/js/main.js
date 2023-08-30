@@ -2,7 +2,7 @@
   "use strict";
 
 
-  
+
 
 
     /**
@@ -47,7 +47,7 @@
   }
 
 
-  
+
 
 
 
@@ -78,6 +78,8 @@
       }
     })
   }
+
+
   window.addEventListener('load', navbarlinksActive)
   onscroll(document, navbarlinksActive)
 
@@ -96,13 +98,16 @@
     })
   }
 
+
+
   function isMobile() {
     return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
     }
-    
+ 
     if (!isMobile()) {
     //place script you don't want to run on mobile here
       console.log('Not mobiled')
+    }
 
       /* 
   * Main color
@@ -117,7 +122,7 @@
 
 
 
-
+  
   
 
 
@@ -298,67 +303,6 @@ function resumeCarouselRotation() {
 
   });
   
-    /**
-   * Initiate portfolio lightbox 
-   */
-  const portfolioLightbox = GLightbox({
-    selector: '.portfolio-lightbox'
-  });
-
-  /**
-   * Initiate portfolio details lightbox 
-   */
-  const portfolioDetailsLightbox = GLightbox({
-    selector: '.portfolio-details-lightbox',
-    width: '90%',
-    height: '90vh'
-  });
-
-  /**
-   * Portfolio details slider
-   */
-  new Swiper('.portfolio-details-slider', {
-    speed: 400,
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
-    },
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
-    }
-  });
-
-  /**
-   * Testimonials slider
-   */
-  new Swiper('.testimonials-slider', {
-    speed: 600,
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
-    },
-    slidesPerView: 'auto',
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
-    },
-    breakpoints: {
-      320: {
-        slidesPerView: 1,
-        spaceBetween: 40
-      },
-
-      1200: {
-        slidesPerView: 3,
-      }
-    }
-  });
-
   /**
    * Animation on scroll
    */
@@ -375,8 +319,8 @@ function resumeCarouselRotation() {
    * Initiate Pure Counter 
    */
   new PureCounter();
-    }
-})
+    
+
 
 document.getElementById("form")?.addEventListener("submit", function (event) {
   // Prevent the default form submission
@@ -430,5 +374,5 @@ document.getElementById("form")?.addEventListener("submit", function (event) {
       }
     }
   });
-
   
+});

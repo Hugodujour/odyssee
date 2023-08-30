@@ -812,7 +812,7 @@
     margin-top: 60px;
   }
 
-  @media (max-width: 1000px) {
+  @media (max-width: 990px) {
     .b-mobile {
       border-right: none;
       border-bottom: var(--border);
@@ -820,6 +820,7 @@
     main {
       background-color: var(--main-color);
     }
+
   
   }
   
@@ -1061,7 +1062,11 @@
     .navbar .dropdown .dropdown:hover>ul {
       left: -100%;
     }
-  
+    
+    .photo1 {
+      background-position: top;
+      border-top: var(--border);
+    }
   }
   
   @media (max-width: 1200px) {
