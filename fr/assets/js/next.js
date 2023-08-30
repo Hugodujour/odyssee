@@ -54,7 +54,6 @@ function provence(){
     l2.innerText = l2Pro
     l3.innerText = l3Pro
     accord.innerText = accordPro
-    engagement.innerText = engagementPro
 }
 
 function merlot(){
@@ -75,7 +74,6 @@ function merlot(){
     l2.innerText = l2Mer
     l3.innerText = l3Mer
     accord.innerText = accordMer
-    engagement.innerText = engagementMer
 }
 
 function sauvignon(){
@@ -99,7 +97,6 @@ function sauvignon(){
     l2.innerText = l2Sau
     l3.innerText = l3Sau
     accord.innerText = accordSau
-    engagement.innerText = engagementSau
 
 }
 
@@ -145,15 +142,6 @@ function bottleAnimation(e){
     
 }
 
-// delete heroAnim
-function heroAnim(){
-    const hero = select('#heroAnim')
-    setTimeout(()=> {
-        hero.classList.remove('heroAnim')
-    }, 800)
-}
-
-heroAnim()
 
 const root = document.querySelector(':root');
 
@@ -189,33 +177,17 @@ provence()
 
 
 let btn = document.querySelector('.mouse-cursor-gradient-tracking');
-btn.addEventListener('mousemove', e => {
-  let rect = e.target.getBoundingClientRect();
-  let xaa = e.clientX - rect.left;
-  let yaa = e.clientY - rect.top;
-  btn.style.setProperty('--x', xaa + 'px');
-  btn.style.setProperty('--y', yaa + 'px');
-});
-
-
-// rectangle fill
-
-document.addEventListener("DOMContentLoaded", function() {
-    var rectangle = document.getElementById("rectangle");
-  
-    window.addEventListener("scroll", updateRectangle);
-  
-    function updateRectangle() {
-      var scrollpercent = (document.documentElement.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight);
-  
-      // Calculate the rectangle's height based on scroll percentage
-      var heightPercent = scrollpercent * 100;
-  
-      // Ensure the height doesn't exceed 100%
-      heightPercent = Math.min(heightPercent, 100);
-  
-      // Set the rectangle's height
-      rectangle.setAttribute("height", heightPercent + "%");
+    if (btn){
+        btn.addEventListener('mousemove', e => {
+            let rect = e.target.getBoundingClientRect();
+            let xaa = e.clientX - rect.left;
+            let yaa = e.clientY - rect.top;
+            btn.style.setProperty('--x', xaa + 'px');
+            btn.style.setProperty('--y', yaa + 'px');
+        });
     }
-  });
+
+
+
+
   

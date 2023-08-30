@@ -204,13 +204,6 @@ function resumeCarouselRotation() {
   continuousRotation();
 }
 
-
-
-
-
-
-
-
   /**
    * Back to top button
    */
@@ -383,9 +376,9 @@ function resumeCarouselRotation() {
    */
   new PureCounter();
     }
-})()
+});
 
-document.getElementById("form").addEventListener("submit", function (event) {
+document.getElementById("form")?.addEventListener("submit", function (event) {
   // Prevent the default form submission
   event.preventDefault();
 
@@ -437,3 +430,5 @@ document.getElementById("form").addEventListener("submit", function (event) {
       }
     }
   });
+
+  

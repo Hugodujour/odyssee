@@ -24,7 +24,7 @@
 
   font-size: 16px;
 
-  --four-color: #6595A8 ;
+  --four-color: #C0818E ;
 
 }
 
@@ -110,7 +110,7 @@ p {
 .coule3 {
   color: var(--white-color);
   min-height: 596px;
-  height: 74vh;
+  height: 710px;
   background-image: url('../img/videals.gif');
   z-index: 10;
   background-repeat: no-repeat;
