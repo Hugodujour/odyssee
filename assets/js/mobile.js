@@ -33,4 +33,5 @@ const on = (type, el, listener, all = false) => {
     }
   }, true)
 
-  console.log('hey')
+
+

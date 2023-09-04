@@ -34,6 +34,15 @@
 }
 
 
+.b-bot-black {
+  border-bottom: 1px solid var(--black-color)!important ;
+}
+
+.mained {
+  background-color: var(--main-color);
+  transition: all 0.3s;
+}
+
 body {
   font-family: 'Roboto Mono', monospace;
   color: var(--black-color);
@@ -718,12 +727,18 @@ z-index: -100;
 -moz-transform: translateX(-50%) translateY(-50%);
 -webkit-transform: translateX(-50%) translateY(-50%);
 transform: translateX(-50%) translateY(-50%);
-background: url(placeholder.jpg) no-repeat;
 background-size: contain;
+
+
 
 
 }
 
+.vided {
+  height: 500px;
+  width: 500px;
+  background-color: red;
+}
 
 /*--------------------------------------------------------------
 # Back to top button
@@ -1266,8 +1281,8 @@ background-size: contain;
   background-size: cover;
   position: relative;
   cursor: pointer;
-  
 }
+
 
 
 
@@ -2797,3 +2812,33 @@ height: 100%;
     height: 0;
   }
 }
+
+@keyframes animed {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes closed {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+
+.animed {
+  animation: animed 0.5s 1 ease-in-out;
+}
+
+.animed2 {
+  animation: closed 0.3s 1 ease-out;
+}
+
