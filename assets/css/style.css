@@ -930,17 +930,11 @@ background-size: contain;
 }
 
 
-.navbar a,
-.navbar a:hover {
+.navbar a {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   padding: 8px 16px;
   margin-left: 10px;
-  font-family:'Roboto Mono', monospace;
-  font-size: 1rem;
-  font-weight: 400;
-  white-space: nowrap;
   transition: 0.3s;
 }
 
@@ -1142,7 +1136,7 @@ background-size: contain;
   right: 0;
   left: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
+  /* background: rgba(126, 39, 38, 0.3); */
   transition: 0.3s;
 }
 
@@ -1155,16 +1149,19 @@ background-size: contain;
 .navbar-mobile ul {
   display: block;
   position: absolute;
-  top: 55px;
+  height: 100%;
+  top: 0px;
   right: 15px;
   left: 15px;
-  padding: 10px 0;
   background-color: var(--main-color);
   overflow-y: auto;
   transition: 0.3s;
   border: var(--border);
-  border-radius: 10px;
+  margin-top: 70px;
+  
 }
+
+
 
 .navbar-mobile a,
 .navbar-mobile a:focus {
@@ -1195,18 +1192,26 @@ background-size: contain;
   opacity: 1;
   visibility: visible;
   background:var(--main-color);
+  
 }
 
 .navbar-mobile .dropdown ul li {
   min-width: 200px;
+  
 }
 
 .navbar-mobile .dropdown ul a {
   padding: 10px 20px;
+  
+}
+
+.navbar-mobile ul li{
+  border-bottom: var(--border);
 }
 
 .navbar-mobile .dropdown ul a i {
   font-size: 12px;
+  
 }
 
 .navbar-mobile .dropdown ul a:hover,
@@ -1283,6 +1288,7 @@ background-size: contain;
   flex-direction: column;
   text-align: center;
   margin-left: -30px;
+  padding: 0px 24px;
 }
 
 #hero h1 {
@@ -1327,6 +1333,7 @@ background-size: contain;
   #hero {
     background-attachment: fixed;
   }
+
 }
 
 @media (max-width: 768px) {
@@ -1384,6 +1391,20 @@ section #main {
   section #main {
     padding: 0px 15px;
   }
+  a.nav-link {
+    font-size: 1.8rem;
+    font-family: 'Domine', serif;
+    font-weight: 400;
+  }
+
+  .cached {
+    display: none;
+  }
+}
+
+.franced {
+  margin: 7.5px 0px;
+  border-bottom: none;
 }
 
 section #odyssee {
@@ -2716,11 +2737,19 @@ span {
   font-weight: 600;
 }
 
-.flag {
+.flag, .flag2 {
   height: 28px;
   width: 45px;
-  border-radius: 5px;
-  border: solid 2px var(--black-color);
+  border: var(--border)
+}
+
+.flag2 {
+  filter: grayscale(1);
+  margin-left: 8px ;
+}
+
+.flag2:hover {
+  filter: grayscale(0);
 }
 
 .bot-tittle {
