@@ -241,7 +241,19 @@ let btn = document.querySelector('.mouse-cursor-gradient-tracking');
     }
   }, true)
 
+//mobile toggle classic
+const mobiled = document.getElementById('mobiled')
+const animed = document.getElementById('animed')
+mobiled.addEventListener('click', function () {
+ animed.classList.toggle('animed')
+ heroed.classList.toggle('mained')
+ logow.classList.toggle('blacked')
+ header.classList.toggle('b-bot-black')
+ mobiled.classList.toggle('blacked')
 
+})
+
+console.log('hey')
 
 
   

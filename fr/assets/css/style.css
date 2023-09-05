@@ -882,6 +882,8 @@ background-size: contain;
     
   }
 
+  
+
 }
 
 .mained {
@@ -1221,7 +1223,6 @@ background-size: contain;
   right: 0;
   left: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
   transition: 0.3s;
 }
 
@@ -1234,15 +1235,20 @@ background-size: contain;
 .navbar-mobile ul {
   display: block;
   position: absolute;
-  top: 55px;
+  height: 100%;
+  top: 0px;
   right: 15px;
   left: 15px;
-  padding: 10px 0;
   background-color: var(--main-color);
   overflow-y: auto;
   transition: 0.3s;
   border: var(--border);
-  border-radius: 10px;
+  margin-top: 70px;
+  
+}
+
+.navbar-mobile ul li{
+  border-bottom: var(--border);
 }
 
 .navbar-mobile a,
@@ -1468,6 +1474,17 @@ section #main {
   section #main {
     padding: 0px 15px;
   }
+
+  a.nav-link {
+    font-size: 1.8rem;
+    font-family: 'Domine', serif;
+    font-weight: 400;
+  }
+}
+
+.franced {
+  margin: 7.5px 0px;
+  border-bottom: none;
 }
 
 section #odyssee {
@@ -2800,11 +2817,19 @@ span {
   font-weight: 600;
 }
 
-.flag {
+.flag, .flag2 {
   height: 28px;
   width: 45px;
-  border-radius: 5px;
-  border: solid 2px var(--black-color);
+  border: var(--border)
+}
+
+.flag2 {
+  filter: grayscale(1);
+  margin-left: 8px ;
+}
+
+.flag2:hover {
+  filter: grayscale(0);
 }
 
 .bot-tittle {
