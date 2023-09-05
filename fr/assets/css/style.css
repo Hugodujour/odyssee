@@ -110,7 +110,7 @@ p {
 .coule3 {
   color: var(--white-color);
   min-height: 596px;
-  height: 710px;
+  height: 100vh;
   background-image: url('../img/videals.gif');
   z-index: 10;
   background-repeat: no-repeat;

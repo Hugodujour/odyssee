@@ -1173,7 +1173,6 @@ background-size: contain;
   transition: 0.3s;
   border: var(--border);
   margin-top: 70px;
-  
 }
 
 
@@ -2835,7 +2834,7 @@ height: 100%;
 
 
 .animed {
-  animation: animed 0.5s 1 ease-in-out;
+  animation: animed 0.35s 1 ease-in-out;
 }
 
 .animed2 {
