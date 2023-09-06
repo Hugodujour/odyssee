@@ -244,7 +244,6 @@ h1 {
 }
 
 .colored {
-  
   color: var(--black-color);
   transition: all 0.3s;
 }
@@ -307,7 +306,7 @@ h1 {
   position: sticky;
   width: 100px;
   height: 100px;
-  top: 50%;
+  top: 20%;
   margin-left: -50px; /* moitié width */
 
   z-index: 1;
@@ -963,6 +962,10 @@ background-size: contain;
   z-index: 10;
 }
 
+.h-new{
+  max-height: 600px;
+}
+
 @keyframes opacited {
   100% {
     height: 0;
@@ -1021,8 +1024,8 @@ background-size: contain;
   justify-content: space-between;
   padding: 8px 16px;
   margin-left: 10px;
-  font-family:'Roboto Mono', monospace;
-  font-size: 1rem;
+
+
   font-weight: 400;
   white-space: nowrap;
   transition: 0.3s;
@@ -1266,7 +1269,7 @@ background-size: contain;
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover>a {
-  color: var(--main-color);
+  color: var(--white-color);
 }
 
 .navbar-mobile .getstarted,
@@ -2835,9 +2838,8 @@ span {
   filter: grayscale(0);
 }
 
-.bot-tittle {
-  padding-top: 24px;
-  
+.bot-title {
+  padding: 48px 24px;
 }
 
 

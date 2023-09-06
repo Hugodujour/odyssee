@@ -261,6 +261,7 @@ h1 {
   background: var(--sec-color);
   color: var(--black-color);
   transition: all 0.3s;
+
 }
 
 .full-height {
@@ -1186,11 +1187,7 @@ background-size: contain;
   color: var(--white-color);
 }
 
-.navbar-mobile a:hover,
-.navbar-mobile .active,
-.navbar-mobile li:hover>a {
-  color: var(--main-color);
-}
+
 
 .navbar-mobile .getstarted,
 .navbar-mobile .getstarted:focus {
@@ -2804,6 +2801,7 @@ height: 100%;
   height: 100%;
   background: var(--main-color);
   animation: opacited 0.5s 1;
+  border-bottom: var(--border);
 }
 
 @keyframes opacited {

@@ -3,6 +3,7 @@ const select = (e) => document.querySelector(e)
 const nexted = select('#nexted')
 const bottled = select('#bottled')
 const title = select('#title')
+const title2 = select('#title2')
 const engagement = select('#engagement')
 const nexted2 = select('#nexted2')
 
@@ -66,6 +67,8 @@ function provence(){
 
     bottled.src = 'assets/img/Odyssée rosé.png'
     title.innerText = 'Côtes de Provence'
+    title2.innerText = 'Côtes de Provence'
+
 
     l1.innerText = l1Pro
     l2.innerText = l2Pro
@@ -86,6 +89,7 @@ function merlot(){
 
     bottled.src = 'assets/img/Odyssée rouge.png'
     title.innerText = 'Bordeaux'
+    title2.innerText = 'Bordeaux'
     
     l1.innerText = l1Mer
     l2.innerText = l2Mer
@@ -109,6 +113,7 @@ function sauvignon(){
 
     bottled.src = 'assets/img/Odysée blanc.png'
     title.innerText = 'Sauvignon'
+    title2.innerText = 'Sauvignon'
 
     l1.innerText = l1Sau
     l2.innerText = l2Sau

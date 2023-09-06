@@ -1282,6 +1282,8 @@
     height: 100%;
     background: var(--main-color);
     animation: opacited 0.5s 1;
+    z-index: 1;
+    border-bottom: var(--border);
   }
   
   @keyframes opacited {
@@ -2126,6 +2128,7 @@
     transform-style: preserve-3d; 
     animation: rotate360 60s infinite forwards linear;
     cursor: pointer;
+    z-index: -100;
   }
   .carousel__face { 
     position: absolute;

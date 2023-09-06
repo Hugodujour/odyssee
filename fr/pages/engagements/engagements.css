@@ -1275,6 +1275,7 @@
     height: 100%;
     background: var(--main-color);
     animation: opacited 0.5s 1;
+    border-bottom: var(--border);
   }
   
   @keyframes opacited {
