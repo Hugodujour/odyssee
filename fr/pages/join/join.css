@@ -69,14 +69,16 @@
     width: auto;
   }
   
-  
+
   
   .four {
     background-color: var(--four-color);
   }
   
   
-  
+  #mobiled {
+    color: var(--black-color);
+  }
   
   .coule4{
     background: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.7)), top center;
@@ -2801,6 +2803,3 @@
     color: var(--black-color);
   }
   
-  #mobiled {
-    color: var(--black-color);
-  }

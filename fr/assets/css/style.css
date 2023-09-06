@@ -737,6 +737,9 @@ background-position: 0 0,16px 16px;
   color: var(--black-color);
 }
 
+#mobiled {
+  color: var(--black-color);
+}
 
 /*--------------------------------------------------------------
 # Background Video

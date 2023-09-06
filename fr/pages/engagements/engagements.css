@@ -2763,7 +2763,9 @@
     
   }
   
-  
+  #mobiled {
+    color: var(--black-color);
+  }
   
   .bot-desc {
   
