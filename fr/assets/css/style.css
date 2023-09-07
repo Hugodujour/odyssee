@@ -1,10 +1,10 @@
 :root {
   
-  --main-color: #F6BDAC ;
+  --main-color: #D9CDA9 ;
   --sec-color: #EAE4D5 ;
 
-  --black-color: #222;
-  --white-color: #fff;
+  --black-color: #105b55;
+  --white-color: #FEF6F3;
 
   --main-color-pro:#F6BDAC ;
   --sec-color-pro: #F3C4B6;
@@ -24,13 +24,13 @@
 
   font-size: 16px;
 
-  --four-color: #C0818E ;
+  --four-color: #437a65;
 
 }
 
 
 .whitee {
-  color: #fff;
+  color: var(--main-color)!important;
 }
 
 
@@ -654,7 +654,7 @@ background-position: 0 0,16px 16px;
   left: -50%;
   z-index: 0;
   background: url(../img/Odyssée5.png) repeat;
-  filter: brightness(0%) opacity(0.1) ;
+  filter: brightness(100%) opacity(0.1) ;
   background-size: 600px;
   transform: rotate(-30deg);
   padding: 720px;
@@ -710,22 +710,49 @@ background-position: 0 0,16px 16px;
   border-top: var(--border);
 }
 
+.b-top-w {
+  border-top: 1px solid var(--main-color);
+}
+
+
 .b-bot {
   border-bottom: var(--border);
+}
+
+.b-bot-w {
+  border-bottom: 1px solid var(--main-color);
 }
 
 .b-left {
   border-left: var(--border);
 }
 
+.b-left-w {
+  border-left: 1px solid var(--main-color);
+}
+
 .b-right {
   border-right: var(--border);
+}
+
+.b-right-w {
+  border-right: 1px solid var(--main-color);
 }
 
 .b-ride {
   border-right: var(--border);
   border-left: var(--border);
 }
+
+.b-ride-w {
+  border-right: 1px solid var(--main-color);
+  border-left: 1px solid var(--main-color);
+}
+
+.b-ride-w {
+  border: 1px solid var(--main-color);
+}
+
 
 .b-all {
   border: var(--border);
