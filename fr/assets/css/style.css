@@ -111,7 +111,7 @@ p {
   color: var(--white-color);
   min-height: 596px;
   height: 100vh;
-  background-image: url('../img/videals.gif');
+  background-image: url('../img/videals.webp');
   z-index: 10;
   background-repeat: no-repeat;
   background-size: cover ;
@@ -883,8 +883,11 @@ background-size: contain;
 
   #nexted, .nexted {
     height: 42px;
-    width: 42px;
-    
+    width: 42px; 
+  }
+
+  #wine1 {
+    height: 121px;
   }
 
   
@@ -2872,7 +2875,6 @@ height: 100%;
   font-size: 1.2rem;
 }
 #wine1::before {
-  background-color: red;
   height: 340px;
   display: block; 
   content: " "; 
