@@ -360,7 +360,7 @@ h1 {
   background: var(--main-color) url('../img/fleche-droite.png');
   background-size: 30px;
   background-repeat: no-repeat;
-  background-position: 56% 50%;
+  background-position: 50% 50%;
   border-radius: 50%;
   transition: all 0.15s;
   border: var(--border);
