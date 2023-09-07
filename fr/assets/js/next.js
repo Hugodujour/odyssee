@@ -65,7 +65,7 @@ function provence(){
     // root.style.setProperty('--sec-color', 'var(--main-color-mer)');
     // root.style.setProperty('--third-color', 'var(--third-color-pro)');
 
-    bottled.src = 'assets/img/Odyssée rosé.png'
+    bottled.src = 'assets/img/Odyssée-rosé.webp'
     title.innerText = 'Côtes de Provence'
     title2.innerText = 'Côtes de Provence'
 
@@ -87,7 +87,7 @@ function merlot(){
     // root.style.setProperty('--third-color', 'var(--third-color-mer)');
 
 
-    bottled.src = 'assets/img/Odyssée rouge.png'
+    bottled.src = 'assets/img/Odyssée-rouge.webp'
     title.innerText = 'Bordeaux'
     title2.innerText = 'Bordeaux'
     
@@ -111,7 +111,7 @@ function sauvignon(){
   
     
 
-    bottled.src = 'assets/img/Odysée blanc.png'
+    bottled.src = 'assets/img/Odysée-blanc.webp'
     title.innerText = 'Sauvignon'
     title2.innerText = 'Sauvignon'
 

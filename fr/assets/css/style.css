@@ -477,8 +477,11 @@ h1 {
   filter: brightness(0);
 }
 
+
+
+
 .sand {
-  background: url('../img/table.jpg');
+  background: url('../img/table.webp');
   background-repeat: no-repeat;
   background-position: 0% 70%;
   background-size: cover;
@@ -2591,6 +2594,8 @@ span {
   font-family: 'Domine', serif;
 }
 
+
+
 .contented h2, .contented h3 {
   font-family: 'Domine', serif;
 }
@@ -2865,5 +2870,14 @@ height: 100%;
   font-weight: bold;
   font-family: 'Domine', serif;
   font-size: 1.2rem;
+}
+#wine1::before {
+  background-color: red;
+  height: 340px;
+  display: block; 
+  content: " "; 
+  margin-top: -285px; 
+
+  visibility: hidden; 
 }
 
