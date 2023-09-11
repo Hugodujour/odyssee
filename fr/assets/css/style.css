@@ -4,7 +4,7 @@
   --sec-color: #EAE4D5 ;
 
   --black-color: #0f1e18;
-  --white-color: #FEF6F3;
+  --white-color: #faeec6;
 
   --main-color-pro:#F6BDAC ;
   --sec-color-pro: #F3C4B6;
@@ -30,14 +30,14 @@
 
 
 .whitee {
-  color: var(--main-color)!important;
+  color: var(--white-color)!important;
 }
 
 
 body {
   font-family: 'Roboto Mono', monospace;
-  color: var(--black-color);
-  background-color: var(--main-color);
+  color: var(--white-color);
+  background-color: var(--black-color);
   background-size: cover;
   min-width: 100%;
   height: 100%;
@@ -164,7 +164,7 @@ h1 {
   font-weight: 1000;
   font-size: 60px;
   background-color: var(--main-color);
-  color: var(--black-color);
+  color: var(--white-color);
 }
 
 .contact-item:hover a {
@@ -222,7 +222,7 @@ h1 {
 }
 
 .abouted {
-  color: var(--black-color);
+  color: var(--white-color);
   padding: 0px 60px;
   display: flex;
   justify-content: center;
@@ -244,7 +244,7 @@ h1 {
 }
 
 .colored {
-  color: var(--black-color);
+  color: var(--white-color);
   transition: all 0.3s;
 }
 
@@ -310,7 +310,7 @@ h1 {
   margin-left: -50px; /* moitié width */
 
   z-index: 1;
-  background: var(--main-color) url('../img/fleche-droite.png');
+  background: url('../img/fleche-droite.png');
   background-size: 35px;
   background-repeat: no-repeat;
   background-position: center;
@@ -572,7 +572,7 @@ border: var(--border);
 }
 
 #main {
-  background-color: var(--main-color);
+  background-color: var(--four-color);
   padding: 0;
   transition: background-color 0.5s ease;
 }
@@ -609,7 +609,7 @@ border: var(--border);
   font-size: 25px;
   white-space: nowrap;
   animation: Scroll 35s linear infinite;
-  color: var(--black-color);
+  color: var(--white-color);
 }
 
 @keyframes Scroll {
@@ -767,7 +767,7 @@ background-position: 0 0,16px 16px;
 }
 
 #mobiled {
-  color: var(--black-color);
+  color: var(--white-color);
 }
 
 /*--------------------------------------------------------------
@@ -873,7 +873,7 @@ background-size: contain;
   transition: all 0.5s;
   padding: 10px 40px;
   border-bottom: var(--border);
-  background-color: var(--main-color);
+  background-color: var(--four-color);
   
   
 }
@@ -912,13 +912,6 @@ background-size: contain;
     height: 42px;
     width: 42px; 
   }
-
-  #wine1 {
-    height: 121px;
-  }
-
-  
-
 }
 
 .mained {
@@ -1023,7 +1016,7 @@ background-size: contain;
 */
 .navbar {
   padding: 0;
-  color: var(--black-color);
+  color: var(--white-color);
   
 }
 
@@ -2900,13 +2893,5 @@ height: 100%;
   font-weight: bold;
   font-family: 'Domine', serif;
   font-size: 1.2rem;
-}
-#wine1::before {
-  height: 340px;
-  display: block; 
-  content: " "; 
-  margin-top: -285px; 
-
-  visibility: hidden; 
 }
 

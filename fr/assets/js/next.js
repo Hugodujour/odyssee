@@ -112,8 +112,8 @@ function sauvignon(){
     
 
     bottled.src = 'assets/img/Odysée-blanc.webp'
-    title.innerText = 'Sauvignon'
-    title2.innerText = 'Sauvignon'
+    title.innerText = 'Sauvignon blanc'
+    title2.innerText = 'Sauvignon blanc'
 
     l1.innerText = l1Sau
     l2.innerText = l2Sau
