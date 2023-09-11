@@ -2807,6 +2807,6 @@
     color: var(--black-color);
   }
  
-  a.nav-link {
-    color: var(--white-color);
+  a.nav-link{
+    color: #fff;
   }
