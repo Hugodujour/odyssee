@@ -4,14 +4,30 @@
 //boat
 const cursorImage = document.getElementById('cursor-image');
 const heroSection = document.getElementById('hero');
+const zPos = []
 
 heroSection.addEventListener('click', (event) => {
   const xPos = event.clientX;
   const yPos = event.clientY;
+  
 
   cursorImage.style.left = xPos + 'px';
   cursorImage.style.top = yPos + 'px';
   cursorImage.style.opacity = "1"
+
+  console.log(`x: ${xPos}`)
+  zPos.unshift(xPos)
+  const newPos = zPos[1]
+  
+  // commence après le 1er clic
+  if (zPos.length > 1) {
+    console.log(newPos)
+
+    
+    cursorImage.style.transform = newPos > xPos ? 'scaleX(-1)' : '';
+
+  }
+
 });
 
 

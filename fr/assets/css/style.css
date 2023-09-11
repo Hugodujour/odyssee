@@ -2902,3 +2902,10 @@ a.nav-link{
   color: #fff;
 }
 
+::marker {
+  color: #fff;
+}
+
+#wine1 {
+  scroll-margin-top: -5px;
+}

@@ -6,6 +6,8 @@ const title = select('#title')
 const title2 = select('#title2')
 const engagement = select('#engagement')
 const nexted2 = select('#nexted2')
+const imgPro = select ('#img-pro')
+
 
 
 delay = 350
@@ -149,6 +151,28 @@ const accordSau = `Sublime le carpaccio de noix de Saint-Jacques, et fruits de m
 
 
 
+
+
+
+  /**
+   * Scrolls to an element with header offset
+   */
+  const scrollto = (el) => {
+    let header = select('#header')
+    let offset = header.offsetHeight
+
+
+    let elementPos = select(el).offsetTop
+    window.scrollTo({
+      top: elementPos - offset + 1 ,
+      behavior: 'smooth'
+    })
+
+  }
+
+  imgPro.addEventListener('click', ()=> {
+    wine1.scrollIntoView() + 200
+  })
 
 
 
