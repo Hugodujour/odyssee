@@ -256,8 +256,6 @@ mobiled.addEventListener('click', function () {
  header.classList.toggle('b-bot-black')
  mobiled.classList.toggle('blacked')
 
-
-
 })
 
 

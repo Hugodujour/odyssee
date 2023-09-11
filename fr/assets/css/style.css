@@ -29,6 +29,7 @@
 }
 
 
+
 .whitee {
   color: var(--white-color)!important;
 }
@@ -983,7 +984,7 @@ background-size: contain;
   left: 0;
   width: 100%;
   height: 100%;
-  background: var(--main-color);
+  background: var(--four-color);
   animation: opacited 0.5s 1;
   z-index: 10;
 }
