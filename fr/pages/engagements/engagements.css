@@ -146,6 +146,7 @@
   h5,
   h6 {
     font-family:'Domine', serif;
+    color: #fff;
   }
   
   h1 {
@@ -610,6 +611,10 @@
     background-size: 80px 80px; 
     background-repeat: repeat;
     
+  }
+
+  ::marker {
+    color: #fff;
   }
   
   .provenced2::before {
@@ -1273,7 +1278,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: var(--main-color);
+    background: var(--four-color);
     animation: opacited 0.5s 1;
     border-bottom: var(--border);
   }

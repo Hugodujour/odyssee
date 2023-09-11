@@ -2800,7 +2800,7 @@ height: 100%;
   width: 100%;
   height: 100%;
   background: var(--four-color);
-  animation: opacited 1s 1;
+  animation: opacited 1.2s 1;
   border-bottom: var(--border);
 }
 
@@ -2808,7 +2808,7 @@ height: 100%;
   0%{
     height: 100%;
   }
-  60%{
+  70%{
     height: 100%;
   }
   100% {

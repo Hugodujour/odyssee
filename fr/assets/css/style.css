@@ -141,6 +141,7 @@ h4,
 h5,
 h6 {
   font-family:'Domine', serif;
+  color: #fff;
 }
 
 h1 {
@@ -2894,5 +2895,6 @@ height: 100%;
   font-weight: bold;
   font-family: 'Domine', serif;
   font-size: 1.2rem;
+  color: #fff;
 }
 
