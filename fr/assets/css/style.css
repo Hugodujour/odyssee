@@ -1,6 +1,6 @@
 :root {
   
-  --main-color: #D9CDA9 ;
+  --main-color: #faeec6 ;
   --sec-color: #EAE4D5 ;
 
   --black-color: #0f1e18;
@@ -312,12 +312,12 @@ h1 {
   margin-left: -50px; /* moitié width */
 
   z-index: 1;
-  background: url('../img/fleche-droite.png');
+  background: var(--four-color);
   background-size: 35px;
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 50%;
-  transition: all 0.3s;
+
 
 }
 
@@ -346,9 +346,10 @@ h1 {
 #nexted:hover {
   /* animation: buttoned 2s */
   cursor: pointer;
-  background-color: var(--four-color);
+  /* background-color: rgba(0, 0, 0, 0); */
   transform: translateY(0px);
   box-shadow: none;
+
   
 }
 
@@ -359,7 +360,7 @@ h1 {
   top: 50%;
   
   z-index: 1;
-  background: var(--main-color) url('../img/fleche-droite.png');
+  background: #FFBC1F url('../img/fleche-droite.png');
   background-size: 30px;
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -367,8 +368,8 @@ h1 {
   transition: all 0.15s;
   border: var(--border);
 
-  box-shadow: 0px 6px 1px var(--main-color), 0px 6px 1px 1px var(--black-color);
-  transform: translateY(-7px);
+  box-shadow: 0px 8px 1px var(--black-color), 0px 8px 1px 1px var(--black-color);
+  transform: translateY(-8px);
   
 }
 
@@ -379,7 +380,7 @@ h1 {
   top: 50%;
   
   z-index: 1;
-  background: var(--main-color) url('../img/fleche-droite.png');
+  background: #FFBC1F url('../img/fleche-droite.png');
   background-size: 18px;
   background-repeat: no-repeat;
   background-position: 56% 50%;
@@ -1947,11 +1948,11 @@ section {
   padding: 8px 28px;
   transition: 0.5s;
   margin-top: 10px;
-  background: var(--main-color);
+  background: #FFBC1F;
   color: var(--black-color);
   border-radius: 50px;
   border: 1px solid var(--black-color);
-  box-shadow: 0px 5px 1px var(--main-color), 0px 5px 1px 1px var(--black-color);
+  box-shadow: 0px 5px 1px var(--black-color), 0px 5px 1px 1px var(--black-color);
   transition: all 0.15s;
   transform: translateY(-10px);
 }
@@ -1977,8 +1978,6 @@ section {
 
 .call:hover {
  box-shadow: none;
- background-color: var(--four-color);
- color: var(--black-color);
  transform: translateY(0px);
 }
 
@@ -1995,7 +1994,6 @@ section {
 
 .call-pro {
   font-family: 'Domine', serif;
-
   font-weight: 800;
   font-size: 16px;
   letter-spacing: 1px;
@@ -2003,11 +2001,10 @@ section {
   padding: 8px 28px;
   transition: 0.5s;
   margin-top: 10px;
-  background: var(--main-color);
-  color: var(--black-color);
+  color: #FFBC1F;
   border-radius: 50px;
-  border: 1px solid var(--black-color);
-  box-shadow: 0px 5px 1px var(--main-color), 0px 5px 1px 1px var(--black-color);
+  border: 1px solid #FFBC1F;
+  box-shadow: 0px 5px 1px, 0px 5px 1px 1px #FFBC1F;
   transition: all 0.15s;
   transform: translateY(-10px);
 }
@@ -2053,9 +2050,10 @@ section {
 .call-pro:hover,
 .call-mer:hover {
   box-shadow: none;
-  background-color: var(--four-color);
+  background-color: #FFBC1F;
   color: var(--black-color);
   transform: translateY(0px);
+  border-color: var(--black-color);
  }
 /*--------------------------------------------------------------
 # Portfolio
