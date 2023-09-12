@@ -541,6 +541,10 @@ border: var(--border);
   min-height: 800px;
 }
 
+.w100 {
+  width: 100%;
+}
+
 .w50 {
   width: 50vw;
 }
@@ -768,7 +772,7 @@ background-position: 0 0,16px 16px;
 }
 
 #mobiled {
-  color: var(--white-color);
+  color: #fff;
 }
 
 /*--------------------------------------------------------------
@@ -1292,7 +1296,7 @@ background-size: contain;
   top: 0px;
   right: 15px;
   left: 15px;
-  background-color: var(--main-color);
+  background-color: var(--four-color);
   overflow-y: auto;
   transition: 0.3s;
   border: var(--border);
@@ -2942,5 +2946,5 @@ a.nav-link{
 }
 
 #wine1 {
-  scroll-margin-top: -5px;
+  scroll-margin: -5px;
 }

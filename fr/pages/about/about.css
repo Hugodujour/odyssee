@@ -946,7 +946,7 @@
   
   .navbar a:hover,
   .navbar li:focus>a {
-    text-decoration: underline var(--border);
+    text-decoration: underline 1px solid #fff;
     text-underline-offset: 10px;
   }
   
@@ -1156,7 +1156,7 @@
     top: 0px;
     right: 15px;
     left: 15px;
-    background-color: var(--main-color);
+    background-color: var(--four-color);
     overflow-y: auto;
     transition: 0.3s;
     border: var(--border);
@@ -2813,5 +2813,10 @@
   }
   
   #mobiled {
-    color: var(--black-color);
+    color: #fff;
+  }
+
+  .big {
+    height: 94vh;
+    min-height: 800px;
   }

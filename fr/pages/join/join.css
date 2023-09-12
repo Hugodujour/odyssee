@@ -77,7 +77,7 @@
   
   
   #mobiled {
-    color: var(--black-color);
+    color: #fff;
   }
   
   .coule4{
@@ -1158,7 +1158,7 @@
     top: 0px;
     right: 15px;
     left: 15px;
-    background-color: var(--main-color);
+    background-color: var(--four-color);
     overflow-y: auto;
     transition: 0.3s;
     border: var(--border);
