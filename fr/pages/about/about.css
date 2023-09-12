@@ -883,7 +883,7 @@
   }
   
   .fra {
-    text-decoration: underline var(--border);
+    text-decoration: underline 1px solid #fff;
     text-underline-offset: 10px;
   }
   
@@ -946,8 +946,9 @@
   
   .navbar a:hover,
   .navbar li:focus>a {
-    text-decoration: underline 1px solid #fff;
+    text-decoration: underline 1px var(--main-color);
     text-underline-offset: 10px;
+    color: var(--main-color);
   }
   
   .navbar .dropdown ul {
@@ -1545,6 +1546,11 @@
     }
 
     a.nav-link {
+      font-size: 1.8rem;
+      font-family: 'Domine', serif;
+      font-weight: 400;
+    }
+    a.nav-link:hover {
       font-size: 1.8rem;
       font-family: 'Domine', serif;
       font-weight: 400;

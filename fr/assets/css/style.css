@@ -978,7 +978,7 @@ background-size: contain;
 }
 
 .fra {
-  text-decoration: underline var(--border);
+  text-decoration: underline 1px solid #fff;
   text-underline-offset: 10px;
 }
 
@@ -1081,8 +1081,9 @@ background-size: contain;
 
 .navbar a:hover,
 .navbar li:focus>a {
-  text-decoration: underline var(--border);
+  text-decoration: underline 1px solid var(--white-color);
   text-underline-offset: 10px;
+  color: var(--main-color);
 }
 
 .navbar .dropdown ul {
@@ -2948,3 +2949,5 @@ a.nav-link{
 #wine1 {
   scroll-margin: -5px;
 }
+
+

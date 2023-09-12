@@ -892,7 +892,7 @@
   }
   
   .fra {
-    text-decoration: underline var(--border);
+    text-decoration: underline 1px solid #fff;
     text-underline-offset: 10px;
   }
   
@@ -955,7 +955,7 @@
   
   .navbar a:hover,
   .navbar li:focus>a {
-    text-decoration: underline var(--border);
+    text-decoration: underline 1px solid var(--main-color);
     text-underline-offset: 10px;
   }
   
@@ -1542,6 +1542,11 @@
     }
 
     a.nav-link {
+      font-size: 1.8rem;
+      font-family: 'Domine', serif;
+      font-weight: 400;
+    }
+    a.nav-link:hover {
       font-size: 1.8rem;
       font-family: 'Domine', serif;
       font-weight: 400;
@@ -2816,3 +2821,6 @@
     min-height: 800px;
   }
   
+  a.nav-link:hover {
+    color: var(--main-color);
+  }

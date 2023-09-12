@@ -1,10 +1,10 @@
 :root {
   
-  --main-color: #D9CDA9 ;
+  --main-color: #faeec6 ;
   --sec-color: #EAE4D5 ;
 
   --black-color: #222;
-  --white-color: #fff;
+  --white-color: #faeec6;
 
   --main-color-pro:#F6BDAC ;
   --sec-color-pro: #F3C4B6;
@@ -905,7 +905,7 @@ background-size: contain;
 }
 
 .fra {
-  text-decoration: underline var(--border);
+  text-decoration: underline 1px solid #fff;
   text-underline-offset: 10px;
 }
 
@@ -963,7 +963,7 @@ background-size: contain;
 
 .navbar a:hover,
 .navbar li:focus>a {
-  text-decoration: underline var(--border);
+  text-decoration: underline 1px solid var(--main-color);
   text-underline-offset: 10px;
 }
 
