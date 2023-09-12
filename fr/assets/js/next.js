@@ -18,13 +18,13 @@ nexted.addEventListener('click', () => {
     nexted.disabled = 'disabled'
     x++
     if (x === 1){
-        displayMerlot()
+        displayProvence()
     }
     if (x === 2){
         displaySauvignon()
     }
     if(x === 3){
-        displayProvence()
+        displayMerlot()
     }
     console.log(x)
     
@@ -34,13 +34,14 @@ nexted2.addEventListener('click', () => {
     nexted.disabled = 'disabled'
     x++
     if (x === 1){
-        displayMerlot()
+        displayProvence()
+        
     }
     if (x === 2){
         displaySauvignon()
     }
     if(x === 3){
-        displayProvence()
+        displayMerlot()
     }
     console.log(x)
     
@@ -198,6 +199,14 @@ function displayMerlot(){
     setTimeout(() => {
         merlot()
     }, delay)
+    x = 0
+}
+
+function displayProvence(){
+    bottleAnimation(bottled)
+    setTimeout(() => {
+        provence()
+    }, delay)
     x = 1
 }
 
@@ -209,15 +218,8 @@ function displaySauvignon(){
     x = 2
 }
 
-function displayProvence(){
-    bottleAnimation(bottled)
-    setTimeout(() => {
-        provence()
-    }, delay)
-    x = 0
-}
-
-provence()
+console.log('hahahahahahha')
+merlot()
 
 
 

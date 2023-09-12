@@ -377,7 +377,7 @@ h1 {
   position: sticky;
   width: 42px;
   height: 42px;
-  top: 50%;
+  bottom: 100%;
   
   z-index: 1;
   background: #FFBC1F url('../img/fleche-droite.png');
@@ -388,15 +388,13 @@ h1 {
   transition: all 0.15s;
   border: var(--border);
 
-  box-shadow: 0px 5px 1px var(--main-color), 0px 5px 1px 1px var(--black-color);
-  transform: translateY(-6px);
+  box-shadow: 0px 5px 1px var(--black-color), 0px 5px 1px 1px var(--black-color);
+  transform: translateY(-5px);
 }
 
 #nexted2:hover {
   box-shadow: none;
   transform: translateY(0px);
-  background-color: var(--four-color);
-  
 
 }
 
@@ -1224,6 +1222,16 @@ background-size: contain;
   .cached {
     display: none;
   }
+
+  .gifed {
+    background-image: url('../img/videals.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .opa {
+    background: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.7)), top center;
+  }
 }
 
 
@@ -2009,6 +2017,24 @@ section {
   transform: translateY(-10px);
 }
 
+.call-pro2 {
+  font-family: 'Domine', serif;
+  font-weight: 800;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 28px;
+  transition: 0.5s;
+  margin-top: 10px;
+  color: #FFBC1F;
+  border-radius: 50px;
+  border: 1px solid #FFBC1F;
+  box-shadow: 0px 5px 1px, 0px 5px 1px 1px #FFBC1F;
+  transition: all 0.15s;
+  transform: translateY(-10px);
+  background: none;
+}
+
  .call-mer {
   font-family: 'Domine', serif;
   font-weight: 800;
@@ -2048,7 +2074,8 @@ section {
 
 .call-sau:hover,
 .call-pro:hover,
-.call-mer:hover {
+.call-mer:hover,
+.call-pro2:hover {
   box-shadow: none;
   background-color: #FFBC1F;
   color: var(--black-color);

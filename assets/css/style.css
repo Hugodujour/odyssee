@@ -1152,7 +1152,6 @@ background-size: contain;
   right: 0;
   left: 0;
   bottom: 0;
-  /* background: rgba(126, 39, 38, 0.3); */
   transition: 0.3s;
 }
 
@@ -1169,13 +1168,16 @@ background-size: contain;
   top: 0px;
   right: 15px;
   left: 15px;
-  background-color: var(--main-color);
+  background-color: var(--four-color);
   overflow-y: auto;
   transition: 0.3s;
   border: var(--border);
   margin-top: 70px;
 }
 
+.foured {
+  background-color: var(--four-color);
+}
 
 
 .navbar-mobile a,
@@ -2849,4 +2851,10 @@ height: 100%;
 animation: 1.1s linear infinite boat;
 }
 
+a.nav-link {
+  color: #fff;
+}
 
+a.nav-link:hover {
+  color: var(--main-color);
+}
