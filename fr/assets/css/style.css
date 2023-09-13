@@ -1076,7 +1076,7 @@ background-size: contain;
 .navbar a:hover {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: start;
   padding: 8px 16px;
   margin-left: 10px;
 
@@ -1557,6 +1557,11 @@ section #main {
 .franced {
   margin: 7.5px 0px;
   border-bottom: none;
+  
+
+
+
+
 }
 
 section #odyssee {
