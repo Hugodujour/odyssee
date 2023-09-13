@@ -1023,6 +1023,20 @@ background-size: contain;
   }
 }
 
+.animed2 {
+  animation: animed2 0.35s 1 ease-in-out;
+}
+
+@keyframes animed2 {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
