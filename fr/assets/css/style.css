@@ -300,6 +300,7 @@ h1 {
   transform: translateY(-10px);
 }
 
+
 .foule {
   min-width: 63vw;
 }
@@ -1250,6 +1251,13 @@ background-size: contain;
 
   .opa {
     background: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.7)), top center;
+  }
+
+}
+
+@media (min-width: 1200px){
+  .bottle-img {
+    width: 135px;
   }
 }
 
