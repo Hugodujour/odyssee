@@ -2830,8 +2830,8 @@
   }
 
   .big {
-    height: 94vh;
-    min-height: 800px;
+    height: 60vh;
+    min-height: 400px;
   }
   
   a.nav-link:hover {
