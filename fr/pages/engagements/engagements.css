@@ -86,7 +86,7 @@
   }
 
   .backgreen {
-    background: url('/fr/assets/img/wines2.jpeg');
+    background: url('/fr/assets/img/wines2.webp');
     background-size: contain;
     background-position: center;
   }
@@ -119,7 +119,7 @@
   
   
   .videaled {
-    background-image: url('/fr/assets/img/wines.jpeg.jpg');
+    background-image: url('/fr/assets/img/wines.webp');
     height: 100vh;
     background-size: cover;
     background-position: center;
@@ -2182,7 +2182,7 @@
   }
   
   .carousel__face:nth-child(1) {
-    background-image: url("/fr/assets/img/Matthieu-et-Jean.jpeg");
+    background-image: url("/fr/assets/img/Matthieu-et-Jean.webp");
     transform: rotateY(  0deg) translateZ(430px); }
   .carousel__face:nth-child(2) { 
     background-image: url("/fr/assets/img/portfolio/bottle1.jpg");
@@ -2203,7 +2203,7 @@
     background-image: url("/fr/assets/img/Odyssée\ plage\ photo\ 3\ \(1\).jpeg");
    transform: rotateY(240deg) translateZ(430px); }
   .carousel__face:nth-child(8) {
-    background-image: url("/fr/assets/img/Matthieu-et-Jean.jpeg");
+    background-image: url("/fr/assets/img/Matthieu-et-Jean.webp");
     transform: rotateY(280deg) translateZ(430px); }
   .carousel__face:nth-child(9) {
     background-image: url("/fr/assets/img/portfolio/bottle2.jpg");

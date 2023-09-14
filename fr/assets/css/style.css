@@ -483,7 +483,7 @@ h1 {
 
 
 .sand {
-  background: url('../img/table3.jpg');
+  background: url('../img/table3.webp');
   background-repeat: no-repeat;
   background-position: center 70%;
   background-size: cover;
@@ -510,7 +510,7 @@ border: var(--border);
 
 
 .photo1 {
-  background: url('../img/Matthieu-et-Jean.jpeg');
+  background: url('../img/Matthieu-et-Jean.webp');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -2992,7 +2992,7 @@ a.nav-link{
 }
 
 .backgreen {
-  background: url('/fr/assets/img/wines2.png');
+  background: url('/fr/assets/img/wines2.webp');
   background-size: contain;
   background-position: center;
 }
