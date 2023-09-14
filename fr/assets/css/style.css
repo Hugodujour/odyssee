@@ -1512,15 +1512,7 @@ background-size: contain;
   }
 }
 
-#cursor-image {
-  position: absolute;
-  width: 100px;
-  height: 50px;
-  pointer-events: none; /* Permet au curseur de passer "au-dessus" de l'image */
-  transition: all 0.5s ease-in-out;
-  animation: 1s linear infinite boat;
-  opacity: 0;
-}
+
 
 
 
