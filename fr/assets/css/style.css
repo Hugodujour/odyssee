@@ -483,9 +483,9 @@ h1 {
 
 
 .sand {
-  background: url('../img/table.webp');
+  background: url('../img/table3.jpg');
   background-repeat: no-repeat;
-  background-position: 0% 70%;
+  background-position: center 70%;
   background-size: cover;
 }
 
@@ -2992,7 +2992,7 @@ a.nav-link{
 }
 
 .backgreen {
-  background: url('/fr/assets/img/wines2.jpeg');
+  background: url('/fr/assets/img/wines2.png');
   background-size: contain;
   background-position: center;
 }

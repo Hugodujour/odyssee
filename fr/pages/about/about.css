@@ -467,7 +467,7 @@
   
   
   .photo1 {
-    background: url('/fr/assets/img/Matthieu-et-Jean.jpeg');
+    background: url('/fr/assets/img/Matthieu-et-Jean.jpeg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -481,7 +481,7 @@
   }
   
   .photo3 {
-    background: url('/fr/assets/img/Odyssée\ plage\ photo\ 3\ \(1\).jpeg');
+    background: url('/fr/assets/img/Odyssée\ plage\ photo\ 3\ \(1\).jpeg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
