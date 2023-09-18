@@ -1,0 +1,22 @@
+name: Cache Control
+
+on:
+  push:
+    branches:
+      - master  # Change this to your default branch if needed
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set cache headers
+      run: |
+        echo -e "Cache-Control: public, max-age=31536000\n$(cat index.html)" > index.html
+        git config --global user.name "GitHub Actions"
+        git config --global user.email "actions@github.com"
+        git commit -m "Set cache headers" index.html
+        git push
