@@ -81,17 +81,7 @@
   
 }});
 
-  /**
-   * Animation on scroll
-   */
-  window.addEventListener('load', () => {
-    AOS.init({
-      duration: 5000,
-      easing: "ease-in-out",
-      once: true,
-      mirror: false
-    });
-  });
+
 
 
 
