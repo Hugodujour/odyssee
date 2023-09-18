@@ -2989,3 +2989,7 @@ a.nav-link{
   background-size: contain;
   background-position: center;
 }
+
+.new-bottle {
+  max-height: 600px;
+}
