@@ -89,7 +89,7 @@ function startTouch(event) {
 function handleTouch(event) {
   if (isDragging) {
     const touchDeltaX = event.touches[0].clientX - startDragX;
-    rotationAngle = initialRotationAngle + touchDeltaX * 0.2; // Adjust the multiplier to control touch sensitivity
+    rotationAngle = initialRotationAngle + touchDeltaX * 0.4; // Adjust the multiplier to control touch sensitivity
     updateCarouselRotation();
   }
 }
