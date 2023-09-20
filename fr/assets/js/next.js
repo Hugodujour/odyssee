@@ -284,6 +284,10 @@ mobiled.addEventListener('click', function () {
 
 })
 
-
+// Function to update the carousel rotation
+function updateCarouselRotation() {
+  const carousel = document.querySelector('.carousel');
+  carousel.style.transform = `rotateY(-${rotationAngle}deg)`;
+}
 
 
