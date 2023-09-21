@@ -593,6 +593,14 @@
     color: var(--black-color);
   }
   
+  .txt-yes2 {
+    padding: 13px 0px;
+    font-family:'Domine', serif;
+    font-size: 25px;
+    white-space: nowrap;
+    animation: Scroll 50s linear infinite;
+    color: var(--black-color);
+  }
   @keyframes Scroll {
     0% {
       transform: translateX(0%);
