@@ -28,22 +28,32 @@ function handleScroll() {
   updateCarouselRotation();
 }
 
-// Function to continuously rotate the carousel
-function continuousRotation() {
-  if (shouldRotate) {
-    // Get the current rotation angle
-    const currentRotation = rotationAngle;
 
-    // Update the rotation angle for the continuous rotation
-    rotationAngle += 0.05; // Adjust the increment to control the continuous rotation speed
+
+// Function to continuously rotate the carousel
+function continuousRotation(e) {
+
+  // Variable to store the rotation increment
+  let rotationIncrement = 0.05; // Vous pouvez ajuster cette valeur en fonction de la vitesse de rotation souhaitée
+
+
+  if (shouldRotate && !isDragging) { // Check if not dragging to prevent acceleration
+    // Increment the rotation angle for the continuous rotation
+    rotationAngle += rotationIncrement; // Adjust the increment to control the continuous rotation speed
 
     // Apply the rotation angle to the carousel element
     updateCarouselRotation();
-
+    
     // Schedule the next continuous rotation frame
     requestAnimationFrame(continuousRotation);
+    
+  } else {
+    // If dragging, still schedule the next frame for smooth interaction
+    requestAnimationFrame(continuousRotation);
+    
   }
 }
+
 
 // Add event listeners for mouse and touch interaction
 const carousel = document.querySelector('.carousel');
@@ -108,7 +118,7 @@ function stopCarouselRotation() {
 // Function to resume the carousel rotation when the mouse leaves
 function resumeCarouselRotation() {
   shouldRotate = true;
-  continuousRotation();
+  console.log('AAAAh')
 }
 
 // Function to update the carousel rotation
@@ -116,6 +126,7 @@ function updateCarouselRotation() {
   const carousel = document.querySelector('.carousel');
   carousel.style.transform = `rotateY(-${rotationAngle}deg)`;
 }
+
 
 
 //mobile toggle classic
