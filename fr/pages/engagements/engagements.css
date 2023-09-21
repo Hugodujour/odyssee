@@ -589,7 +589,7 @@
     font-family:'Domine', serif;
     font-size: 25px;
     white-space: nowrap;
-    animation: Scroll 35s linear infinite;
+    animation: Scroll 40s linear infinite;
     color: var(--black-color);
   }
   
