@@ -128,26 +128,26 @@ function sauvignon(){
 
 // change text Provence
 const l1Pro = '45% Grenache, 25% Cinsault, 20% Carignan, 10% Mourvèdre.'
-const l2Pro = 'Jolie couleur rose pâle, presque cristaline.'
-const l3Pro = 'Délicat, facile à boire.'
+const l2Pro = 'Lovely pale pink color, almost crystalline.'
+const l3Pro = 'Delicate and easy to drink.'
 const engagementPro = `Engagés envers la légèreté et la durabilité, notre vin est maintenant présenté dans des bouteilles allégées pour une expérience délicieuse et respectueuse de l'environnement.`
-const accordPro = 'Se marie à merveille avec des charcuteries fines ou des fruits de mer.'
+const accordPro = 'Pairs wonderfully with fine charcuteries or seafood.'
 
 
 // change text Merlot
 const l1Mer = `100% Merlot.`
-const l2Mer = `Teinte pourpre intense et profonde.`
-const l3Mer = `Arômes captivants de fruits à noyeaux et de cerises, nuances épicées.`
+const l2Mer = `Intense and deep purple hue.`
+const l3Mer = `Captivating aromas of stone fruits and cherries, with spicy undertones.`
 const engagementMer = `Nous sommes fiers de notre engagement croissant envers des pratiques plus durables, en collaborant étroitement avec des producteurs de plus en plus axés sur le bio pour vous offrir des produits de qualité supérieure.`
-const accordMer = `Se déguste aussi bien avec de la viande rouge qu'avec de la viande blanche.`
+const accordMer = `Pairs well with both red and white meats.`
 
 
 // change text Sauvignon
 const l1Sau = '70% Sauvignon Blanc, 30% Sauvignon Gris.'
-const l2Sau = 'Magnifique couleur jaune pâle avec des reflets émeraude.'
-const l3Sau = 'Frais, délicat, aux arômes exotiques.'
+const l2Sau = 'Beautiful pale yellow color with emerald reflections.'
+const l3Sau = 'Fresh, delicate, with exotic aromas.'
 const engagementSau = `Bientôt, nos étiquettes seront imprimées avec une encre 100% biodégradable, reflétant notre engagement envers l'innovation durable et la préservation de l'environnement.`
-const accordSau = `Sublime le carpaccio de noix de Saint-Jacques, et fruits de mer en tous genres.`
+const accordSau = `Enhances the flavors of scallop carpaccio and all kinds of seafood.`
 
 
 
