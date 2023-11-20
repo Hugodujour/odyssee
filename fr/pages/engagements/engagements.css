@@ -500,14 +500,14 @@
   }
   
   .photo3 {
-    background: url('/fr/assets/img/Odyssée\ plage\ photo\ 3\ \(1\).jpeg');
+    background: url('/fr/assets/img/coxy.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: top;
+    background-position: center;
   }
   
   .photo4 {
-    background: url('/fr/assets/img/bg.jpg');
+    background: url('/fr/assets/img/macro.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
@@ -517,15 +517,23 @@
     height: 94vh;
     min-height: 800px;
   }
+
+  .h50 {
+    height: 60vh;
+    min-height: 300px;
+  }
   
   .w50 {
     width: 50vw;
   }
   
   .engaged {
-    width: 50vw;
-    height: 94vh;
-    min-height: 800px;
+    width: 600px;
+    text-align: center;
+  }
+
+  .engaged li {
+    list-style: '🍷: ';
   }
   
   .logoted {
@@ -1115,7 +1123,8 @@
     }
   
     .engaged {
-      width: 100vw;
+      width: 94vw;
+      text-align: left;
     }
   
     .cached {
